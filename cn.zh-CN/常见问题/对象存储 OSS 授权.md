@@ -13,11 +13,11 @@
 
 ## 查看 OSS 的权限定义 {#section_mzy_x4x_ydb .section}
 
-请参考 OSS 产品文档中的[访问控制](../../../../cn.zh-CN/开发指南/访问与控制/访问控制.md)部分。
+请参考 OSS 产品文档中的[访问控制](../../../../intl.zh-CN/开发指南/访问与控制/访问控制.md#)部分。
 
 ## 为一个子用户授予只读访问 OSS 的权限 {#section_jft_y4x_ydb .section}
 
-在 RAM 控制台中创建一个子用户，并为此子用户附加系统授权策略”AliyunOSSReadOnlyAccess”。附加授权策略的方式请参考[授权](../../../../cn.zh-CN/用户指南/授权管理/授权.md)。
+在 RAM 控制台中创建一个子用户，并为此子用户附加系统授权策略”AliyunOSSReadOnlyAccess”。附加授权策略的方式请参考[授权](../../../../intl.zh-CN/用户指南/授权管理/授权.md)。
 
 ## 为一个子用户授予完全管理 OSS 的权限 {#section_fnn_z4x_ydb .section}
 
