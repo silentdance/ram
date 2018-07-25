@@ -41,11 +41,15 @@ RAM 适用具有如下特点的企业场景：
 
 其具体需求如下图所示：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12331/3479_zh-CN.png "企业场景")
+![](images/3479_zh-CN.png "企业场景")
 
 -   您的企业只需使用一个云账号\(比如 companyA@aliyun.com\)。
 -   所有资源都归属于该云账号的名下，云账号是资源的 Owner（掌握完全控制权的人），也是账单的支付者。
 -   通过 RAM 为您名下的操作员（对资源进行运维管控操作）创建独立的用户账号并进行授权管理。
 -   用户账号不拥有资源（对其所创建的资源默认没有访问权限），只能操作被授权的资源。
 -   用户账号操作所发生费用都计入主账号名下，不支持用户账号的独立计量计费。
+
+## 学习路径图 {#section_mkm_gkx_42b .section}
+
+您可以通过[RAM 学习路径图](https://www.alibabacloud.com/getting-started/learningpath/ram)快速了解RAM，学习相关的基础操作，并利用丰富的API、SDK包和便捷工具进行二次开发。
 
