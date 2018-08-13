@@ -11,7 +11,7 @@
 
 ## 查看 ECS 的权限定义 {#section_mzy_x4x_ydb .section}
 
-请参考 ECS OpenAPI 文档中的[鉴权规则](../../../../cn.zh-CN/API 参考/授权 RAM 用户/鉴权规则.md)。
+请参考 ECS OpenAPI 文档中的[鉴权规则](../../../../cn.zh-CN/API 参考/鉴权规则.md)。
 
 ## 为一个子用户授予 ECS 服务的完全管理权限 {#section_jft_y4x_ydb .section}
 
