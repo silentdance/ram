@@ -6,14 +6,14 @@
 -   [Assign the OSS read-only permission to a RAM user](#section_jft_y4x_ydb)
 -   [Assign the full OSS management permission to a RAM user](#section_fnn_z4x_ydb)
 -   [Authorize a RAM user to list and read resources in a bucket](#section_jpq_1px_ydb)
--   [How to apply IP address-specific access control in OSS?](#section_jpq_1px_ydb)
--   [Authorization by OSS directory](#section_a1c_cpx_ydb)
+-   [Apply IP address-specific access control in OSS](intl.en-US/FAQ/Authorization for OSS instances.md#section_plf_hkg_c2b)
+-   [Authorization by OSS directory](intl.en-US/FAQ/Authorization for OSS instances.md#section_dk4_42k_c2b)
 -   [Authorize a RAM user complete management of a bucket](#section_a1c_cpx_ydb)
--   [RAM user authorized to manage a bucket notified of having no operation permissions when logging on to the OSS console](#section_a1c_cpx_ydb)
+-   [RAM user authorized to manage a bucket notified of having no operation permissions when logging on to the OSS console](intl.en-US/FAQ/Authorization for OSS instances.md#section_t51_sfk_c2b)
 
 ## View OSS permission definitions {#section_mzy_x4x_ydb .section}
 
-See [访问控制](../../../../intl.en-US/Developer Guide/Access and control/Access control.md#) in the OSS product document.
+See [Access control](../../../../intl.en-US/Developer Guide/Access and control/Access control.md#) in the OSS product document.
 
 ## Assign the OSS read-only permission to a RAM user {#section_jft_y4x_ydb .section}
 
