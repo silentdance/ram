@@ -37,30 +37,29 @@ Here, the **Authorization policy name**, **Remarks**, and **Policy content** are
 
 ```
 
-
 ```json
-
+{
 "Version": "1",
 "Statement": [
-
+{
 "Effect": "Allow",
 "Action": [
 "oss:Get*",
 "oss:List*"
-
+],
 "Resource": [
 "acs:oss:*:*:samplebucket/bob/*"
-
+],
 "Condition": {
 "IpAddress": {
 "acs:SourceIp": "121.0.27.1"
 }
+}
+}
+]
+}
 
-
-
-
-
-
+```
 
 ```
 
