@@ -36,7 +36,7 @@
 
  |[弹性伸缩API使用须知](https://help.aliyun.com/document_detail/25925.html)|
 |容器服务|√|√|服务级别|-|[使用子账号](https://help.aliyun.com/document_detail/63578.html)|
-|资源编排 ROS|√|√|服务级别|-|[使用RAM控制资源访问](https://help.aliyun.com/document_detail/48754.html)|
+|资源编排 ROS|√|√|服务级别|-|[使用 RAM 控制资源访问](https://help.aliyun.com/document_detail/48754.html)|
 |批量计算 BatchCompute|√|√|服务级别|AliyunBatchComputeFullAccess|-|
 
 ## 云数据库 {#section_ep3_h52_xdb .section}
@@ -94,6 +94,11 @@
 -   AliyunCDNReadOnlyAccess
 
  |[CDN鉴权规则](https://help.aliyun.com/document_detail/27154.html)|
+|云存储网关|√|○|服务级别|AliyunHCSSGWFullAccess|-|
+|混合云备份|√|○|资源级别| -   AliyunHBRFullAccess
+-   AliyunHBRReadOnlyAccess
+
+ |-|
 
 ## 网络 {#section_az3_j52_xdb .section}
 
@@ -111,6 +116,10 @@
 -   AliyunExpressConnectReadOnlyAccess
 
  |[高速通道鉴权规则](https://help.aliyun.com/document_detail/31813.html)|
+|NAT网关|√|√|资源级别| -   AliyunNATGatewayReadOnlyAccess
+-   AliyunNATGatewayFullAccess
+
+ |-|
 
 ## 分析 {#section_psg_k52_xdb .section}
 
@@ -215,17 +224,18 @@
 -   AliyunHotfixReadOnlyAccess
 
  |[移动热修复鉴权规则](https://help.aliyun.com/document_detail/55889.html)|
+|移动安全（应用安全）|√|√|服务级别|AliyunYundunJaqFullAccess|-|
 
 ## 视频服务 {#section_slb_q52_xdb .section}
 
 |服务名|控制台|API|授权粒度|系统策略|相关文档|
 |:--|:--|:--|:---|:---|:---|
-|媒体转码|√|√|服务级别| -   AliyunMTSFullAccess
+|媒体处理|√|√|服务级别| -   AliyunMTSFullAccess
 -   AliyunMTSPlayerAuth
 
  |[子账号使用控制台说明](https://help.aliyun.com/document_detail/42841.html)|
 |视频点播|√|√|服务级别|AliyunMTSFullAccess|-|
-|视频直播|√|√|服务级别|AliyunMTSFullAccess|-|
+|视频直播|√|√|服务级别|AliyunLiveFullAccess|-|
 
 ## 大数据（数加） {#section_qbt_q52_xdb .section}
 
@@ -253,7 +263,7 @@
 -   AliyunYundunSASReadOnlyAccess
 
  |-|
-|服务器安全\(安骑士\)|√|○|服务级别| -   AliyunYundunAegisFullAccess
+|安骑士（服务器安全）|√|○|服务级别| -   AliyunYundunAegisFullAccess
 -   AliyunYundunAegisReadOnlyAccess
 
  |-|
@@ -262,14 +272,14 @@
 -   AliyunYundunHighReadOnlyAccess
 
  |-|
-|Web 应用防火墙|√|○|服务级别| -   AliyunYundunWAFFullAccess
+|Web应用防火墙（网络安全）|√|○|服务级别| -   AliyunYundunWAFFullAccess
 -   AliyunYundunWAFReadOnlyAccess
 
  |-|
 |先知\(安全情报\)|√|○|服务级别|AliyunYundunXianzhiFullAccess|-|
 |安全管家|√|○|服务级别| |-|
 |加密服务|√|○|服务级别|AliyunYundunHSMFullAccess|-|
-|内容安全|√|○|服务级别|AliyunYundunGreenWebFullAccess|-|
+|内容安全（业务安全）|√|○|服务级别|AliyunYundunGreenWebFullAccess|-|
 |数据风控|√|○|服务级别|AliyunYundunAFSFullAccess|-|
 |证书服务|√|○|服务级别|AliyunYundunCertFullAccess|-|
 |移动安全|√|○|服务级别|AliyunYundunJaqFullAccess|-|
