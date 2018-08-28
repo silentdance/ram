@@ -10,7 +10,9 @@ When each product is being integrated with RAM functions, different levels of au
 
 ## List of cloud services supporting RAM {#section_x2b_krs_q2b .section}
 
-The following tables list the cloud services that support RAM in the following categories: [Elastic Computing](#section_b53_g52_xdb), [Database Services](#section_ep3_h52_xdb), [Storage & CDN](#section_ihm_352_xdb), [Networking](#section_az3_j52_xdb), [Analytics](#section_psg_k52_xdb), [Cloud Communication](#section_xlt_l52_xdb), [Monitoring and Management](#section_ypn_m52_xdb), [Application Service](#section_mfn_n52_xdb), [Middleware](#section_wck_452_xdb), [Mobile Service](#section_qqf_p52_xdb), [Media Services](#section_slb_q52_xdb), [Big Data \(data plus\)](#section_qbt_q52_xdb), [Security \(Alibaba Cloud Security\)](#section_tsn_r52_xdb), [Cloud Marketplace](#section_ejg_s52_xdb), and [Domain and Hosting](#section_spw_s52_xdb) Each table contains the following information:
+The following tables list the cloud services that support RAM in the following categories: [Elastic Computing](#section_b53_g52_xdb), [Database Services](#section_ep3_h52_xdb), [Storage & CDN](#section_ihm_352_xdb), [Networking](#section_az3_j52_xdb), [Analytics](#section_psg_k52_xdb), [Cloud Communication](#section_xlt_l52_xdb), [Monitoring and Management](#section_ypn_m52_xdb), [Application Service](#section_mfn_n52_xdb), [Middleware](#section_wck_452_xdb), [Mobile Service](#section_qqf_p52_xdb), [Media Services](#section_slb_q52_xdb), [Big Data \(data plus\)](#section_qbt_q52_xdb), [Security \(Alibaba Cloud Security\)](#section_tsn_r52_xdb), [Cloud Marketplace](#section_ejg_s52_xdb), and [Domain and Hosting](#section_spw_s52_xdb).
+
+Each table contains the following information:
 
 -   Service: name of the cloud service that supports RAM
 -   Console: whether the current service supports RAM through the console; “∨” indicates "supported", “×” indicates "not supported", and “○” indicates "not available".
