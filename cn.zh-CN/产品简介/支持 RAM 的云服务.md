@@ -59,7 +59,7 @@
 -   AliyunOCSReadOnlyAccess
 
  |-|
-|云数据库 HybirdDB for MySQL|√|√|资源级别| -   AliyunPetaDataFullAccess
+|云数据库 HybridDB for MySQL|√|√|资源级别| -   AliyunPetaDataFullAccess
 -   AliyunPetaDataReadOnlyAccess
 
  |-|
