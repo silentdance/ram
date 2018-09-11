@@ -11,7 +11,7 @@
 
 ## 查看 ECS 的权限定义 {#section_mzy_x4x_ydb .section}
 
-请参考 ECS OpenAPI 文档中的[鉴权规则](../../../../cn.zh-CN/API 参考/鉴权规则.md)。
+请参考 ECS OpenAPI 文档中的[鉴权规则](../../../../intl.zh-CN/API 参考/鉴权规则.md)。
 
 ## 为一个子用户授予 ECS 服务的完全管理权限 {#section_jft_y4x_ydb .section}
 
@@ -21,7 +21,7 @@
 
 在 RAM 控制台中创建一个子用户，并为此子用户附加系统授权策略 “AliyunECSReadOnlyAccess”。
 
-添加授权策略的方式请参考[授权](../../../../cn.zh-CN/用户指南/授权管理/授权.md)。
+添加授权策略的方式请参考[授权](../../../../intl.zh-CN/用户指南/授权管理/授权.md)。
 
 ## 仅允许子用户查看青岛的 ECS 实例，但是不允许查看磁盘信息及快照信息 {#section_jpq_1px_ydb .section}
 
