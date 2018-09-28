@@ -1,6 +1,6 @@
 # What is RAM {#concept_oyr_zzv_tdb .concept}
 
-Resource Access Management \(RAM\) is a cloud service that helps you **manage user identities** and **control resources access**. Using RAM, you can create and manage user accounts, and control the operation permissions that these user accounts possess for resources under your account, for example, employees, systems, and applications. If multiple users in your enterprise need to collaborate with each other to perform operations on resources, using RAM allows you to avoid sharing your Alibaba Cloud account AccessKey with other users. Instead, you can grant users the minimum permissions needed to complete their work, reducing security risks of your enterprise.
+Resource Access Management \(RAM\) is a cloud service that helps you **manage user identities** and **control resources access**. Using RAM, you can create and manage user accounts, and control the operation permissions that these user accounts possess for resources under your account, for example, employees, systems, and applications. If multiple users in your enterprise collaboratively work with resources, using RAM allows you to avoid sharing your Alibaba Cloud account AccessKey with other users. Instead, you can grant users the minimum permissions needed to complete their work, reducing security risks of your enterprise.
 
 ## Identity management and access control {#section_rwm_q1w_tdb .section}
 
@@ -41,11 +41,15 @@ RAM is applicable to the following enterprise scenarios:
 
 The specific requirements are shown as follows:
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12331/3479_en-US.png "Enterprise scenario")
+![](images/3479_en-US.png "Enterprise scenario")
 
 -   Company A only needs one Alibaba Cloud account \(in the figure, this is companyA@aliyun.com\).
 -   All resources belong to this Alibaba Cloud account. As the resource owner, this account has full control of all resources. This account is also responsible for paying all bills.
--   A can use RAM to create independent user accounts for operators under the account \(the employees that perform resource O&M control operations\) and perform authorization management.
--   User accounts do not possess resources. By default they do not have access permissions for the resources they create and can only perform operations on resources after their permissions are authorized.
+-   A can use RAM to create independent user accounts for operators under the account \(the employees who perform operation and maintenance on resources\) and perform authorization management.
+-   User accounts do not possess resources. By default they do not have access permissions for the resources they create and can only perform operations on resources after their permissions are authorized. 
 -   The charges incurred due to operations of user accounts are billed to the primary account. Separate billing for user accounts is not supported.
+
+## Learning path {#section_mkm_gkx_42b .section}
+
+Visit the [RAM Learning Path](https://help.aliyun.com/learn/learningpath/ram.html) for the knowledge you need to become a RAM expert!
 
