@@ -51,5 +51,5 @@ The specific requirements are shown as follows:
 
 ## Learning path {#section_mkm_gkx_42b .section}
 
-Visit the [RAM Learning Path](https://help.aliyun.com/learn/learningpath/ram.html) for the knowledge you need to become a RAM expert!
+Visit the [RAM Learning Path](https://www.alibabacloud.com/getting-started/learningpath/ram) for the knowledge you need to become a RAM expert!
 
