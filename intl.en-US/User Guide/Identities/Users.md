@@ -2,7 +2,7 @@
 
 RAM user is an identity used in RAM to relate with a true identity, such as a user or an application. To allow a new user or a new application to access your cloud resources, you can create and grant permissions to a RAM user. The general procedure is as follows:
 
-1.  Use the primary account \(or a RAM user with RAM operation permissions\) to log on to the RAM console.
+1.  Use the primary account \(or a RAM user with RAM operation permissions\) to log on to the [RAM console](https://partners-ram.console.aliyun.com/).
 2.  Create a RAM user and add the user to one or more groups.
 3.  Attach one or more authorization policies to the user \(or the group to which the user belongs\).
 4.  Create a credential for the user. If the user performs operations through the console, set a logon password for the user. If the user performs operations by calling APIs, create an API AccessKey for the user.
@@ -17,14 +17,14 @@ RAM user is an identity used in RAM to relate with a true identity, such as a us
 
 ## Set the enterprise alias {#section_dbn_plf_xdb .section}
 
-1.  In the RAM console, choose**Settings** \> **Enterprise Alias Settings** \> **Edit Enterprise Alias**.
+1.  In the **RAM console**, choose**Settings** \> **Enterprise Alias Settings** \> **Edit Enterprise Alias**.
 2.  Enter an **enterprise alias** and click **OK**.
 
 ## Configure the password policy {#section_x1n_plf_xdb .section}
 
 To configure the password policy, follow these steps:
 
-1.  In the RAM console, choose**Settings** \> **Password Strength Settings**.
+1.  In the **RAM console**, choose**Settings** \> **Password Strength Settings**.
 2.  Follow the page prompts to configure rules such as password length, character format, expiration date, and retry constraint policy, and then click **Save Changes** to make the rules take effect.
 
     **Note:** Once the password policy takes effect, all RAM users created hereafter must comply with the password strength settings.
@@ -32,7 +32,7 @@ To configure the password policy, follow these steps:
 
 ## Configure the security policy {#section_gvd_1rf_xdb .section}
 
-1.  In the RAM console, choose**Settings** \> **User Security Settings**.
+1.  In the **RAM console**, choose**Settings** \> **User Security Settings**.
 2.  On the User Security Settings page, configure your security policy.
 3.  Click **Save Changes**.
 
@@ -40,7 +40,7 @@ To configure the password policy, follow these steps:
 
 To create a RAM user, follow these steps:
 
-1.  In the RAM console, choose **Users** \> **New User**.
+1.  In the **RAM console**, choose **Users** \> **New User**.
 2.  Enter user information in the displayed dialog box and click **OK**.
 
 After creating a RAM user, you can do the following as needed:
@@ -51,12 +51,12 @@ After creating a RAM user, you can do the following as needed:
 
 ## Set a logon password {#section_utb_njf_xdb .section}
 
-To allow a RAM user to access the RAM console, you can set a logon password for the user. The procedure is as follows:
+To allow a RAM user to access the **RAM console**, you can set a logon password for the user. The procedure is as follows:
 
-1.  Click Users in the left navigation bar of the RAM console. Select the target user \(which can be queried by user name\). Click the user name or **Manage**.
+1.  Click Users in the left navigation bar of the **RAM console**. Select the target user \(which can be queried by user name\). Click the user name or **Manage**.
 2.  On the User Details page, click **Enable Console Logon**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12348/3576_en-US.png "Set a logon password")
+    ![](images/3576_en-US.png "Set a logon password")
 
 3.  In the displayed dialog box, set an initial password for the user. You can specify a rule that the user must change the password upon logon.
 
@@ -81,10 +81,10 @@ The virtual MFA \(VMFA\) device is an application that generates a 6-digit verif
 
 To enable virtual MFA devices for a RAM user, follow these steps:
 
-1.  Click **Users** in the left navigation bar of the RAM console. Select the target user \(which can be queried by user name\). Click the user name or **Manage**.
-2.  On the User Details page, click **Enable VMFA Device** to start the [Set up MFA \(optional\)](../../../../intl.en-US/Quick Start/Set up MFA (optional).md) procedure.
+1.  Click **Users** in the left navigation bar of the **RAM console**. Select the target user \(which can be queried by user name\). Click the user name or **Manage**.
+2.  On the User Details page, click **Enable VMFA Device** to start the [Set up MFA \(optional\)](../../../../reseller.en-US/Quick Start/Set up MFA (optional).md) procedure.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12348/3577_en-US.png "Set MFA")
+    ![](images/3577_en-US.png "Set MFA")
 
 
 ## RAM user logon {#section_c5s_bkf_xdb .section}
@@ -93,7 +93,7 @@ To enable virtual MFA devices for a RAM user, follow these steps:
 
 RAM user and cloud account logon entries are different. RAM users cannot log on through the cloud account logon page.
 
-The RAM user's logon link is [https://signin.aliyun.com/login.htm](https://signin.aliyun.com/login.htm)  \(The logon link can be queried through the Dashboard page.\)
+Please log on to the [RAM console](https://partners-ram.console.aliyun.com/) to query the logon link on the Dashboard page\).
 
 **Login information**
 
@@ -101,7 +101,7 @@ RAM User logon requires an enterprise alias, a sub-user name, and a password.
 
 The enterprise alias is the one you have set in the initial RAM setup. If you have not set an enterprise alias, the default enterprise alias is your cloud account ID \(which can be queried through**Account Management** \> **Security Settings**.
 
-**Note:** By default, RAM users do not have any access permissions. A RAM user without permissions can log on to the console, but cannot perform any operations. For details about how to attach a policy to a RAM user, see [Authorization](intl.en-US/User Guide/Authorization/Authorization.md).
+**Note:** By default, RAM users do not have any access permissions. A RAM user without permissions can log on to the console, but cannot perform any operations. For details about how to attach a policy to a RAM user, see [Authorization](reseller.en-US/User Guide/Authorization/Authorization.md).
 
 ## Delete a RAM user {#section_h5b_njf_xdb .section}
 
@@ -112,10 +112,10 @@ To delete a RAM user, follow these steps:
 1.  Click **Users** in the left navigation bar of the RAM console to open the User Management page.
 2.  Find the RAM user you want to delete and click **Delete** in the **Actions** area.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12348/3578_en-US.png "Delete a RAM user")
+    ![](images/3578_en-US.png "Delete a RAM user")
 
 3.  In the displayed **Delete User** dialog box, select the **Unlink Dependent Objects** check box, and then click **OK**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12348/3579_en-US.png "Confirm the deletion")
+    ![](images/3579_en-US.png "Confirm the deletion")
 
 
