@@ -2,7 +2,7 @@
 
 RAM user is an identity used in RAM to relate with a true identity, such as a user or an application. To allow a new user or a new application to access your cloud resources, you can create and grant permissions to a RAM user. The general procedure is as follows:
 
-1.  Use the primary account \(or a RAM user with RAM operation permissions\) to log on to the [RAM console](https://partners-ram.console.aliyun.com/).
+1.  Use the primary account \(or a RAM user with RAM operation permissions\) to log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram).
 2.  Create a RAM user and add the user to one or more groups.
 3.  Attach one or more authorization policies to the user \(or the group to which the user belongs\).
 4.  Create a credential for the user. If the user performs operations through the console, set a logon password for the user. If the user performs operations by calling APIs, create an API AccessKey for the user.
@@ -93,7 +93,7 @@ To enable virtual MFA devices for a RAM user, follow these steps:
 
 RAM user and cloud account logon entries are different. RAM users cannot log on through the cloud account logon page.
 
-Please log on to the [RAM console](https://partners-ram.console.aliyun.com/) to query the logon link on the Dashboard page\).
+Please log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram) to query the logon link on the Dashboard page\).
 
 **Login information**
 
