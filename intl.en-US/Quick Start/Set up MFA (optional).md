@@ -10,11 +10,16 @@ Your primary account has full control over the resources under it. Once the logo
 
 Make sure you have installed on your smartphone a virtual MFA application, preferably the Alibaba Cloud app.
 
+You can also install Google Authenticator, which is also a common MFA application.
+
+-   iOS: Install Google Authenticator in App Store. The installation method can be found in [iOS-based Google Authenticator installation and use guide](https://help.aliyun.com/document_detail/28668.html).
+-   Android: Install Google Authenticator in Google Play. The installation method can be found in [Android-based Google Authenticator installation and use guide](https://help.aliyun.com/document_detail/28669.html).
+
 The following takes the Alibaba Cloud app as an example to describe the operation procedure.
 
 **Procedure**
 
-1.  Log on to the Alibaba Cloud Console with your primary account. Choose Account Management \> Security Settings to open the [Security Settings](https://partners-ram.console.aliyun.com/) page.
+1.  Log on to the Alibaba Cloud Console with your primary account. Choose Account Management \> Security Settings to open the [Security Settings](https://partners-intl.console.aliyun.com/#/ram) page.
 2.  Under the Virtual MFA menu, click **Set** to enter the virtual MFA device binding procedure.
 3.  Complete the authentication through mailbox authentication, smartphone authentication, or security authentication. Then, go to the Enable the Virtual MFA Device page, as shown in the following figure.
 
