@@ -11,7 +11,7 @@
 
 ## View ECS permission definitions {#section_mzy_x4x_ydb .section}
 
-See [Authorization rules](../../../../intl.en-US/API Reference/Authorization rules.md) in the ECS OpenAPI document.
+See [Authorization rules](../../../../reseller.en-US/API Reference/Authorization rules.md) in the ECS OpenAPI document.
 
 ## Assign full ECS service management permissions to a subaccount {#section_jft_y4x_ydb .section}
 
@@ -21,7 +21,7 @@ Add the system authorization policy “AliyunECSFullAccess” to the subaccount 
 
 Create a subaccount on the RAM console and add the system authorization policy “AliyunECSReadOnlyAccess” to the subaccount. 
 
-For more information about how to add an authorization policy, see [Authorization](../../../../intl.en-US/User Guide/Authorization/Authorization.md). 
+For more information about how to add an authorization policy, see [Authorization](../../../../reseller.en-US/User Guide/Authorization/Authorization.md). 
 
 ## Allow a RAM user to view ECS instances in the Qingdao region but disallow the user to view disk or snapshot information {#section_jpq_1px_ydb .section}
 
