@@ -83,7 +83,7 @@ Operations can be divided into two main categories: **resource control operation
 
 ## Policies {#section_xjz_nt2_xdb .section}
 
-A policy is a type of simple language specification that describes a permission set. For the language specifications supported by RAM, see [../../../../dita-oss-bucket/SP\_65/DNRAM11885314/EN-US\_TP\_12358.md](../../../../intl.en-US/User Guide/Policy Language/Policy syntax structure.md). RAM supports two types of authorization policies: **system access policies** and **custom access policies**.
+A policy is a type of simple language specification that describes a permission set. For the language specifications supported by RAM, see [Policy syntax structure](../../../../intl.en-US/User Guide/Policy Language/Policy syntax structure.md). RAM supports two types of authorization policies: **system access policies** and **custom access policies**.
 
 -   You can use but cannot modify the system access policies managed by Alibaba Cloud. Alibaba Cloud automatically updates the system access policy version.
 -   You can create or delete the custom access policies. In addition, you must maintain the policy version by yourself.
