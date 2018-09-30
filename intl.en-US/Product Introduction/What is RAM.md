@@ -49,7 +49,3 @@ The specific requirements are shown as follows:
 -   User accounts do not possess resources. By default they do not have access permissions for the resources they create and can only perform operations on resources after their permissions are authorized. 
 -   The charges incurred due to operations of user accounts are billed to the primary account. Separate billing for user accounts is not supported.
 
-## Learning path {#section_mkm_gkx_42b .section}
-
-Visit the [RAM Learning Path](https://www.alibabacloud.com/getting-started/learningpath/ram) for the knowledge you need to become a RAM expert!
-
