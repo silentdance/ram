@@ -12,8 +12,8 @@ Make sure you have installed on your smartphone a virtual MFA application, prefe
 
 You can also install Google Authenticator, which is also a common MFA application.
 
--   iOS: Install Google Authenticator in App Store. The installation method can be found in [iOS-based Google Authenticator installation and use guide](https://help.aliyun.com/document_detail/28668.html).
--   Android: Install Google Authenticator in Google Play. The installation method can be found in [Android-based Google Authenticator installation and use guide](https://help.aliyun.com/document_detail/28669.html).
+-   iOS: Install Google Authenticator in App Store. The installation method can be found in [iOS-based Google Authenticator installation and use guide](https://partners-intl.aliyun.com/help/doc-detail/28668.htm).
+-   Android: Install Google Authenticator in Google Play. The installation method can be found in [Android-based Google Authenticator installation and use guide](https://partners-intl.aliyun.com/help/doc-detail/28669.htm).
 
 The following takes the Alibaba Cloud app as an example to describe the operation procedure.
 
