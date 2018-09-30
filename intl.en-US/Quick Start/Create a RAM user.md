@@ -8,7 +8,7 @@ This document describes how to create a RAM user and how to configure the logon 
 
 To create a RAM user, follow these steps.
 
-1.  From the left navigation pane of the [RAM控制台](https://partners-intl.console.aliyun.com/#/ram), click **Users**.
+1.  From the left navigation pane of the [RAM console](https://partners-intl.console.aliyun.com/#/ram), click **Users**.
 2.  Click **Create User** in the upper right corner to open the Create User dialog box.
 3.  After entering user information, click **OK**.
 
