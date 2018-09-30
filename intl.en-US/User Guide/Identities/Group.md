@@ -17,14 +17,14 @@ This document describes the following tasks:
 
 The operation procedure is as follows:
 
-1.  On the [homepage](https://partners-intl.console.aliyun.com/#/ram) of the [RAM console](https://partners-ram.console.aliyun.com/), click**Groups** \> **Create Group**.
+1.  On the homepage of the [RAM console](https://partners-intl.console.aliyun.com/#/ram), click**Groups** \> **Create Group**.
 2.  Enter a Group Name and click **OK**.
 
 ## Manage group members {#section_f2c_4sf_xdb .section}
 
 The operation procedure is as follows:
 
-1.  On the **homepage** of the **RAM console**, click Groups.
+1.  On the homepage of the **RAM console**, click Groups.
 2.  On the Group Management page, click **Management** in the **Actions** area to manage group members.
 
 -   Add group members:
