@@ -31,7 +31,7 @@ When creating a custom Authorization Policy, you need to understand the basic st
 
 After learning about the authorization policy language, you can easily create custom authorization policies to meet the above needs on the **RAM console**.
 
-1.  Log on to the [RAM console](https://partners-ram.console.aliyun.com/).
+1.  Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ecs).
 2.  Click**Policy Management** \> **Custom Authorization Policy**.
 3.  Click new authorization policy to open the new authorization policy burst window, as shown in the following figure:
 
