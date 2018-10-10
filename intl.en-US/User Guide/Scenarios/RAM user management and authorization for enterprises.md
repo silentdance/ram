@@ -27,7 +27,7 @@ The operation procedure is as follows:
 
 1.  [Set up MFA](../../../../intl.en-US/Quick Start/Set up MFA (optional).md) to prevent risks caused by disclosure of the password of the primary account.
 2.  Activate RAM.
-3.  [Create a RAM user](../../../../intl.en-US/Quick Start/Create a RAM user.md) for different employees \(or application systems\) and set logon passwords or create AccessKeys for them as needed.
+3.  [Create RAM users](../../../../intl.en-US/Quick Start/Create a RAM user.md) for different employees \(or application systems\) and set logon passwords or create AccessKeys for them as needed.
 4.  [Create a RAM user group](../../../../intl.en-US/Quick Start/Create a RAM user group (optional).md). If multiple employees share the same responsibility, we recommend that you create a group for them and add the users to the group.
 5.  [Grant permissions](https://www.alibabacloud.com/help/doc-detail/28653.htm). Attach one or more authorization policies to groups or users. For finer-grained authorization, you can create [custom authorization policies](intl.en-US/User Guide/Authorization/Authorization Policy Management.md) and then attach them to groups or users.
 
