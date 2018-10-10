@@ -30,7 +30,7 @@ For the requirements above, **use the RAM role for cross-account authorization a
 
 The following figure shows how to use the RAM role for cross-account authorization. Assume that enterprise A \(AccountID=11223344, alias: company-a\) needs to grant ECS operation permissions to the employees of enterprise B \(AccountID=12345678, alias: company-b\).
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12363/15391773673632_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12363/15391776373632_en-US.png)
 
 The operation procedure is as follows:
 
@@ -63,7 +63,7 @@ The operation procedure is as follows:
         
         ```
 
-2.  Account A adds [Authorization](intl.en-US/User Guide/Authorization/Authorization.md) \(AliyunECSFullAccess\) to the role ecs-admin.
+2.  Account A [adds the authorization policy](intl.en-US/User Guide/Authorization/Authorization.md) \(AliyunECSFullAccess\) to the role ecs-admin.
 3.  Account B creates a RAM user for its employee \(assuming the user name is Alice\) and
     -   [sets the logon password](intl.en-US/User Guide/Identities/User.md) \(assuming the logon password is 123456\). That is, the RAM user is allowed to log on to the console.
     -   [calls the permission for the STS interface AssumeRole](intl.en-US/User Guide/Authorization/Authorization.md) \(AliyunSTSAssumeRoleAccess\). That is, the RAM user Alice is allowed to assume or switch the role.
@@ -76,7 +76,7 @@ The RAM user Alice under account B accesses account A's ECS resources through th
 
     When a sub-user logs on, the sub-user must enter **enterprise alias** \(company-b\), **sub-user username** \(Alice\), and **sub-user password** \(123456\) correctly.
 
-2.  The RAM user \(Alice\) under account B [switches role](intl.en-US/User Guide/Identities/Role.md).
+2.  The RAM user \(Alice\) under account B [switches the role](intl.en-US/User Guide/Identities/Role.md).
 
     In the upper right corner of the console, move the mouse pointer to the logon user name and click **Switch Role** to go to the identity switching page. Enter **enterprise alias** \(company-a\) and **role name** \(ecs-admin\) correctly to **switch** the role.
 
