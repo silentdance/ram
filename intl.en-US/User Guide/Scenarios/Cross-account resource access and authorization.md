@@ -22,15 +22,15 @@ The analysis of the preceding scenarios is as follows:
 
 For the requirements above, **use the RAM role for cross-account authorization and resource access**.
 
--   Account A creates a role in RAM and assigns appropriate permissions to the role, and allows account B to use this role. For the operation procedure, see [Cross-account authorization](#section_xgm_dgk_xdb).
--   If an employee \(RAM user\) under account B needs to use this role, account B can perform authorization control independently. Under the O&M entrustment contract, the RAM user under account B can use the granted role identity to manipulate the resources of account A. For the operation procedure, see [Cross-account resource access](#section_fhm_dgk_xdb).
--   If A and B terminate this O&M entrustment contract, account A only needs to revoke the enterprise B's use of this role. Once account B's use of this role is revoked, all RAM users under account B cannot use this role. For the operation procedure, see [Revocation of cross-account authorization](#section_ihm_dgk_xdb).
+-   Account A creates a role in RAM and assigns appropriate permissions to the role, and allows account B to use this role. For the operation procedure, see the section "Cross-account authorization".
+-   If an employee \(RAM user\) under account B needs to use this role, account B can perform authorization control independently. Under the O&M entrustment contract, the RAM user under account B can use the granted role identity to manipulate the resources of account A. For the operation procedure, see the section "Cross-account resource access".
+-   If A and B terminate this O&M entrustment contract, account A only needs to revoke the enterprise B's use of this role. Once account B's use of this role is revoked, all RAM users under account B cannot use this role. For the operation procedure, see the section "Revocation of cross-account authorization".
 
 ## Cross-account authorization {#section_xgm_dgk_xdb .section}
 
 The following figure shows how to use the RAM role for cross-account authorization. Assume that enterprise A \(AccountID=11223344, alias: company-a\) needs to grant ECS operation permissions to the employees of enterprise B \(AccountID=12345678, alias: company-b\).
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12363/15391776373632_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12363/15391782423632_en-US.png)
 
 The operation procedure is as follows:
 
