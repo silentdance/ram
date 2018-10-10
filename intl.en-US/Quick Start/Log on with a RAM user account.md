@@ -10,5 +10,5 @@ The logon entry for RAM users is [https://signin.aliyun.com/login.htm](https://s
 
 RAM user logon requires an enterprise alias, a sub-user name, and a password.
 
-The enterprise alias is the one you have configured in [RAM initial setup](intl.en-US/Quick Start/Ram initial setup.md). If you have not configured the enterprise alias, the default enterprise alias is your cloud account ID \(which can be queried through **Account Management** \> **Security Settings**.
+The enterprise alias is the one you have configured in [RAM initial setup](intl.en-US/Quick Start/Ram initial setup.md). If you have not configured the enterprise alias, the default enterprise alias is your cloud account ID \(which can be queried through **Account Management** \> **Security Settings**\).
 
