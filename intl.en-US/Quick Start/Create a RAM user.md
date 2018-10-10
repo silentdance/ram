@@ -1,6 +1,6 @@
 # Create a RAM user {#concept_gpm_ccf_xdb .concept}
 
-Before creating a RAM user, ensure that you have finished [Ram initial setup](intl.en-US/Quick Start/Ram initial setup.md) and have configured your enterprise alias, RAM user's logon password policy, and security policy.
+Before creating a RAM user, ensure that you have finished [RAM initial setup](intl.en-US/Quick Start/Ram initial setup.md) and have configured your enterprise alias, RAM user's logon password policy, and security policy.
 
 This document describes how to create a RAM user and how to configure the logon password \(if the user needs to log on to the console\) or the AccessKey \(if the user needs to call the cloud service API through a program\).
 
