@@ -33,7 +33,7 @@
     
     ```
 
--   se Case \#2
+-   Use Case \#2
 
     The following policy sample allows a RAM user to do READ operations on a specified OSS bucket \(for example, myphotos\) through the OSS SDK, where the Source IP address of an HTTP request must be “42.120.88.18” or "42.120.66.0/24 ".
 
