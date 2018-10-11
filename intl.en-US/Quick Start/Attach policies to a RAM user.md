@@ -2,8 +2,8 @@
 
 There are two methods for authorizing a RAM user:
 
--   [Attach policies to a RAM user directly](#section_odn_kgf_xdb)
--   [Attach policies to a RAM user group](#section_tdn_kgf_xdb)
+-   \#[Attach policies to a RAM user directly](#section_odn_kgf_xdb)
+-   \#[Attach policies to a RAM user group](#section_tdn_kgf_xdb)
 
 Both of these methods can achieve the purpose of granting a RAM user the permission for accessing related resources.
 
