@@ -3,7 +3,7 @@
 There are two methods for authorizing a RAM user:
 
 -   [Attach policies to a RAM user directly](#section_odn_kgf_xdb)
--   [Authorization for user group to which the user belongs](#section_tdn_kgf_xdb)
+-   [Attach policies to a RAM user group](#section_tdn_kgf_xdb)
 
 Both of these methods can achieve the purpose of granting a RAM user the permission for accessing related resources.
 
@@ -19,33 +19,28 @@ If none of these authorization policies meet your needs, you can customize a fin
 
 Use AttachPolicyToUser to attach policies to a RAM user directly.
 
-**The operation procedure is as follows:**
+**Operation procedure:**
 
 1.  Click **Users** in the left navigation pane of the RAM console.
-2.  On the Users page, click **Authorize** next to the user \(which can be searched by user name\) to whom you want to grant permissions.
-3.  In the **Edit User-Level Authorization** window, click an authorization policy and move it to the selected authorization policy field.
+2.  On the **User Management** page, click **Authorize** next to the user \(which can be searched by user name\) to whom you want to grant permissions.
+3.  In the **Edit User-Level Authorization** dialog box, add an authorization policy \(which can be searched by keyword\) and click **OK**.
+    -   Select the policy you want from the **Available Authorization Policy Names** list on the left, and click the right arrow to add it to the **Selected Authorization Policy Name** list.
+    -   To deselect an authorization policy, select the policy, and click the left arrow to remove it from the **Selected Authorization Policy Name** list.
 
-    -   Optional Authorization Policy Name from left Select the policy you want in the list, click the right arrow \(that is, authorization\) adds it to the list of selected Authorization Policy names.
+## Attach policies to a RAM user group {#section_tdn_kgf_xdb .section}
 
-    -   Instead, click the left arrow to deselect the policy in the list of selected Authorization Policy names.
-
-    ![](images/3542_en-US.png "Edit a personal authorization policy")
-
-
-## Authorization for user group to which the user belongs {#section_tdn_kgf_xdb .section}
-
-Through the chain. Authorize the user group to which the user belongs.
+Use AttachPolicyToGroup to attach policies to a RAM user group.
 
 Before using this method, make sure that the authorized user is already in the user group that you want to authorize.
 
-**Operation steps**
+**Operation procedure:**
 
-1.  In the ram console, click Group Management in the left navigation bar.
-2.  Locate the user group to which you want to authorize the user, and click the authorization button for this user group.
-3.  In the Edit Group Authorization Policy Dialog Box, add an Authorization Policy \(search by keyword\), and click Determine.
+1.  Click **Groups** in the left navigation pane of the RAM console.
+2.  On the **Group Management** page, click **Authorize** next to the group to whom you want to grant permissions.
+3.  In the **Edit Group Authorization Policy** dialog box, add an authorization policy \(which can be searched by keyword\) and click **OK**.
 
 **Subsequent operation**
 
--   For direct grant of RAM Permissions for users, you can go to the personal authorization Policies tab of the user authorization Policies Sub-page View permissions, or disauthorize.
--   For grant of RAM Permissions for user-owned user groups, you can go to the group Authorization Policy Management Sub-page to view the permissions or disauthorize.
+-   If policies are attached to a RAM user directly, you can go to the **User-Level Authorization** sub-page of the **User Authorization Polices** page to **View Permissions** or **Revoke Authorization**.
+-   If policies are attached to a RAM user group, you can go to **Group Authorization Polices** page to **View Permissions** or **Revoke Authorization**.
 
