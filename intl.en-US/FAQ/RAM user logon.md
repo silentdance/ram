@@ -1,13 +1,8 @@
 # RAM user logon {#concept_dwg_5rx_ydb .concept}
 
-## Questions {#section_x1f_w4x_ydb .section}
-
--   [RAM user logon](#section_mzy_x4x_ydb)
--   [Enterprise alias](#section_alh_rrx_ydb)
-
 ## RAM user logon {#section_mzy_x4x_ydb .section}
 
-on the overview page of the [RAM console](https://partners-intl.console.aliyun.com/#/ram).
+Either visit [https://signin.aliyun.com](https://signin.aliyun.com/) or query the logon link on the Dashboard page of the [RAM console](https://ram.console.aliyun.com/)
 
 ## Enterprise alias {#section_alh_rrx_ydb .section}
 
