@@ -10,9 +10,9 @@ The limit for log groups is: a maximum of 4096 logs or 10 MB space
 
 ## Prerequisite {#section_ert_t2f_xdb .section}
 
-Before creating custom authorization policies, you must understand the basic structure and syntax of the authorization policy language. For more details, see [Syntax](https://www.alibabacloud.com/help/doc-detail/28664.htm).
+Before creating custom authorization policies, you must understand the basic structure and syntax of the authorization policy language. For more details, see [Attach policies to a RAM user](reseller.en-US/User Guide/Policy Language/Policy syntax structure.md).
 
-RAM supports the authorization of the API granularity, at the finest. That is, the operation permissions in the authorization policy can be as fine as each API. Before creating custom authorization policies, you must understand the authorization granularity and method supported by related products. For more details, see [Cloud services supporting RAM](https://www.alibabacloud.com/help/doc-detail/28630.htm).
+RAM supports the authorization of the API granularity, at the finest. That is, the operation permissions in the authorization policy can be as fine as each API. Before creating custom authorization policies, you must understand the authorization granularity and method supported by related products. For more details, see [Attach policies to a RAM user](reseller.en-US/Product Introduction/Cloud services supporting RAM.md).
 
 ## Operation steps {#section_ayv_v2f_xdb .section}
 
@@ -67,5 +67,5 @@ Here, the **Authorization policy name**, **Remarks**, and **Policy content** are
 
 Next, simply authorize the policy created in this document to user Bob, and Bob will have the read-only permission for the objects in  `oss://samplebucket/bob/`, allowing access of the IP address \(121.0.27.1\) only from your company network.
 
-Assign the authorization policy to the RAM user. For details, see [Attach policies to a RAM user](intl.en-US/Quick Start/Attach policies to a RAM user.md).
+Assign the authorization policy to the RAM user. For details, see [Attach policies to a RAM user](reseller.en-US/Quick Start/Attach policies to a RAM user.md).
 
