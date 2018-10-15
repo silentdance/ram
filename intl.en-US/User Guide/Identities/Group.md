@@ -1,26 +1,26 @@
 # Group {#concept_hb3_nsf_xdb .concept}
 
-If you have created multiple RAM users with your Alibaba Cloud account, we recommend that you manage those users by group to simplify the management process. Classify RAM users with the same responsibility by group and [Authorization](intl.en-US/User Guide/Authorization/Authorization.md) upon authorization. The benefits of doing so are as follows:
+If you have created multiple RAM users with your Alibaba Cloud account, we recommend that you manage those users by group to simplify the management process. Classify RAM users with the same responsibility by group and [Authorization](reseller.en-US/User Guide/Authorization/Authorization.md) upon authorization. The benefits of doing so are as follows:
 
 -   When the responsibility of a specific user changes, you can simply move them to an appropriate group, which does not have an impact on other users.
 -   When the permissions of a group change, you only need to modify the authorization policy for the group, which can be applied to all users.
 
 This document describes the following tasks:
 
--   Create a group
--   Manage group members
--   Rename a group
--   Delete a group
--   Grant permissions to a group
+-   [Create a group](#)
+-   [Manage group members](#)
+-   [Rename a group](#)
+-   [Delete a group](#)
+-   [Grant permissions to a group](#)
 
-## Create a group {#section_d2c_4sf_xdb .section}
+## Create a group {#section_01 .section}
 
 The operation procedure is as follows:
 
-1.  On the homepage of the [RAM console](https://ram.console.aliyun.com/), click**Groups** \> **Create Group**.
+1.  On the homepage of the [RAM console](https://partners-intl.console.aliyun.com/#/ram), click**Groups** \> **Create Group**.
 2.  Enter a Group Name and click **OK**.
 
-## Manage group members {#section_f2c_4sf_xdb .section}
+## Manage group members {#section_02 .section}
 
 The operation procedure is as follows:
 
@@ -35,7 +35,7 @@ The operation procedure is as follows:
     1.  Locate the group you want to manage in the group list \(you can use the group name for a fuzzy query \), and click the group name.
     2.  In the **Group Member Management** area, click **Remove from Group** to delete the target user from the group.
 
-## Rename a group {#section_k2c_4sf_xdb .section}
+## Rename a group {#section_03 .section}
 
 The operation procedure is as follows:
 
@@ -44,7 +44,7 @@ The operation procedure is as follows:
 3.  Click **Edit Basic Info**.
 4.  Enter **Group Name** and click **OK**.
 
-## Delete a group {#section_n2c_4sf_xdb .section}
+## Delete a group {#section_04 .section}
 
 The operation procedure is as follows:
 
@@ -54,7 +54,7 @@ The operation procedure is as follows:
     **Note:** If the group contains group members or a bound authorization policy, you can delete a group only after selecting **Unlink Dependent Objects**.
 
 
-## Grant permissions to a group {#section_p2c_4sf_xdb .section}
+## Grant permissions to a group {#section_05 .section}
 
-For details about how to grant permissions to a group, see [Authorization](intl.en-US/User Guide/Authorization/Authorization.md).
+For details about how to grant permissions to a group, see [Authorization](reseller.en-US/User Guide/Authorization/Authorization.md).
 
