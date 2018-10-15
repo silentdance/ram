@@ -10,7 +10,7 @@ Assume that enterprise A buys several types of cloud resources, such as ECS inst
 
 ## Requirement analysis {#section_y1b_xdk_xdb .section}
 
-Different scenarios have different requirements:
+The analysis of the preceding scenarios is as follows:
 
 -   Employees do not share the primary account to avoid uncontrollable risks caused by the disclosure of the account’s password or AccessKey.
 -   Different employees are allocated independent user accounts \(or operator accounts\) with independent permissions, so that their responsibilities are consistent with their permissions.
@@ -25,9 +25,9 @@ Use RAM-user accounts and the authorization management function, as shown in the
 
 The operation procedure is as follows:
 
-1.  [Set up MFA](../../../../intl.en-US/Quick Start/Set up MFA (optional).md) to prevent risks caused by disclosure of the password of the primary account.
+1.  [Set up MFA](../../../../reseller.en-US/Quick Start/Set up MFA (optional).md) to prevent risks caused by disclosure of the password of the primary account.
 2.  Activate RAM.
-3.  [Create RAM users](../../../../intl.en-US/Quick Start/Create a RAM user.md) for different employees \(or application systems\) and set logon passwords or create AccessKeys for them as needed.
-4.  [Create a RAM user group](../../../../intl.en-US/Quick Start/Create a RAM user group (optional).md). If multiple employees share the same responsibility, we recommend that you create a group for them and add the users to the group.
-5.  [Grant permissions](https://www.alibabacloud.com/help/doc-detail/28653.htm). Attach one or more authorization policies to groups or users. For finer-grained authorization, you can create [custom authorization policies](intl.en-US/User Guide/Authorization/Authorization Policy Management.md) and then attach them to groups or users.
+3.  [Create RAM users](../../../../reseller.en-US/Quick Start/Create a RAM user.md) for different employees \(or application systems\) and set logon passwords or create AccessKeys for them as needed.
+4.  [Create a RAM user group](../../../../reseller.en-US/Quick Start/Create a RAM user group (optional).md). If multiple employees share the same responsibility, we recommend that you create a group for them and add the users to the group.
+5.  [Authorization](reseller.en-US/User Guide/Authorization/Authorization.md). Attach one or more authorization policies to groups or users. For finer-grained authorization, you can create [Authorization Policy Management](reseller.en-US/User Guide/Authorization/Authorization Policy Management.md) and then attach them to groups or users.
 
