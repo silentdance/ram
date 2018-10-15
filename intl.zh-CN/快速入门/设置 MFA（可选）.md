@@ -12,8 +12,8 @@
 
 此外，常用的 MFA 应用程序还有 Google Authenticator，您可以自主选择安装使用。
 
--   iOS：在App Store中安装Google Authenticator。安装方法参见[iOS版Google Authenticator安装及使用指导](https://help.aliyun.com/document_detail/28668.html)。
--   Android：在Google应用市场中安装Google Authenticator。安装方法参见[安卓版Google Authenticator安装及使用指导](https://help.aliyun.com/document_detail/28669.html)。
+-   iOS：在App Store中安装Google Authenticator。安装方法参见[iOS版Google Authenticator安装及使用指导](https://alibabacloud.com/help/doc-detail/28668.html)。
+-   Android：在Google应用市场中安装Google Authenticator。安装方法参见[安卓版Google Authenticator安装及使用指导](https://alibabacloud.com/help/doc-detail/28669.html)。
 
 下文以 阿里云 App 为例来描述操作步骤。
 
@@ -29,7 +29,7 @@
 
      ![](images/3501_zh-CN.png "动态口令") 
 
-    **说明：** 如果您的智能设备不支持扫码功能，那么您也可以选择**手输信息获取**，在 MFA 应用程序中以手动输入 MFA 密钥的方式进行配置。
+    **说明：** 如果您的智能设备不支持扫码功能，那么您也可以选择**手动输入**，在 MFA 应用程序中以手动输入 MFA 密钥的方式进行配置。
 
 5.  在启用虚拟MFA设备 页面中输入 MFA 应用中显示的连续两组动态口令，然后单击**确定启用**。如下图所示：
 
