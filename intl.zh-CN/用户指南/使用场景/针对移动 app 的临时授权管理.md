@@ -53,7 +53,7 @@
          "Effect": "Allow",
          "Principal": {
            "RAM": [
-             "acs:ram::11223344:root"
+             "acs:ram::11223344:root"// 当角色为用户角色时，此处固定是root
            ]
          }
         }

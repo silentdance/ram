@@ -33,7 +33,7 @@
 
 假设云账号 A 的 AccountID 为：11223344。为 appServer 创建角色、用户，并配置权限的操作流程如下：
 
-1.  云账号 A 创建用户角色（假设角色名为 oss-readonly），并选择**当前云账号**作为受信云账号，即只允许云账号 A 下的 RAM 用户来扮演该角色。具体操作请参考[角色](cn.zh-CN/用户指南/身份管理/角色.md)。
+1.  云账号 A 创建用户角色（假设角色名为 oss-readonly），并选择**当前云账号**作为受信云账号，即只允许云账号 A 下的 RAM 用户来扮演该角色。具体操作请参考[角色](intl.zh-CN/用户指南/身份管理/角色.md)。
 
     角色创建成功后，在角色详情中可以查看到该角色的基本信息：
 
@@ -53,7 +53,7 @@
          "Effect": "Allow",
          "Principal": {
            "RAM": [
-             "acs:ram::11223344:root"
+             "acs:ram::11223344:root"// 当角色为用户角色时，此处固定是root
            ]
          }
         }
@@ -62,10 +62,10 @@
         }
         ```
 
-2.  云账号 A 给角色授权，向用户角色（oss-readonly）[附加只读访问 OSS 的权限](cn.zh-CN/用户指南/授权管理/授权.md)（AliyunOSSReadOnlyAccess）。
+2.  云账号 A 给角色授权，向用户角色（oss-readonly）[附加只读访问 OSS 的权限](intl.zh-CN/用户指南/授权管理/授权.md)（AliyunOSSReadOnlyAccess）。
 3.  云账号 A 为 appServer 创建 RAM 用户身份（假设用户名为 appserver），并为该 RAM 用户
-    -   [创建 AccessKey](cn.zh-CN/用户指南/身份管理/用户.md)，即许可 RAM 用户（appserver）调用 API。
-    -   [附加调用 STS AssumeRole 接口的权限](cn.zh-CN/用户指南/授权管理/授权.md)（AliyunSTSAssumeRoleAccess），即许可 RAM 用户（appserver）去扮演角色。
+    -   [创建 AccessKey](intl.zh-CN/用户指南/身份管理/用户.md)，即许可 RAM 用户（appserver）调用 API。
+    -   [附加调用 STS AssumeRole 接口的权限](intl.zh-CN/用户指南/授权管理/授权.md)（AliyunSTSAssumeRoleAccess），即许可 RAM 用户（appserver）去扮演角色。
 
 ## 获取、传递角色令牌及访问 {#section_sqp_42k_xdb .section}
 
@@ -75,7 +75,7 @@ appClient 获取并使用角色令牌调用 OSS API 的操作示意图如下：
 
 操作流程如下：
 
-1.  appServer 使用 RAM 用户（appserver）的 AccessKey调用STS[AssumeRole](../../../../cn.zh-CN/API参考/API 参考（STS）/操作接口/AssumeRole.md)。 使用 aliyuncli 来调用 AssumeRole 的命令示例如下：
+1.  appServer 使用 RAM 用户（appserver）的 AccessKey调用STS[AssumeRole](../../../../intl.zh-CN/API参考/API 参考（STS）/操作接口/AssumeRole.md)。 使用 aliyuncli 来调用 AssumeRole 的命令示例如下：
 
     **说明：** 必须配置 appServer 的 AccessKey，而不允许是主账号 A 的 AccessKey。
 
@@ -140,8 +140,8 @@ appClient 获取并使用角色令牌调用 OSS API 的操作示意图如下：
 
 关于移动应用直传场景，可参考以下文档：
 
--   [快速搭建移动应用直传服务](../../../../cn.zh-CN/最佳实践/移动应用端直传实践/快速搭建移动应用直传服务.md)
--   [搭建应用服务器之STS Policy](../../../../cn.zh-CN/最佳实践/移动应用端直传实践/权限控制.md)
--   [快速搭建移动应用上传回调服务](../../../../cn.zh-CN/最佳实践/移动应用端直传实践/快速搭建移动应用上传回调服务.md)
--   [STS临时授权访问](../../../../cn.zh-CN/最佳实践/权限管理/STS临时授权访问.md)
+-   [快速搭建移动应用直传服务](../../../../intl.zh-CN/最佳实践/移动应用端直传实践/快速搭建移动应用直传服务.md)
+-   [搭建应用服务器之STS Policy](../../../../intl.zh-CN/最佳实践/移动应用端直传实践/权限控制.md)
+-   [快速搭建移动应用上传回调服务](../../../../intl.zh-CN/最佳实践/移动应用端直传实践/快速搭建移动应用上传回调服务.md)
+-   [STS临时授权访问](../../../../intl.zh-CN/最佳实践/权限管理/STS临时授权访问.md)
 
