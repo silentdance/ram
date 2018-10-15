@@ -2,20 +2,20 @@
 
 There are two methods for authorizing a RAM user:
 
--   \#[Attach policies to a RAM user directly](#section_odn_kgf_xdb)
--   \#[Attach policies to a RAM user group](#section_tdn_kgf_xdb)
+-   [Attach policies to a RAM user directly](#)
+-   [Attach policies to a RAM user group](#)
 
 Both of these methods can achieve the purpose of granting a RAM user the permission for accessing related resources.
 
-## Background {#section_ndn_kgf_xdb .section}
+## Background {#section_01 .section}
 
 System authorization policies are a group of general authorization policies that meet coarse-granularity authorization requirements. For example, you can use them to authorize a RAM user to manage orders \(AliyunBSSFullAccess\), ECS resources \(AliyunECSFullAccess\), or all sub-users and their permissions \(AliyunRAMFullAccess\).
 
-You can view all the system authorization policies that are supported by RAM in [Authorization Policy Management](../../../../intl.en-US/User Guide/Authorization/Authorization Policy Management.md).
+You can view all the system authorization policies that are supported by RAM in [Authorization Policy Management](../../../../reseller.en-US/User Guide/Authorization/Authorization Policy Management.md).
 
-If none of these authorization policies meet your needs, you can customize a finer-granularity authorization policy. For details, see [Create a custom policy \(optional\)](intl.en-US/Quick Start/Create a custom policy (optional).md).
+If none of these authorization policies meet your needs, you can customize a finer-granularity authorization policy. For details, see [Create a custom policy \(optional\)](reseller.en-US/Quick Start/Create a custom policy (optional).md).
 
-## Attach policies to a RAM user directly {#section_odn_kgf_xdb .section}
+## Attach policies to a RAM user directly {#section_02 .section}
 
 Use AttachPolicyToUser to attach policies to a RAM user directly.
 
@@ -27,7 +27,7 @@ Use AttachPolicyToUser to attach policies to a RAM user directly.
     -   Select the policy you want from the **Available Authorization Policy Names** list on the left, and click the right arrow to add it to the **Selected Authorization Policy Name** list.
     -   To deselect an authorization policy, select the policy, and click the left arrow to remove it from the **Selected Authorization Policy Name** list.
 
-## Attach policies to a RAM user group {#section_tdn_kgf_xdb .section}
+## Attach policies to a RAM user group {#section_03 .section}
 
 Use AttachPolicyToGroup to attach policies to a RAM user group.
 
