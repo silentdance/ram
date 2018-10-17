@@ -1,6 +1,6 @@
 # Set up RAM initially {#concept_sj1_r1f_xdb .concept}
 
-In the RAM console, you can set your [enterprise alias](#section_jfs_t1f_xdb), [RAM user logon password strength](#section_nfs_t1f_xdb), and [RAM user security policy](#section_rfs_t1f_xdb).
+In the RAM console, you can set your [enterprise alias](#), [RAM user logon password strength](#), and [RAM user security policy](#).
 
 ## Set your enterprise alias {#section_jfs_t1f_xdb .section}
 
