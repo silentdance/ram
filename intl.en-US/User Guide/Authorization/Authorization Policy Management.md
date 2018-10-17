@@ -2,7 +2,7 @@
 
 Authorization Policy is a collection of permissions defined in ALI cloud.[Elements](reseller.en-US/User Guide/Policy Language/Elements.md) by a more common deployment.  By adding authorization policies for a user or a group, the user or all users in the group can acquire the access permission specified in the authorization policy.
 
-Ram supports two types of authorization policies: System Authorization policies and [Custom Authorization Policy](#section_opw_vwf_xdb). This paper introduces the management method of Authorization Policy, including: to view the System Authorization Policy, and, modify, and delete, customize authorization policies.
+Ram supports two types of authorization policies: System Authorization policies and [Custom Authorization Policy](#). This paper introduces the management method of Authorization Policy, including: to view the System Authorization Policy, and, modify, and delete, customize authorization policies.
 
 ## System authorization policy {#section_lpw_vwf_xdb .section}
 
@@ -101,7 +101,7 @@ The authorization policy has a version management mechanism that addresses the p
     -   Sets the non-default version policy to the current version \(that is, the default version \).
     -   Select remove non-default version policy.
 
-## \#\# Delete a custom authorization policy {#section_iqw_vwf_xdb .section}
+## Delete a custom authorization policy {#section_iqw_vwf_xdb .section}
 
 You can create multiple authorization policies. Multiple versions can be maintained for each policy. Custom authorization policies no longer needed should be deleted.
 
