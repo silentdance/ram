@@ -103,7 +103,7 @@ Scenario description: Enterprise A has purchased the ECS server and has deployed
 
 |
 
-**Note:** The RAM service role can be used for authorization operations in cross-product scenarios, such as authorizing the EMR to operate on the customer's ECS, the FC to operate on the customer's OSS, and the MTS to operate on the customer's OSS data. For all service role types and scenarios provided by RAM, see [Create a service role](#section_nnj_gtf_xdb).
+**Note:** The RAM service role can be used for authorization operations in cross-product scenarios, such as authorizing the EMR to operate on the customer's ECS, the FC to operate on the customer's OSS, and the MTS to operate on the customer's OSS data. For all service role types and scenarios provided by RAM, see [Create a service role](#).
 
 **About the PassRole permission for RAM**
 
@@ -131,7 +131,7 @@ To create a RAM role in the RAM console, perform the following steps:
 
 The procedure is as follows:
 
-1.  Log on to the [RAM console](https://ram.console.aliyun.com/).
+1.  Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram).
 2.  In the left navigation pane, click **Roles**.
 3.  On the **Role Management** page, click **Create Role**.
 4.  On the **Select Role Type** page, click **User Role**.
@@ -139,11 +139,11 @@ The procedure is as follows:
     -   If the role is to be used by the RAM-Users under your own account \(such as authorizing a mobile app client to directly perform operations on OSS resources\), select your **Current Alibaba Cloud Account** as the trusted Alibaba Cloud account.
     -   If the role is to be used by the RAM-Users under another Alibaba Cloud account \(such as for cross-account resource authorization access\), select **Other Alibaba Cloud Account** and enter its ID in the **Trusted Alibaba Cloud Account ID** field.
 6.  On the **Configure Basic Role Information** page, enter a **Role Name** \(the description is optional\) and click **Create**.
-7.  After you have successfully created a role, you can click **Authorize** to grant permissions to the role or click **Close**. For details, see [Authorization](intl.en-US/User Guide/Authorization/Authorization.md).
+7.  After you have successfully created a role, you can click **Authorize** to grant permissions to the role or click **Close**. For details, see [Authorization](reseller.en-US/User Guide/Authorization/Authorization.md).
 
 Now you have created the user role.
 
-Go back to the [Role Management](https://ram.console.aliyun.com/#/role/list) page and you can find the newly created role in the role list. Click the **Role Name** or the corresponding **Manage** in the **Actions** column to enter the **Role Details** page, where you can find the role’s ARN and can **Edit Basic Information**.
+Go back to the [Role Management](https://partners-intl.console.aliyun.com/#/ram/role/list) page and you can find the newly created role in the role list. Click the **Role Name** or the corresponding **Manage** in the **Actions** column to enter the **Role Details** page, where you can find the role’s ARN and can **Edit Basic Information**.
 
 ## Create a service role {#section_nnj_gtf_xdb .section}
 
@@ -163,11 +163,11 @@ The procedure is as follows:
 
 4.  On the **Enter Type Information** page, select a service as the trusted service.
 5.  On the **Configure Basic Role Information** page, enter a **Role Name** \(the description is optional\) and click **Create**.
-6.  After you have successfully created a role, you can click **Authorize** to grant permissions to the role or click **Close**. For details, see [Authorization](intl.en-US/User Guide/Authorization/Authorization.md).
+6.  After you have successfully created a role, you can click **Authorize** to grant permissions to the role or click **Close**. For details, see [Authorization](reseller.en-US/User Guide/Authorization/Authorization.md).
 
 Now you have created the service role.
 
-Go back to the [Role Management](https://ram.console.aliyun.com/#/role/list) page and you can find the newly created role in the role list. Click the **Role Name** or the corresponding **Manage** in the **Actions** column to enter the **Role Details** page, where you can find the role’s ARN and can **Edit Basic Information**.
+Go back to the [Role Management](https://partners-intl.console.aliyun.com/#/ram/role/list) page and you can find the newly created role in the role list. Click the **Role Name** or the corresponding **Manage** in the **Actions** column to enter the **Role Details** page, where you can find the role’s ARN and can **Edit Basic Information**.
 
 ## Use a RAM role {#section_snj_gtf_xdb .section}
 
