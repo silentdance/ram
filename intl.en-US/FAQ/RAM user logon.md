@@ -2,7 +2,7 @@
 
 ## RAM user logon {#section_mzy_x4x_ydb .section}
 
-Either visit [https://signin.aliyun.com](https://signin.aliyun.com/) or query the logon link on the Dashboard page of the [RAM console](https://ram.console.aliyun.com/)
+on the overview page of the [RAM console](https://partners-intl.console.aliyun.com/#/ram).
 
 ## Enterprise alias {#section_alh_rrx_ydb .section}
 
