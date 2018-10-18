@@ -2,9 +2,9 @@
 
 ## Questions {#section_x1f_w4x_ydb .section}
 
-[Error reported when STS uses Java SDK to generate an on-demand account password](#section_mzy_x4x_ydb)
+[Error reported when STS uses Java SDK to generate an on-demand account password](#)
 
-## Error reported when STS uses Java SDK to generate an on-demand account password {#section_mzy_x4x_ydb .section}
+## Error reported when STS uses Java SDK to generate an on-demand account password {#section_01 .section}
 
 Error reported when STS uses Java SDK to generate an on-demand account password The following error message is returned:
 
