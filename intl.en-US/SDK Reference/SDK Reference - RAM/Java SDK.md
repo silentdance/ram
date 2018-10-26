@@ -6,6 +6,8 @@ RAM SDK consists of two parts. The public part of Alibaba Cloud Java SDK depends
 
 For details about each API interface, see RAM API documentation.
 
+For the automatic generation and online API debugging of SDK Demo codes, see [OpenAPI Explorer](https://api.aliyun.com/).
+
 ## Installation {#section_nvs_p5v_xdb .section}
 
 You can use Maven Repo to introduce RAM SDK or manually download RAM SDK.jar and then add it to the project.

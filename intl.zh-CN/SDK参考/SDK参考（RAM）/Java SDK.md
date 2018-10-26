@@ -2,13 +2,15 @@
 
 ## 简介 {#section_cyw_n5v_xdb .section}
 
-RAM SDK包含阿里云Java SDK公共部分和RAM部分，公共部分依赖`aliyun-java-sdk-core`, RAM部分依赖`aliyun-java-sdk-ram`。
+RAM SDK 包含阿里云 Java SDK 公共部分和 RAM 部分，公共部分依赖`aliyun-java-sdk-core`, RAM 部分依赖`aliyun-java-sdk-ram`。
 
-每个接口的详细使用方法请参考RAM API文档。
+每个接口的详细使用方法请参考 RAM API 文档。
+
+关于 SDK Demo 代码的自动生成和在线 API 调试，请参考[OpenAPI Explorer](https://api.aliyun.com/)。
 
 ## 安装 {#section_nvs_p5v_xdb .section}
 
-您可以使用Maven仓库引入RAM SDK或手动下载RAM SDK jar后手动添加到项目中。
+您可以使用 Maven 仓库引入 RAM SDK 或手动下载 RAM SDK jar 后手动添加到项目中。
 
 **Maven Dependencies**
 
@@ -25,7 +27,7 @@ RAM SDK包含阿里云Java SDK公共部分和RAM部分，公共部分依赖`aliy
 </dependency>
 ```
 
-**下载jar包**
+**下载 jar 包**
 
 [aliyun-java-sdk-core-2.2.3.jar](http://search.maven.org/remotecontent?filepath=com/aliyun/aliyun-java-sdk-core/2.2.3/aliyun-java-sdk-core-2.2.3.jar)
 
@@ -33,7 +35,7 @@ RAM SDK包含阿里云Java SDK公共部分和RAM部分，公共部分依赖`aliy
 
 ## 示例 {#section_btk_r5v_xdb .section}
 
-这里以在RAM中创建一个名为alice的子用户为例：
+这里以在 RAM 中创建一个名为 alice 的子用户为例：
 
 ```
 package com.aliyun.ram.sample;
@@ -87,5 +89,5 @@ public class RamServiceSample {
 
 **Version: 2.0.7**
 
-2015年11月07日发布RAM Java SDK 第一个版本，覆盖RAM所有API
+2015 年 11 月 07 日发布 RAM Java SDK 第一个版本，覆盖 RAM 所有 API
 
