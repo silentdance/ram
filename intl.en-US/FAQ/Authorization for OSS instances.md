@@ -6,18 +6,18 @@
 -   [Assign the OSS read-only permission to a RAM user](#section_jft_y4x_ydb)
 -   [Assign the full OSS management permission to a RAM user](#section_fnn_z4x_ydb)
 -   [Authorize a RAM user to list and read resources in a bucket](#section_jpq_1px_ydb)
--   [Apply IP address-specific access control in OSS](intl.en-US/FAQ/Authorization for OSS instances.md#section_plf_hkg_c2b)
--   [Authorization by OSS directory](intl.en-US/FAQ/Authorization for OSS instances.md#section_dk4_42k_c2b)
+-   [Apply IP address-specific access control in OSS](reseller.en-US/FAQ/Authorization for OSS instances.md#section_plf_hkg_c2b)
+-   [Authorization by OSS directory](reseller.en-US/FAQ/Authorization for OSS instances.md#section_dk4_42k_c2b)
 -   [Authorize a RAM user complete management of a bucket](#section_a1c_cpx_ydb)
--   [RAM user authorized to manage a bucket notified of having no operation permissions when logging on to the OSS console](intl.en-US/FAQ/Authorization for OSS instances.md#section_t51_sfk_c2b)
+-   [RAM user authorized to manage a bucket notified of having no operation permissions when logging on to the OSS console](reseller.en-US/FAQ/Authorization for OSS instances.md#section_t51_sfk_c2b)
 
 ## View OSS permission definitions {#section_mzy_x4x_ydb .section}
 
-See [Access control](../../../../intl.en-US/Developer Guide/Access and control/Access control.md#) in the OSS product document.
+See [Access control](../../../../reseller.en-US/Developer Guide/Access and control/Access control.md#) in the OSS product document.
 
 ## Assign the OSS read-only permission to a RAM user {#section_jft_y4x_ydb .section}
 
-Create a RAM user in the RAM console and add the system authorization policy AliyunOSSReadOnlyAccess to the user.  For more information about how to add an authorization policy, see [Authorization](../../../../intl.en-US/User Guide/Authorization/Authorization.md).
+Create a RAM user in the RAM console and add the system authorization policy AliyunOSSReadOnlyAccess to the user.  For more information about how to add an authorization policy, see [Authorization](../../../../reseller.en-US/User Guide/Authorization/Authorization.md).
 
 ## Assign the full OSS management permission to a RAM user {#section_fnn_z4x_ydb .section}
 
