@@ -4,8 +4,8 @@
 
 **操作系统类型**
 
--   [iOS版Google Authenticator安装及使用指导](cn.zh-CN/用户指南/Google Authenticator 安装及使用指导/iOS版Google Authenticator安装及使用指导.md)
--   [安卓版Google Authenticator安装及使用指导](cn.zh-CN/用户指南/Google Authenticator 安装及使用指导/安卓版Google Authenticator安装及使用指导.md)
+-   [iOS 版 Google Authenticator 安装及使用指导](intl.zh-CN/用户指南/Google Authenticator 安装及使用指导/iOS 版 Google Authenticator 安装及使用指导.md#)
+-   [安卓版 Google Authenticator 安装及使用指导](intl.zh-CN/用户指南/Google Authenticator 安装及使用指导/安卓版 Google Authenticator 安装及使用指导.md#)
 
 **说明：** 因为MFA客户端需要根据时间信息来生成密钥，请确保您手机上时间信息准确。
 
