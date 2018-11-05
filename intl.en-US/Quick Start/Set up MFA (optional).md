@@ -10,10 +10,10 @@ Your primary account has full control over the resources under it. Once the logo
 
 Make sure you have installed on your smartphone a virtual MFA application.
 
-You can also install Google Authenticator, which is also a common MFA application.
+You can install the following virtual MFA applications:
 
--   iOS: Install Google Authenticator in App Store. The installation method can be found in [iOS-based Google Authenticator installation and use guide](#).
--   Android: Install Google Authenticator in Google Play. The installation method can be found in [Android-based Google Authenticator installation and use guide](#).
+-   iOS: Install Google Authenticator in App Store. The installation method can be found in [iOS-based Google Authenticator installation and use guide](../../../../reseller.en-US/User Guide/Google Authenticator installation and user guide/iOS-based Google Authenticator installation and use guide.md#).
+-   Android: Install Google Authenticator in Google Play. The installation method can be found in [Android-based Google Authenticator installation and use guide](../../../../reseller.en-US/User Guide/Google Authenticator installation and user guide/Android-based Google Authenticator installation and use guide.md#).
 
-For detials about MFA configurations, see guidance provided by Google.
+For details about MFA configurations, see the guidance provided by Google.
 
