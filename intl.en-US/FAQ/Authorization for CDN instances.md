@@ -2,7 +2,7 @@
 
 ## Questions {#section_x1f_w4x_ydb .section}
 
-[Authorize a RAM user to perform the cache refresh and push operations](#section_mzy_x4x_ydb)
+[Authorize a RAM user to perform the cache refresh and push operations](#)
 
 ## Authorize a RAM user to perform the cache refresh and push operations {#section_mzy_x4x_ydb .section}
 
