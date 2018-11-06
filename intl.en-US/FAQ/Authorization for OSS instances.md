@@ -2,7 +2,7 @@
 
 ## Questions {#section_x1f_w4x_ydb .section}
 
--   [Authorize a RAM user to create snapshots](#)
+-   [View OSS permission definitions](#)
 -   [Assign the OSS read-only permission to a RAM user](#)
 -   [Assign the full OSS management permission to a RAM user](#)
 -   [Authorize a RAM user to list and read resources in a bucket](#)
