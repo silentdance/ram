@@ -2,11 +2,11 @@
 
 ## Questions {#section_x1f_w4x_ydb .section}
 
--   [View SLB permission definitions](#section_mzy_x4x_ydb)
--   [Assign the SLB read-only permission to a RAM user](#section_jft_y4x_ydb)
--   [Assign the SLB full access permission to a RAM user](#section_fnn_z4x_ydb)
--   [Authorize a RAM user to manage two specified SLB instances](#section_jpq_1px_ydb)
--   [A RAM user authorized to manage an SLB instance is notified of no operation permission when the user adds or removes ECS servers in the instance or sets weights](#section_a1c_cpx_ydb)
+-   [View SLB permission definitions](#)
+-   [Assign the SLB read-only permission to a RAM user](#)
+-   [Assign the SLB full access permission to a RAM user](#)
+-   [Authorize a RAM user to manage two specified SLB instances](#)
+-   [A RAM user authorized to manage an SLB instance is notified of no operation permission when the user adds or removes ECS servers in the instance or sets weights](#)
 
 ## View SLB permission definitions {#section_mzy_x4x_ydb .section}
 
