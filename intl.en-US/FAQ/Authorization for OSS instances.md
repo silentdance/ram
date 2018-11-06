@@ -2,14 +2,14 @@
 
 ## Questions {#section_x1f_w4x_ydb .section}
 
--   [View OSS permission definitions](#section_mzy_x4x_ydb)
--   [Assign the OSS read-only permission to a RAM user](#section_jft_y4x_ydb)
--   [Assign the full OSS management permission to a RAM user](#section_fnn_z4x_ydb)
--   [Authorize a RAM user to list and read resources in a bucket](#section_jpq_1px_ydb)
--   [Apply IP address-specific access control in OSS](reseller.en-US/FAQ/Authorization for OSS instances.md#section_plf_hkg_c2b)
--   [Authorization by OSS directory](reseller.en-US/FAQ/Authorization for OSS instances.md#section_dk4_42k_c2b)
--   [Authorize a RAM user complete management of a bucket](#section_a1c_cpx_ydb)
--   [RAM user authorized to manage a bucket notified of having no operation permissions when logging on to the OSS console](reseller.en-US/FAQ/Authorization for OSS instances.md#section_t51_sfk_c2b)
+-   [Authorize a RAM user to create snapshots](#)
+-   [Assign the OSS read-only permission to a RAM user](#)
+-   [Assign the full OSS management permission to a RAM user](#)
+-   [Authorize a RAM user to list and read resources in a bucket](#)
+-   [Apply IP address-specific access control in OSS](#)
+-   [Authorization by OSS directory](#)
+-   [Authorize a RAM user complete management of a bucket](#)
+-   [RAM user authorized to manage a bucket notified of having no operation permissions when logging on to the OSS console](#)
 
 ## View OSS permission definitions {#section_mzy_x4x_ydb .section}
 
