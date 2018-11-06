@@ -4,9 +4,9 @@ This document describes how to use RAM SDK. Before using SDK, read RAM API docum
 
 **Languages or environments supported by RAM SDK**
 
--   [Java SDK](intl.en-US/SDK Reference/SDK Reference - RAM/Java SDK.md)
--   [.Net SDK](intl.en-US/SDK Reference/SDK Reference - RAM/.Net SDK.md)
--   [Python SDK](intl.en-US/SDK Reference/SDK Reference - RAM/Python SDK.md)
--   [PHP SDK](intl.en-US/SDK Reference/SDK Reference - RAM/PHP SDK.md)
--   [Node. js SDK](intl.en-US/SDK Reference/SDK Reference - RAM/Node. js SDK.md)
+-   [Java SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/Java SDK.md)
+-   [.Net SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/.Net SDK.md)
+-   [Python SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/Python SDK.md)
+-   [PHP SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/PHP SDK.md)
+-   [Node. js SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/Node. js SDK.md)
 
