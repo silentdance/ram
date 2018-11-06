@@ -2,12 +2,12 @@
 
 ## Questions {#section_x1f_w4x_ydb .section}
 
--   [View ECS permission definitions](#section_mzy_x4x_ydb)
--   [Assign full ECS service management permissions to a subaccount](#section_jft_y4x_ydb)
--   [Assign the ECS read-only permission to a subaccount](#section_fnn_z4x_ydb)
--   [Allow a RAM user to view ECS instances in the Qingdao region but disallow the user to view disk or snapshot information](#section_jpq_1px_ydb)
--   [Authorize a RAM user to manage two specified ECS instances](#section_a1c_cpx_ydb)
--   [Authorize a RAM user to create snapshots](#section_ecc_2px_ydb)
+-   [View ECS permission definitions](#)
+-   [Assign full ECS service management permissions to a subaccount](#)
+-   [ssign the ECS read-only permission to a subaccount](#)
+-   [Allow a RAM user to view ECS instances in the Qingdao region but disallow the user to view disk or snapshot information](#)
+-   [Authorize a RAM user to manage two specified ECS instances](#)
+-   [Authorize a RAM user to create snapshots](#)
 
 ## View ECS permission definitions {#section_mzy_x4x_ydb .section}
 
