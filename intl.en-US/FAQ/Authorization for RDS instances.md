@@ -2,11 +2,11 @@
 
 ## Questions {#section_x1f_w4x_ydb .section}
 
--   [View RDS permission definitions](#section_mzy_x4x_ydb)
--   [Assign the RDS read-only permission to a RAM user](#section_jft_y4x_ydb)
--   [Assign full RDS service management permissions to a RAM user](#section_fnn_z4x_ydb)
--   [Authorize a RAM user to manage two specified RDS instances](#section_jpq_1px_ydb)
--   [Access the content of the DMS management database as a RAM user](#section_a1c_cpx_ydb)
+-   [View RDS permission definitions](#)
+-   [Assign the RDS read-only permission to a RAM user](#)
+-   [Assign full RDS service management permissions to a RAM user](#)
+-   [Authorize a RAM user to manage two specified RDS instances](#)
+-   [Access the content of the DMS management database as a RAM user](#)
 
 ## View RDS permission definitions {#section_mzy_x4x_ydb .section}
 
