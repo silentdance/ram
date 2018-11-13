@@ -2,7 +2,7 @@
 
 ## What is RAM {#section_ynd_dmk_xdb .section}
 
-Resource Access Management \(RAM\) is a resource access control service provided by Alibaba Cloud.  is a resource access control service provided by Alibaba Cloud.
+Resource Access Management \(RAM\) is a resource access control service provided by Alibaba Cloud. RAM enables you to centrally manage your users \(such as employees, systems, or applications\) and control users' access to your resources.
 
 ## Issues to be resolved by RAM {#section_znd_dmk_xdb .section}
 
