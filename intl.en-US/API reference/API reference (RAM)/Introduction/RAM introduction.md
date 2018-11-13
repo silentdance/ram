@@ -28,7 +28,7 @@ The default RAM access point is `https://ram.aliyuncs.com` . You must connect to
 
 ## Alibaba Cloud products supporting RAM {#section_e4d_dmk_xdb .section}
 
-Almost all Alibaba Cloud products are integrated with RAM. For details about services integrated with RAM, refer to  [Cloud services supporting RAM](../../../../intl.en-US/Product Introduction/Cloud services supporting RAM.md).
+Almost all Alibaba Cloud products are integrated with RAM. For details about services integrated with RAM, see [Cloud services supporting RAM](../../../../reseller.en-US/Product Introduction/Cloud services supporting RAM.md).
 
 ## RAM service charges {#section_f4d_dmk_xdb .section}
 
