@@ -26,12 +26,12 @@ Alibaba Cloud accounts support standard virtual MFA. It is an easy-to-use applic
 
 Based on the preceding organization chart, you can create different user accounts for employees A, B, C, D, and E, and then create a user account for the application “app”.  Then, you can create three user groups to match the HR, R&D, and O&M Departments, respectively, and add these users to appropriate groups \(note that User D belongs to both the R&D and O&M Departments\). 
 
-Furthermore, you must [Create a RAM user](../../../../intl.en-US/Quick Start/Create a RAM user.md) based on different user needs.
+Furthermore, you must [Create a RAM user](../../../../reseller.en-US/Quick Start/Create a RAM user.md) based on different user needs.
 
 -   The application “app” is only allowed to visit cloud resources through the OpenAPI, so you only need to create an AccessKey for it.
 -   If an employee only requires operating on cloud resources through the console, you only need to set a logon password for the employee. 
 
-Another consideration is that maintenance operations are typically quite sensitive. You may be concerned about the significant risks of maintenance personnel account passwords being leaked. To address this issue, you can set [enforced MFA at logon of these accounts](../../../../intl.en-US/Quick Start/Create a RAM user.md) and have two different persons assigned to maintain the account passwords and MFA devices. In this way, some operations can only be fulfilled in the presence of both persons.
+Another consideration is that maintenance operations are typically quite sensitive. You may be concerned about the significant risks of maintenance personnel account passwords being leaked. To address this issue, you can set [enforced MFA at logon of these accounts](../../../../reseller.en-US/Quick Start/Create a RAM user.md) and have two different persons assigned to maintain the account passwords and MFA devices. In this way, some operations can only be fulfilled in the presence of both persons.
 
 ## Step 3: Assign minimum permissions for various user groups {#section_bq4_hlk_xdb .section}
 
@@ -43,7 +43,7 @@ Take conditional authorization, for example. If you are concerned that the leak 
 
 ## Step 4: Employee job transfer, onboarding, and resignation {#section_cq4_hlk_xdb .section}
 
-When an employee transfers to another post, you can transfer the account of the employee to the destination group.  For a new employee, you can create a new user account for the new employee, set the logon password or AccessKey, and then add the account to the appropriate user group [Attach policies to a RAM user](../../../../intl.en-US/Quick Start/Attach policies to a RAM user.md). . If an employee quits, you can delete the user account in the RAM console, and the RAM automatically removes all access permissions for the user account. 
+When an employee transfers to another post, you can transfer the account of the employee to the destination group.  For a new employee, you can create a new user account for the new employee, set the logon password or AccessKey, and then add the account to the appropriate user group [Authorize RAM users](../../../../reseller.en-US/Quick Start/Authorize RAM users.md). If an employee quits, you can delete the user account in the RAM console, and the RAM automatically removes all access permissions for the user account. 
 
 ## Step 5: Use STS to authorize a temporary user {#section_dq4_hlk_xdb .section}
 
