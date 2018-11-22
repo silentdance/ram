@@ -28,24 +28,24 @@ Each table contains the following information:
 |Elastic Compute Service|√|√|Resource level| -   AliyunECSFullAccess
 -   AliyunECSReadOnlyAccess
 
- |[ECS authorization rules](../../../../intl.en-US/API Reference/Authorization rules.md)|
+ |[ECS authorization rules](../../../../reseller.en-US/API Reference/Authorization rules.md)|
 |Server Load Balancer|√|√|Resource level| -   AliyunSLBFullAccess
 -   AliyunSLBReadOnlyAccess
 
- |[SLB authorization rules](../../../../intl.en-US/Developer Guide/RAM authentication.md)|
+ |[SLB authorization rules](../../../../reseller.en-US/Developer Guide/RAM authentication.md)|
 |Auto Scaling|√|√|Service level| -   AliyunESSFullAccess
 -   AliyunESSReadOnlyAccess
 
  |[Auto Scaling API usage instructions](https://help.aliyun.com/document_detail/25925.html)|
-|Container Service|√|√|Service level|AliyunCSFullAccess|[Use sub-accounts](https://help.aliyun.com/document_detail/63578.html)|
+|Container Service|√|√|Service level|AliyunCSFullAccess|[Use sub-accounts](../../../../reseller.en-US/User Guide/Authorizations/Use sub-accounts.md#)|
 |Container Registry|√|√|Resource level| -   AliyunContainerRegistryFullAccess
 -   AliyunContainerRegistryReadOnlyAccess
 
- |[Repository access control](https://www.alibabacloud.com/help/zh/doc-detail/67992.htm?spm=a2796.11159934.1160638.1.19ae409aoYRHYp)|
+ |[Repository access control](https://www.alibabacloud.com/help/en/doc-detail/67992.htm?spm=a2796.11159934.1160638.1.19ae409aoYRHYp)|
 |Resource Orchestration Service|√|√|Service level| -   AliyunROSFullAccess
 -   AliyunROSReadOnlyAccess
 
- |[Use RAM to control resource access](https://www.alibabacloud.com/help/zh/doc-detail/48754.htm?spm=a2c63.p38356.b99.10.42d02cb78VbyLL)|
+ |[Use RAM to control resource access](https://www.alibabacloud.com/help/en/doc-detail/48754.htm?spm=a2c63.p38356.b99.10.42d02cb78VbyLL)|
 |BatchCompute|√|√|Service level|-|-|
 |Function Compute|√|√|Resource level| -   AliyunFCFullAccess
 -   AliyunFCInvocationAccess
@@ -65,15 +65,17 @@ Each table contains the following information:
 |ApsaraDB for RDS|√|√|Resource level| -   AliyunRDSFullAccess
 -   AliyunRDSReadOnlyAccess
 
- |[RDS authorization rules](https://help.aliyun.com/document_detail/26307.html)|
+ |[Use RAM for RDS resource authorization](../../../../reseller.en-US/API Reference/Use RAM for RDS resource authorization.md#)|
 |ApsaraDB for MongoDB|√|√|Resource level| -   AliyunMongoDBFullAccess
 -   AliyunMongoDBReadOnlyAccess
 
- |[MongoDB authorization rules](https://help.aliyun.com/document_detail/61757.html)|
+ |-
+
+|
 |ApsaraDB for Redis|√|√|Resource level| -   AliyunKvstoreFullAccess
 -   AliyunKvstoreReadOnlyAccess
 
- |[Redis authorization rules](https://help.aliyun.com/document_detail/61122.html)|
+ |[Redis authorization rules](https://alibabacloud.com/help/doc-detail/61122.html)|
 |ApsaraDB for Memcache|√|√|Service level| -   AliyunOCSFullAccess
 -   AliyunOCSReadOnlyAccess
 
@@ -99,24 +101,22 @@ Each table contains the following information:
 |Object Storage Service|√|√|Resource level| -   AliyunOSSFullAccess
 -   AliyunOSSReadOnlyAccess
 
- | -   [OSS rights control](https://help.aliyun.com/document_detail/56283.html)
--   [OSS authorization policy configuration](https://help.aliyun.com/document_detail/56288.html)
--   [OSS rights management best practices](https://help.aliyun.com/document_detail/31929.html)
+ | -   -
 
  |
 |Network Attached Storage|√|○|Service level| -   AliyunNASFullAccess
 -   AliyunNASReadOnlyAccess
 
- |[Use permission groups](https://help.aliyun.com/document_detail/27534.html)|
+ |[Use permission groups](../../../../reseller.en-US/User Guide/Use permission groups.md#)|
 |Table Store|√|√|Resource level| -   AliyunOTSFullAccess
 -   AliyunOTSReadOnlyAccess
 -   AliyunOTSWriteOnlyAccess
 
- |[Customize permissions](https://help.aliyun.com/document_detail/27362.html)|
+ |[Customize permissions](../../../../reseller.en-US/Authorization/Customize permissions.md#)|
 |CDN|√|√|Resource level| -   AliyunCDNFullAccess
 -   AliyunCDNReadOnlyAccess
 
- |[CDN authorization rules](https://help.aliyun.com/document_detail/27154.html)|
+ |[API authentication rules](../../../../reseller.en-US/API Reference/API authentication rules.md#)|
 |Cloud Storage Gateway|√|○|Service level|AliyunHCSSGWFullAccess|-|
 |Hybrid Backup|√|○|Resource level| -   AliyunHBRFullAccess
 -   AliyunHBRReadOnlyAccess
@@ -130,15 +130,15 @@ Each table contains the following information:
 |Virtual Private Cloud|√|√|Resource level| -   AliyunVPCFullAccess
 -   AliyunVPCReadOnlyAccess
 
- |[VPC authorization rules](https://www.alibabacloud.com/help/zh/doc-detail/27777.htm)|
+ |[VPC authorization rules](https://www.alibabacloud.com/help/en/doc-detail/27777.htm)|
 |Elastic IP Address|√|√|Resource level| -   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
- |[EIP authorization rules](https://www.alibabacloud.com/help/zh/doc-detail/27777.htm)|
+ |[EIP authorization rules](https://www.alibabacloud.com/help/en/doc-detail/27777.htm)|
 |Express Connect|√|√|Resource level| -   AliyunExpressConnectFullAccess
 -   AliyunExpressConnectReadOnlyAccess
 
- |[Express Connect authorization rules](https://www.alibabacloud.com/help/zh/doc-detail/31813.htm)|
+ |[Express Connect authorization rules](https://www.alibabacloud.com/help/en/doc-detail/31813.htm)|
 |NAT Gateway|√|√|Resource level| -   AliyunNATGatewayReadOnlyAccess
 -   AliyunNATGatewayFullAccess
 
@@ -148,7 +148,7 @@ Each table contains the following information:
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |-------|-------|---|-------------------------|-------------|---------|
-|E-MapReduce|√|√|Service level|AliyunEMRFullAccess|[E-MapReduce role authorization](https://www.alibabacloud.com/help/zh/doc-detail/28072.htm)|
+|E-MapReduce|√|√|Service level|AliyunEMRFullAccess|[E-MapReduce role authorization](https://www.alibabacloud.com/help/en/doc-detail/28072.htm)|
 |HybridDB for PostgreSQL|√|√|Resource level| -   AliyunGPDBFullAccess
 -   AliyunGPDBReadOnlyAccess
 
@@ -161,7 +161,7 @@ Each table contains the following information:
 |Message Service|√|√|Resource level| -   AliyunMNSFullAccess
 -   AliyunMNSReadOnlyAccess
 
- |[Message Service authorization rules](https://help.aliyun.com/document_detail/27448.html)|
+ |-|
 |DirectMail|√|√|Service level| -   AliyunDirectMailFullAccess
 -   AliyunDirectMailReadOnlyAccess
 
@@ -175,17 +175,17 @@ Each table contains the following information:
 |CloudMonitor|√|√|Service level| -   AliyunCloudMonitorFullAccess
 -   AliyunCloudMonitorReadOnlyAccess
 
- |[RAM for CloudMonitor](https://help.aliyun.com/document_detail/43170.html)|
+ |[RAM for CloudMonitor](../../../../reseller.en-US/User Guide/RAM for CloudMonitor.md#)|
 |Resource Access Management|√|√|Resource level| -   AliyunRAMFullAccess
 -   AliyunRAMReadOnlyAccess
 
- |[RAM API reference](https://www.alibabacloud.com/help/zh/doc-detail/28672.htm)|
+ |[RAM API reference](https://www.alibabacloud.com/help/en/doc-detail/28672.htm)|
 |ActionTrail|√|√|Resource level|-|-|
 |Key Management Service|√|√|Resource level| -   AliyunKMSFullAccess
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
 
- |[KMS authorization rules](https://www.alibabacloud.com/help/zh/doc-detail/28953.htm)|
+ |[KMS authorization rules](https://www.alibabacloud.com/help/en/doc-detail/28953.htm)|
 
 ## Application Service {#section_mfn_n52_xdb .section}
 
@@ -194,8 +194,8 @@ Each table contains the following information:
 |Log Service|√|√|Resource level| -   AliyunLogFullAccess
 -   AliyunLogReadOnlyAccess
 
- | -   [Grant RAM sub-accounts permissions to access Log Service](https://www.alibabacloud.com/help/zh/doc-detail/47664.htm)
--   [Authorization rules](https://www.alibabacloud.com/help/zh/doc-detail/29052.htm)
+ | -   [Grant RAM sub-accounts permissions to access Log Service](https://www.alibabacloud.com/help/en/doc-detail/47664.htm)
+-   [Authorization rules](https://www.alibabacloud.com/help/en/doc-detail/29052.htm)
 
  |
 |API Gateway|√|√|Service level| -   Aliyunapigatewayfullaccess
@@ -215,7 +215,7 @@ Each table contains the following information:
 
 |Service|Console|API|Authorization granularity|System policy|Reference|
 |:------|:------|:--|:------------------------|:------------|:--------|
-|Enterprise Distributed Application Service|√|×|Service level|AliyunEDASFullAccess|[Sub-accounts](https://help.aliyun.com/document_detail/44023.html)|
+|Enterprise Distributed Application Service|√|×|Service level|AliyunEDASFullAccess|[Sub-accounts](https://www.alibabacloud.com/help/en/doc-detail/44023.htm)|
 |Message Queue|√|√|Resource level| -   AliyunMQFullAccess
 -   AliyunMQPubOnlyAccess
 -   AliyunMQSubOnlyAccess
@@ -237,7 +237,7 @@ Each table contains the following information:
 |Media Processing|√|√|Service level| -   AliyunMTSFullAccess
 -   AliyunMTSPlayerAuth
 
- |[Sub-account console operating instructions](https://www.alibabacloud.com/help/zh/doc-detail/42841.htm)|
+ |[Sub-account console operating instructions](https://www.alibabacloud.com/help/en/doc-detail/42841.htm)|
 |ApsaraVideo for Live|√|√|Service level|AliyunLiveFullAccess|-|
 
 ## Big Data \(data plus\) {#section_qbt_q52_xdb .section}
@@ -293,7 +293,7 @@ Each table contains the following information:
 
 The following table lists the cloud services that support STS.
 
-The table conventions in this table are the same as those in [List of cloud services supporting RAM](intl.en-US/Product Introduction/Cloud services supporting RAM.md#ul_yx3_gtx_g2b).
+The table conventions in this table are the same as those in [List of cloud services supporting RAM](reseller.en-US/Product Introduction/Cloud services supporting RAM.md#ul_yx3_gtx_g2b).
 
 |Service|Console|API|
 |:------|:------|:--|
