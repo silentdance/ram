@@ -10,7 +10,7 @@ When each product is being integrated with RAM functions, different levels of au
 
 ## List of cloud services supporting RAM {#section_x2b_krs_q2b .section}
 
-The following tables list the cloud services that support RAM in the following categories: [Elastic Computing](#), [Database Services](#), [Storage & CDN](#), [Networking](#), [Analytics](#), [Cloud Communication](#), [Monitoring and Management](#), [Application Service](#), [Middleware](#), [Mobile Service](#), [Media Services](#), [Big Data \(data plus\)](#), [Security \(Alibaba Cloud Security\)](#), [Cloud Marketplace](#), and [Domain and Hosting](#).
+The following tables list the cloud services that support RAM in the following categories: [Elastic Computing](#), [Database Services](#section_ep3_h52_xdb), [Storage & CDN](#section_ihm_352_xdb), [Networking](#section_az3_j52_xdb), [Analytics](#section_psg_k52_xdb), [Cloud Communication](#section_xlt_l52_xdb), [Monitoring and Management](#section_ypn_m52_xdb), [Application Service](#section_mfn_n52_xdb), [Middleware](#section_wck_452_xdb), [Mobile Service](#section_qqf_p52_xdb), [Media Services](#section_slb_q52_xdb), [Big Data \(data plus\)](#section_qbt_q52_xdb), [Security \(Alibaba Cloud Security\)](#section_tsn_r52_xdb), [Cloud Marketplace](#section_ejg_s52_xdb), and [Domain and Hosting](#section_spw_s52_xdb).
 
 Each table contains the following information:
 
@@ -65,7 +65,7 @@ Each table contains the following information:
 |ApsaraDB for RDS|√|√|Resource level| -   AliyunRDSFullAccess
 -   AliyunRDSReadOnlyAccess
 
- |[Use RAM for RDS resource authorization](../../../../reseller.en-US/API Reference/Use RAM for RDS resource authorization.md#)|
+ |-|
 |ApsaraDB for MongoDB|√|√|Resource level| -   AliyunMongoDBFullAccess
 -   AliyunMongoDBReadOnlyAccess
 
@@ -101,7 +101,7 @@ Each table contains the following information:
 |Object Storage Service|√|√|Resource level| -   AliyunOSSFullAccess
 -   AliyunOSSReadOnlyAccess
 
- | -   -
+ | -
 
  |
 |Network Attached Storage|√|○|Service level| -   AliyunNASFullAccess
@@ -130,11 +130,15 @@ Each table contains the following information:
 |Virtual Private Cloud|√|√|Resource level| -   AliyunVPCFullAccess
 -   AliyunVPCReadOnlyAccess
 
- |[VPC authorization rules](https://www.alibabacloud.com/help/en/doc-detail/27777.htm)|
+ |-
+
+|
 |Elastic IP Address|√|√|Resource level| -   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
- |[EIP authorization rules](https://www.alibabacloud.com/help/en/doc-detail/27777.htm)|
+ |-
+
+|
 |Express Connect|√|√|Resource level| -   AliyunExpressConnectFullAccess
 -   AliyunExpressConnectReadOnlyAccess
 
