@@ -10,7 +10,7 @@ When each product is being integrated with RAM functions, different levels of au
 
 ## List of cloud services supporting RAM {#section_x2b_krs_q2b .section}
 
-The following tables list the cloud services that support RAM in the following categories: [Elastic Computing](#section_b53_g52_xdb), [Database Services](#section_ep3_h52_xdb), [Storage & CDN](#section_ihm_352_xdb), [Networking](#section_az3_j52_xdb), [Analytics](#section_psg_k52_xdb), [Cloud Communication](#section_xlt_l52_xdb), [Monitoring and Management](#section_ypn_m52_xdb), [Application Service](#section_mfn_n52_xdb), [Middleware](#section_wck_452_xdb), [Mobile Service](#section_qqf_p52_xdb), [Media Services](#section_slb_q52_xdb), [Big Data \(data plus\)](#section_qbt_q52_xdb), [Security \(Alibaba Cloud Security\)](#section_tsn_r52_xdb), [Cloud Marketplace](#section_ejg_s52_xdb), and [Domain and Hosting](#section_spw_s52_xdb).
+The following tables list the cloud services that support RAM in the following categories: [Elastic Computing](#), [Database Services](#), [Storage & CDN](#), [Networking](#), [Analytics](#), [Cloud Communication](#), [Monitoring and Management](#), [Application Service](#), [Middleware](#), [Mobile Service](#), [Media Services](#), [Big Data \(data plus\)](#), [Security \(Alibaba Cloud Security\)](#), [Cloud Marketplace](#), and [Domain and Hosting](#).
 
 Each table contains the following information:
 
@@ -36,7 +36,7 @@ Each table contains the following information:
 |Auto Scaling|√|√|Service level| -   AliyunESSFullAccess
 -   AliyunESSReadOnlyAccess
 
- |[Auto Scaling API usage instructions](https://help.aliyun.com/document_detail/25925.html)|
+ |[API usage instructions](../../../../reseller.en-US/API-Reference/API usage instructions.md#)|
 |Container Service|√|√|Service level|AliyunCSFullAccess|[Use sub-accounts](../../../../reseller.en-US/User Guide/Authorizations/Use sub-accounts.md#)|
 |Container Registry|√|√|Resource level| -   AliyunContainerRegistryFullAccess
 -   AliyunContainerRegistryReadOnlyAccess
