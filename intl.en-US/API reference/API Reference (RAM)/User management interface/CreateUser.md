@@ -10,7 +10,7 @@ Creates an RAM user.
 
 -   Type: String
 -   Required: Yes
--   Description: Operation interface, required. The parameter value is “CreateUser”.
+-   Description: Operation interface, required. The parameter value is "CreateUser".
 
 **UserName**
 
@@ -40,14 +40,14 @@ Creates an RAM user.
 
 -   Type: String
 -   Required: No
--   Description: An RAM user’s mobile number.
+-   Description: An RAM user's mobile number.
 -   Format: International area code-number such as 86-18600008888
 
 **E-mail**
 
 -   Type: String
 -   Required: No
--   Description: An RAM user’s email address.
+-   Description: An RAM user's email address.
 
 **Comments**
 
@@ -90,38 +90,38 @@ ACS: Ram: *: $ {accountant}: User /*
 
 **InvalidParameter.DisplayName.InvalidChars**
 
--   HTTP Status：400
--   Error Message：The parameter - "DisplayName" contains invalid chars.
+-   HTTP Status: 400
+-   Error Message: The parameter - "DisplayName" contains invalid chars.
 
 **InvalidParameter.DisplayName.Length**
 
--   HTTP Status：400
--   Error Message：The parameter - "DisplayName" beyond the length limit.
+-   HTTP Status: 400
+-   Error Message: The parameter - "DisplayName" beyond the length limit.
 
 **InvalidParameter.Comments.Length**
 
--   HTTP Status：400
--   Error Message：The parameter - "Comments" beyond the length limit.
+-   HTTP Status: 400
+-   Error Message: The parameter - "Comments" beyond the length limit.
 
 **InvalidParameter.MobilePhone.Format**
 
--   HTTP Status：400
--   Error Message：The format of the parameter - "MobilePhone" is incorrect.
+-   HTTP Status: 400
+-   Error Message: The format of the parameter - "MobilePhone" is incorrect.
 
 **InvalidParameter.Email.Format**
 
--   HTTP Status：400
--   Error Message：The format of the parameter - "Email" is incorrect.
+-   HTTP Status: 400
+-   Error Message: The format of the parameter - "Email" is incorrect.
 
 **EntityAlreadyExists.User**
 
--   HTTP Status：409
--   Error Message：The user does already EXIST.
+-   HTTP Status: 409
+-   Error Message: The user does already EXIST.
 
 **LimitExceeded.User**
 
--   HTTP Status：409
--   Error Message：The count of users beyond the current limits.
+-   HTTP Status: 409
+-   Error Message: The count of users beyond the current limits.
 
 ## Operation examples {#section_pwp_vtk_xdb .section}
 
