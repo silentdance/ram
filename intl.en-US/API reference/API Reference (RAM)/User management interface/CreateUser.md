@@ -69,11 +69,11 @@ ram:CreateUser
 ACS: Ram: *: $ {accountant}: User /*
 ```
 
-## 返回参数 {#section_svf_5tk_xdb .section}
+## Return parameters {#section_svf_5tk_xdb .section}
 
 **User**
 
--   类型：[User](intl.en-US/API reference/API Reference (RAM)/Data types/User.md) Type
+-   Type：[User](reseller.en-US/API reference/API Reference (RAM)/Data types/User.md) 
 -   Description: user information
 
 ## Error messages {#section_zjv_5tk_xdb .section}
