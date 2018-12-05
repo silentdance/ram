@@ -1,24 +1,30 @@
 # Overview {#concept_hz5_jjf_xdb .concept}
 
-This document mainly describes the core functions of RAM and their typical application scenarios.
+This topic describes the core functions of RAM and their typical scenarios.
 
 ## Core functions {#section_k5p_kjf_xdb .section}
 
 **Identity management**
 
--   [User](reseller.en-US/User Guide/Identities/User.md)
--   [Group](reseller.en-US/User Guide/Identities/Group.md)
--   [Role](reseller.en-US/User Guide/Identities/Role.md)
+-   [Users](reseller.en-US/User Guide/Identity management/User management/Users.md#)
+-   [User groups](reseller.en-US/User Guide/Identity management/User management/User groups.md#)
+-   [Federated SSO overview](reseller.en-US/User Guide/Identity management/Identity federation management/Federated SSO overview.md#)
+-   [Configure the SAML of an external IdP](reseller.en-US/User Guide/Identity management/Identity federation management/Configure the SAML of an external IdP.md#)
+-   [Example](reseller.en-US/User Guide/Identity management/Identity federation management/Example.md#)
+-   [Manage RAM roles](reseller.en-US/User Guide/Identity management/RAM roles and identities/Manage RAM roles.md#)
 
 **Authorization management**
 
--   [Authorization Policy Management](reseller.en-US/User Guide/Authorization/Authorization Policy Management.md)
--   [Authorization](reseller.en-US/User Guide/Authorization/Authorization.md)
--   [Policy syntax structure](reseller.en-US/User Guide/Policy Language/Policy syntax structure.md)
+-   [Policy management](reseller.en-US/User Guide/Permission management/Policy management.md#)
+-   [Permission granting in RAM](reseller.en-US/User Guide/Permission management/Permission granting/Permission granting in RAM.md#)
+-   [Permission check rules](reseller.en-US/User Guide/Permission management/Permission check rules.md#)
 
-## Typical application scenarios {#section_m1y_xk1_ydb .section}
+## Typical scenarios {#section_m1y_xk1_ydb .section}
 
--   [RAM user management and authorization for enterprises](reseller.en-US/User Guide/Scenarios/RAM user management and authorization for enterprises.md)
--   [Temporary authorization management of mobile apps](reseller.en-US/User Guide/Scenarios/Temporary authorization management of mobile apps.md)
--   [Cross-account resource access and authorization](reseller.en-US/User Guide/Scenarios/Cross-account resource access and authorization.md)
+-   [User management and access control](reseller.en-US/User Guide/Scenarios/User management and access control.md#)
+-   [Temporary authorization for mobile apps](reseller.en-US/User Guide/Scenarios/Temporary authorization for mobile apps.md#)
+-   [Cross-account resource authorization and access](reseller.en-US/User Guide/Scenarios/Cross-account resource authorization and access.md#)
+-   [Resource grouping and authorization](reseller.en-US/User Guide/Scenarios/Resource grouping and permission management.md#)
+-   [Dynamic identity and permission management of cloud applications](reseller.en-US/User Guide/Scenarios/Dynamic identity and permission management of cloud applications.md#)
+-   [Use a local enterprise account to log on to Alibaba Cloud](reseller.en-US/User Guide/Scenarios/Use a local enterprise account to log on to Alibaba Cloud.md#)
 
