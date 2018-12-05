@@ -24,7 +24,6 @@ This topic describes the core functions of RAM and their typical scenarios.
 -   [User management and access control](reseller.en-US/User Guide/Scenarios/User management and access control.md#)
 -   [Temporary authorization for mobile apps](reseller.en-US/User Guide/Scenarios/Temporary authorization for mobile apps.md#)
 -   [Cross-account resource authorization and access](reseller.en-US/User Guide/Scenarios/Cross-account resource authorization and access.md#)
--   [Resource grouping and authorization](reseller.en-US/User Guide/Scenarios/Resource grouping and permission management.md#)
 -   [Dynamic identity and permission management of cloud applications](reseller.en-US/User Guide/Scenarios/Dynamic identity and permission management of cloud applications.md#)
 -   [Use a local enterprise account to log on to Alibaba Cloud](reseller.en-US/User Guide/Scenarios/Use a local enterprise account to log on to Alibaba Cloud.md#)
 
