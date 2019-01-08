@@ -1,10 +1,10 @@
 # What is RAM {#concept_oyr_zzv_tdb .concept}
 
-Resource Access Management \(RAM\) is a cloud service that helps you manage identities and control resource access. You can use RAM to create and manage user \(such as employees, systems, and applications.\) and control the users' operation permissions on resources. When multiple users in your enterprise collaboratively operate on resources, RAM keeps the users' keys confidential and grant users the minimum permissions to reduce information security risks.
+Resource Access Management \(RAM\) is a cloud service that helps you manage identities and control resource access. You can use RAM to create and manage RAM user \(such as employees, systems, and applications.\) and control the RAM users' operation permissions on resources. When multiple RAM users in your enterprise collaboratively operate on resources, RAM keeps the RAM users' keys confidential and grant RAM users the minimum permissions to reduce information security risks.
 
 ## Identity management and access control {#section_rwm_q1w_tdb .section}
 
-RAM allows you to create and manage multiple identities under an account and to attach different policies to different identities or identity groups. That is, RAM grants different resource access permissions to different users.
+RAM allows you to create and manage multiple identities under an account and to attach different policies to different identities or identity groups. That is, RAM grants different resource access permissions to different RAM users.
 
 ## Identity {#section_swm_q1w_tdb .section}
 
@@ -48,7 +48,7 @@ The specific requirements are shown in the following figure.
 
 -   Company A only needs one account \(for example, companyA@aliyun.com\).
 -   All resources belong to the account. As the resource owner, the account has full control over all resources. It also pays for all bills.
--   Company A can use RAM to create independent users for operators \(the employees who perform operation and maintenance on resources\) and grant permissions to the users.
--   Users do not possess resources. By default, they do not have access permissions on the resources they create and can only operate on the resources after they are authorized.
--   The fees incurred due to operations of users are billed by their accounts. Users have no permission to pay for themselves.
+-   Company A can use RAM to create independent RAM users for operators \(the employees who perform operation and maintenance on resources\) and grant permissions to the RAM users.
+-   RAM users do not possess resources. By default, they do not have access permissions on the resources they create and can only operate on the resources after they are authorized.
+-   The fees incurred due to operations of RAM users are billed by their accounts. RAM users have no permission to pay for themselves.
 
