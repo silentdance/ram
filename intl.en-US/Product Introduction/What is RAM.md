@@ -50,5 +50,5 @@ The specific requirements are shown in the following figure.
 -   All resources belong to the account. As the resource owner, the account has full control over all resources. It also pays for all bills.
 -   Company A can use RAM to create independent users for operators \(the employees who perform operation and maintenance on resources\) and grant permissions to the users.
 -   Users do not possess resources. By default, they do not have access permissions on the resources they create and can only operate on the resources after they are authorized.
--   The fees incurred due to operations of user accounts are billed by their accounts. Users have no permission to pay for themselves.
+-   The fees incurred due to operations of users are billed by their accounts. Users have no permission to pay for themselves.
 
