@@ -1,51 +1,54 @@
 # What is RAM {#concept_oyr_zzv_tdb .concept}
 
-Resource Access Management \(RAM\) is a cloud service that helps you **manage user identities** and **control resources access**. Using RAM, you can create and manage user accounts, and control the operation permissions that these user accounts possess for resources under your account, for example, employees, systems, and applications. If multiple users in your enterprise collaboratively work with resources, using RAM allows you to avoid sharing your Alibaba Cloud account AccessKey with other users. Instead, you can grant users the minimum permissions needed to complete their work, reducing security risks of your enterprise.
+Resource Access Management \(RAM\) is a cloud service that helps you manage identities and control resource access. You can use RAM to create and manage user \(such as employees, systems, and applications.\) and control the users' operation permissions on resources. When multiple users in your enterprise collaboratively operate on resources, RAM keeps the users' keys confidential and grant users the minimum permissions to reduce information security risks.
 
 ## Identity management and access control {#section_rwm_q1w_tdb .section}
 
-RAM allows you to create and manage multiple user identities under an account, and attach different authorization policies to different identities or identity groups. This grants different resource access permissions to different users.
+RAM allows you to create and manage multiple identities under an account and to attach different policies to different identities or identity groups. That is, RAM grants different resource access permissions to different users.
 
 ## Identity {#section_swm_q1w_tdb .section}
 
-Identity refers to any person, system, or application that uses resources from the console or by using Open APIs. To enable identity management in different application scenarios, RAM supports two types of identities, which are RAM-User and RAM-Role.
+An identity refers to any person, system, or application that uses resources in the RAM console or through open APIs. To manage identities in different application scenarios, RAM supports two types of identities, RAM users and RAM roles.
 
--   A RAM-User is a real identity of a fixed ID and an identity authentication AccessKey. Generally, a RAM-User refers to a person or an application.
+-   A RAM user is an entity identity with a fixed ID and an identity authentication key. Generally, a RAM user corresponds to a person or an application.
+-   A RAM role is a virtual identity with a fixed ID but without an identity authentication key.
 
--   A RAM-Role is a virtual identity of a fixed ID, but no identity authentication AccessKey.
+A RAM role must be associated with an entity identity before it can be used. A RAM role can be associated with multiple entity identities, such as:
 
+-   RAM users under the current account
+-   RAM users under another account
+-   Alibaba Cloud services \(such as EMR or MTS\)
+-   External real identities \(such as a local enterprise account\)
 
-A RAM-Role must be associated with a real identity before it becomes available. A RAM-Role can be associated with multiple real identities, such as RAM-Users under the current Alibaba Cloud account, RAM-Users under another Alibaba Cloud account, Alibaba Cloud services \(such as EMR or MTS\), and External real identities \(such as a local enterprise account\).
+## Policy {#section_uwm_q1w_tdb .section}
 
-## Authorization {#section_uwm_q1w_tdb .section}
+RAM allows you to create and manage multiple policies under your account. In essence, each policy is a collection of permissions. Administrators can attach one or more policies to a RAM identity \(a RAM user or RAM role\).
 
-RAM allows you to create and manage multiple authorization policies under your Alibaba Cloud account. In essence, each authorization policy is a collection of permissions. Administrators can attach one or more authorization policies to a RAM identity \(including RAM-Users and  RAM-Roles\).
+The RAM policy language expresses fine-grained authorization semantics. A policy can grant permissions to a specific API action or resource ID and specify multiple restrictions \(such as source IP address, access time, and MFA\).
 
-The RAM authorization policy language expresses the meaning of the authorization policy in detail. A policy can grant permissions to an API-Action and Resource-ID, and specify multiple restrictions \(such as source IP address, access time, and MFA\).
+## Relationship between accounts and RAM users {#section_rfk_hs2_xdb .section}
 
-## RAM user vs. Alibaba Cloud account {#section_rfk_hs2_xdb .section}
+-   From the ownership perspective, an account and its RAM users are in parent-child relationship.
+    -   An account is the basic entity for judging the ownership of Alibaba Cloud resources and billing for resource consumption.
+    -   RAM users exist only in RAM instances of a certain account. RAM users do not possess resources, and the resources they create under authorization belong to their accounts. RAM users do not possess bills, and all fees incurred by their authorized operations are debited to their accounts.
+-   From the permission perspective, an account and its RAM users are in root–user relationship \(similar to the relationship in Linux\).
+    -   The root user has all operation and control permissions on resources.
+    -   RAM users only have permissions that are granted by the root user. The root user can revoke the permissions at any time.
 
--   From an **ownership** point of view, the relationship between your Alibaba Cloud account and its RAM users is like parent-child.
-    -   An Alibaba Cloud account is the basic entity for judging the ownership of Alibaba Cloud resources and billing for resource consumption.
-    -   RAM users exist only in the RAM instances of a certain Alibaba Cloud account. RAM users do not possess resources, and the resources they create under authorization belong to the parent account. RAM users do not possess bills, and all expenses incurred by their authorized operations are debited to the parent account.
--   In terms of **permissions**, the relationship between your Alibaba Cloud account and its RAM users is like root–user \(such as the relationship in Linux\).
-    -   The root user has all operation and control permissions for resources.
-    -   A RAM user has only some permissions that are granted by the root user. In addition, the root user can revoke the permissions granted to a RAM user at any time.
-
-## Perform enterprise-level cloud resource management using RAM {#section_ywm_q1w_tdb .section}
+## Use RAM to manage cloud resources for enterprises {#section_ywm_q1w_tdb .section}
 
 RAM is applicable to the following enterprise scenarios:
 
--   An enterprise needs to easily manage the account and permissions of each operator \(or application\).
+-   An enterprise needs to manage the account and permissions of each operator \(or application\) in a simplified manner.
 -   An enterprise does not want to calculate the costs and fees for each operator \(or application\) separately.
 
-The specific requirements are shown as follows:
+The specific requirements are shown in the following figure.
 
 ![](images/3479_en-US.png "Enterprise scenario")
 
--   Company A only needs one Alibaba Cloud account \(in the figure, this is companyA@aliyun.com\).
--   All resources belong to this Alibaba Cloud account. As the resource owner, this account has full control of all resources. This account is also responsible for paying all bills.
--   A can use RAM to create independent user accounts for operators under the account \(the employees who perform operation and maintenance on resources\) and perform authorization management.
--   User accounts do not possess resources. By default they do not have access permissions for the resources they create and can only perform operations on resources after their permissions are authorized. 
--   The charges incurred due to operations of user accounts are billed to the primary account. Separate billing for user accounts is not supported.
+-   Company A only needs one account \(for example, companyA@aliyun.com\).
+-   All resources belong to the account. As the resource owner, the account has full control over all resources. It also pays for all bills.
+-   Company A can use RAM to create independent users for operators \(the employees who perform operation and maintenance on resources\) and grant permissions to the users.
+-   Users do not possess resources. By default, they do not have access permissions on the resources they create and can only operate on the resources after they are authorized.
+-   The fees incurred due to operations of user accounts are billed by their accounts. Users have no permission to pay for themselves.
 
