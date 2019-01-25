@@ -1,22 +1,24 @@
 # Limits {#reference_gmw_yhf_xdb .reference}
 
-|Resource|Limit|
-|:-------|:----|
-|Users in an Alibaba Cloud account|100|
-|Groups in an Alibaba Cloud account|50|
-|Groups a RAM user can join|5|
-|AccessKeys a RAM user can create|2|
-|Virtual MFA devices in use for a RAM user|1|
-|Virtual MFA devices in an Alibaba Cloud account|100|
-|Custom policies in an Alibaba Cloud account|200|
-|Versions of a custom policy that can be stored|5|
-|Authorization policies attached to a user|5|
-|Authorization policies attached to a group|5|
-|Characters for a user name|64|
-|Characters for a group name|64|
-|Characters for an authorization policy name|128|
-|Characters for a role name|64|
-|Roles|100|
-|Characters for an alias|3-64|
-|Characters for a custom authorization policy|2048|
+|Item|Limit|
+|:---|:----|
+|Total number of users|1000|
+|Total number of user groups|50|
+|Number of groups a user can join|5|
+|Number of AccessKeys \(AKs\) a user can create|2|
+|Number of MFA devices a user can attach|1|
+|Number of virtual MFA devices|100|
+|Number of customized authorization policies|200|
+|Number of custom policy versions|5|
+|Maximum number of custom policies that can be attached to a single user|5|
+|Maximum number of custom policies that can be attached to a single user group|5|
+|Maximum number of system policies that can be attached to a single user|20|
+|Maximum number of system policies that can be attached to a single user group|20|
+|Number of characters a user name can contain|64|
+|Number of characters a user group name can contain|64|
+|Number of characters a policy name can contain|128|
+|Number of characters a RAM role name can contain|64|
+|Number of roles|100|
+|Number of characters an alias can contain|3 to 64|
+|Number of characters a custom policy name can contain|2,048|
 
