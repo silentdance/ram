@@ -7,7 +7,7 @@
 |Number of groups a user can join|5|
 |Number of AccessKeys \(AKs\) a user can create|2|
 |Number of MFA devices a user can attach|1|
-|Number of virtual MFA devices|100|
+|Number of virtual MFA devices|1000|
 |Number of customized authorization policies|200|
 |Number of custom policy versions|5|
 |Maximum number of custom policies that can be attached to a single user|5|
