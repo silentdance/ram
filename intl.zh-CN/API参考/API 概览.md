@@ -1,6 +1,6 @@
 # API 概览 {#concept_vdd_rmk_xdb .concept}
 
-本页面列出了 RAM 所有 API 接口。更多 OpenAPI 资源，请关注 [API Explorer](https://api.aliyun.com/)。
+本页面列出了 RAM 所有 API 接口。更多 open API 资源，请关注 [API Explorer](https://api.aliyun.com/)。
 
 ## 用户管理相关接口 {#section_uyr_dmj_3gb .section}
 
