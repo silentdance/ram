@@ -11,7 +11,7 @@ Your company purchases several Alibaba Cloud products and deploys a number of ap
 
 ## Solution {#section_jyj_z2b_kgb .section}
 
-You can categorize the O&M requirements by product to make them easier to manage. More specifically, you can assign different [O&M owners](#) to different categories of requirements and attach your specified [policies](#) to these owners, as shown in the following example.
+You can categorize the O&M requirements by product to make them easier to manage. More specifically, you can set an O&M owner and assign different O&M engineers to different categories of requirements and attach your specified policies to these engineers, as shown in the following figure.
 
 ![O&M owner](images/37801_en-US.png "O&M owner")
 
@@ -52,5 +52,5 @@ This example describes how to set the RAM user `alice@secloud.onaliyun.com` as t
 3.  Find the created RAM user and click **Add Permissions**.
 4.  In the **Policy Name** column, select `AliyunRDSFullAccess` and `AliyunDTSFullAccess`, and click **Ok**.
 
-**Note:** To grant other O&M permissions to the RAM user, see [Policies](#).
+**Note:** To grant other O&M permissions to the RAM user, see the policies described in the preceding table.
 
