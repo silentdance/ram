@@ -30,7 +30,7 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 |云服务器 ECS|√|√|√|√|资源级别| -   AliyunECSFullAccess
 -   AliyunECSReadOnlyAccess
 
- |[ECS鉴权规则](../../../../../intl.zh-CN/API参考/鉴权规则.md)|
+ |[ECS鉴权规则](../../../../../intl.zh-CN/API参考/鉴权规则.md#)|
 |负载均衡 SLB|√|√|√|√|资源级别| -   AliyunSLBFullAccess
 -   AliyunSLBReadOnlyAccess
 
@@ -84,7 +84,7 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 |云数据库 HybridDB for PostgreSQL|√|○|×|×|资源级别| -   AliyunGPDBFullAccess
 -   AliyunGPDBReadOnlyAccess
 
- |-|
+ |[API的鉴权规则](../../../../../intl.zh-CN/API参考/如何使用RAM授权/API的鉴权规则.md#)|
 |数据传输服务DTS|√|√|×|×|服务级别| -   AliyunDTSFullAccess
 -   AliyunDTSReadOnlyAccess
 
@@ -130,15 +130,15 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 |专有网络 VPC|√|√|√|√|资源级别| -   AliyunVPCFullAccess
 -   AliyunVPCReadOnlyAccess
 
- |[VPC鉴权规则](https://alibabacloud.com/help/doc-detail/27777.htm)|
+ |[RAM鉴权](../../../../../intl.zh-CN/API参考/RAM鉴权.md#)|
 |弹性公网 IP|√|√|×|×|资源级别| -   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
- |[弹性公网IP鉴权规则](https://www.alibabacloud.com/help/en/doc-detail/27777.htm)|
+ |-|
 |高速通道 ExpressConnect|√|√|×|×|资源级别| -   AliyunExpressConnectFullAccess
 -   AliyunExpressConnectReadOnlyAccess
 
- |[高速通道鉴权规则](https://www.alibabacloud.com/help/en/doc-detail/31813.html)|
+ |-|
 |NAT网关|√|√|×|×|资源级别| -   AliyunNATGatewayReadOnlyAccess
 -   AliyunNATGatewayFullAccess
 
@@ -148,11 +148,11 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 
 |服务名|控制台|API|授权粒度|系统策略|相关文档|
 |:--|:--|:--|:---|:---|:---|
-|E-MapReduce|√|√|服务级别|AliyunEMRFullAccess|[角色授权](../../../../../intl.zh-CN/用户指南/角色授权.md#)|
+|E-MapReduce|√|√|服务级别|AliyunEMRFullAccess|-|
 |云数据库 HybridDB for PostgreSQL|√|√|资源级别| -   AliyunGPDBFullAccess
 -   AliyunGPDBReadOnlyAccess
 
- |-|
+ |[API的鉴权规则](../../../../../intl.zh-CN/API参考/如何使用RAM授权/API的鉴权规则.md#)|
 
 ## 云通信 {#section_06 .section}
 
@@ -176,7 +176,7 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 -   AliyunCloudMonitorReadOnlyAccess
 
  | |
-|操作审计|√|√|资源级别|-|-|
+|操作审计|√|√|资源级别|-|[RAM鉴权](../../../../../intl.zh-CN/API参考/RAM鉴权.md#)|
 |密钥管理|√|√|资源级别| -   AliyunKMSFullAccess
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
@@ -190,10 +190,7 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 |日志服务|√|√|×|×|资源级别| -   AliyunLogFullAccess
 -   AliyunLogReadOnlyAccess
 
- | -   [授权RAM 用户](../../../../../intl.zh-CN/用户指南/         访问控制 RAM/授权RAM 用户.md#)
--   [鉴权规则](../../../../../intl.zh-CN/API 参考/RAM子用户访问/鉴权规则.md#)
-
- |
+ |[鉴权规则](../../../../../intl.zh-CN/API 参考/RAM子用户访问/鉴权规则.md#)|
 |API 网关|√|√|×|×|服务级别| -   AliyunApiGatewayFullAccess
 -   AliyunApiGatewayReadOnlyAccess
 
@@ -234,7 +231,8 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 -   AliyunMTSPlayerAuth
 
  |[子帐号使用控制台说明](../../../../../intl.zh-CN/用户指南/子帐号使用控制台说明.md#)|
-|视频直播|√|√|服务级别|AliyunLiveFullAccess|-|
+|视频点播|√|√|服务级别|AliyunVODFullAccess|-|
+|视频直播|√|√|服务级别|AliyunLiveFullAccess|[API鉴权规则](../../../../../intl.zh-CN/API参考/API鉴权规则.md#)|
 
 ## 大数据（数加） {#section_12 .section}
 
@@ -284,5 +282,5 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 -   AliyunDNSReadOnlyAccess
 
  |-|
-|域名|√|有|资源级别|AliyunDomainFullAccess|[概述](../../../../../intl.zh-CN/域名管理/RAM资源授权-域名/概述.md#)|
+|域名|√|有|资源级别|AliyunDomainFullAccess|[Domain API 鉴权规则](../../../../../intl.zh-CN/域名管理/RAM资源授权-域名/Domain API 鉴权规则.md#)|
 
