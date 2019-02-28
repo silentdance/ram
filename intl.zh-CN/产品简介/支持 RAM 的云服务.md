@@ -1,10 +1,10 @@
 # 支持 RAM 的云服务 {#concept_ofk_yt2_xdb .concept}
 
+许多阿里云服务都与 RAM/STS 相集成，本文按服务类别罗列了这些服务，并提供每个服务支持的 RAM 授权粒度、系统策略，以及相关文档的链接，方便您使用及查询。
+
 RAM \(Resource Access Management\) 是阿里云为客户提供的用户身份管理与资源访问控制服务。
 
 STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管理服务。
-
-许多阿里云服务都与 RAM/STS 相集成，本文按服务类别罗列了这些服务，并提供每个服务支持的 RAM 授权粒度、系统策略，以及相关文档的链接，方便您使用及查询。
 
 在集成 RAM 功能时，各产品针对 RAM 用户定义了不同级别的授权粒度，具体有：
 
@@ -14,7 +14,7 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 
 ## 支持 RAM/STS 的云服务列表 {#section_00 .section}
 
-以下表格分别罗列了弹性计算、云数据库、存储与 CDN、网络、分析、云通信、监控与管理、应用服务、互联网中间件、移动服务、视频服务、大数据（数加）、安全（云盾）、云市场、域名与网站下，已支持 RAM/STS 的云服务。每个表格具体包含如下信息：
+以下表格分别罗列了弹性计算、云数据库、存储与 CDN、网络、分析、云通信、监控与管理、应用服务、互联网中间件、移动云、视频服务、大数据（数加）、安全（云盾）、云市场、域名与网站下，已支持 RAM/STS 的云服务。每个表格具体包含如下信息：
 
 -   服务名：支持 RAM/STS 的云服务的名称。
 -   控制台：当前服务是否支持在控制台进行访问控制，“∨”表示支持，“×”表示不支持，“○”表示不提供。
@@ -190,7 +190,7 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 |日志服务|√|√|×|×|资源级别| -   AliyunLogFullAccess
 -   AliyunLogReadOnlyAccess
 
- |[鉴权规则](../../../../../intl.zh-CN/API 参考/RAM子用户访问/鉴权规则.md#)|
+ |[鉴权规则](../../../../../intl.zh-CN/API 参考/RAM__STS/鉴权规则.md#)|
 |API 网关|√|√|×|×|服务级别| -   AliyunApiGatewayFullAccess
 -   AliyunApiGatewayReadOnlyAccess
 
@@ -217,11 +217,10 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 |业务实时监控服务|√|×|服务级别|-|-|
 |应用配置管理|√|√|资源级别|-|-|
 
-## 移动服务 {#section_10 .section}
+## 移动云 {#section_10 .section}
 
 |服务名|控制台|API|授权粒度|系统策略|相关文档|
 |:--|:--|:--|:---|:---|:---|
-|移动安全（应用安全）|√|√|服务级别|AliyunYundunJaqFullAccess|-|
 
 ## 视频服务 {#section_11 .section}
 
@@ -261,7 +260,6 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 
  |-|
 |内容安全（业务安全）|√|○|服务级别|-|-|
-|证书服务|√|○|服务级别|AliyunYundunCertFullAccess|-|
 |移动安全|√|○|服务级别|AliyunYundunJaqFullAccess|-|
 |SSL证书（应用安全）|√|○|服务级别| -   AliyunYundunCertFullAccess
 -   AliyunYundunCertReadOnlyAccess
@@ -282,5 +280,5 @@ STS \(Security Token Service\) 是阿里云提供的一种临时访问权限管�
 -   AliyunDNSReadOnlyAccess
 
  |-|
-|域名|√|有|资源级别|AliyunDomainFullAccess|[Domain API 鉴权规则](../../../../../intl.zh-CN/域名管理/RAM资源授权-域名/Domain API 鉴权规则.md#)|
+|域名|√|√|资源级别|AliyunDomainFullAccess|[Domain API 鉴权规则](../../../../../intl.zh-CN/域名管理/RAM资源授权-域名/Domain API 鉴权规则.md#)|
 
