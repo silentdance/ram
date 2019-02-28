@@ -23,7 +23,7 @@ The following table describes the policy elements.
 
     Action can have multiple values. The values are API operations defined by the target cloud services.
 
-    **Note:** Actions are operations performed on specific resources. In most cases, an action corresponds to an Alibaba Cloud API. For more information about the actions supported by different Alibaba Cloud products, see [Cloud services supporting RAM](../../../../../reseller.en-US/Product Introduction/Cloud services supporting RAM.md#).
+    **Note:** Actions are operations performed on specific resources. In most cases, an action corresponds to an Alibaba Cloud API. For more information about the actions supported by different Alibaba Cloud products, see [Alibaba Cloud services that work with RAM](../../../../../reseller.en-US/Product Introduction/Alibaba Cloud services that work with RAM.md#).
 
     Format:
 
