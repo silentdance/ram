@@ -1,4 +1,4 @@
-# GetPolicy {#doc_api_977720 .reference}
+# GetPolicy {#doc_api_1057993 .reference}
 
 获取指定的权限策略信息。
 
@@ -39,7 +39,7 @@
 |└Description|String|OSS管理员权限|权限策略描述。
 
  |
-|└PolicyDocument|String|\{ "Statement": \[\{ "Action": \["oss:\*"\], "Effect": "Allow", "Resource": \["acs:oss:\*:\*:\*"\]\}\], "Version": "1"\}|权限策略内容。
+|└PolicyDocument|String|\{ "Statement": \[\{ "Action": \["oss:\*"\], "Effect": "Allow", "Resource": \["acs:oss:\*:\*:\*"\]\}\], "Version": "1"\}|暂未提供。
 
  |
 |└PolicyName|String|OSS-Administrator|权限策略名称。
@@ -83,7 +83,6 @@ https://ram.aliyuncs.com/?Action=GetPolicy
     <CreateDate>2015-01-23T12:33:18Z</CreateDate>
     <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
     <AttachmentCount>0</AttachmentCount>
-    <PolicyDocument>{ "Statement": [{ "Action": ["oss:*"], "Effect": "Allow", "Resource": ["acs:oss:*:*:*"]}], "Version": "1"}</PolicyDocument>
   </Policy>
 </GetPolicyResponse>
 
@@ -98,7 +97,6 @@ https://ram.aliyuncs.com/?Action=GetPolicy
 		"Description":"OSS管理员权限",
 		"PolicyName":"OSS-Administrator",
 		"UpdateDate":"2015-01-23T12:33:18Z",
-		"PolicyDocument":"{ \"Statement\": [{ \"Action\": [\"oss:*\"], \"Effect\": \"Allow\", \"Resource\": [\"acs:oss:*:*:*\"]}], \"Version\": \"1\"}",
 		"CreateDate":"2015-01-23T12:33:18Z",
 		"DefaultVersion":"v1",
 		"PolicyType":"Custom"
