@@ -9,7 +9,7 @@ Identity management
 -   [RAM users](reseller.en-US/User Guide/Identity management/User management/RAM users.md#)
 -   [RAM user groups](reseller.en-US/User Guide/Identity management/User management/RAM user groups.md#)
 -   [RAM roles](reseller.en-US/User Guide/Identity management/RAM roles and identities/RAM roles.md#)
--   [RAM roles management](reseller.en-US/User Guide/Identity management/RAM roles and identities/RAM role management.md#)
+-   [RAM role management](reseller.en-US/User Guide/Identity management/RAM roles and identities/RAM role management.md#)
 
 Identity integration
 
