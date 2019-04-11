@@ -1,4 +1,4 @@
-# ListGroups {#doc_api_977711 .reference}
+# ListGroups {#doc_api_Ram_ListGroups .reference}
 
 列出所有的用户组。
 
