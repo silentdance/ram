@@ -1,4 +1,4 @@
-# ListUsers {#doc_api_977694 .reference}
+# ListUsers {#doc_api_Ram_ListUsers .reference}
 
 列出所有RAM用户。
 
@@ -46,22 +46,22 @@
 |└CreateDate|String|2015-01-23T12:33:18Z|创建时间。
 
  |
-|└DisplayName|String|张强|显示名称。
+|└DisplayName|String|张\*|显示名称。
 
  |
-|└Email|String|zhangqiang@example.com|RAM用户邮箱。
+|└Email|String|zhangq\*\*\*\*@example.com|RAM用户邮箱。
 
  |
-|└MobilePhone|String|86-18600008888|RAM用户手机号。
+|└MobilePhone|String|86-1860000\*\*\*\*|RAM用户手机号。
 
  |
 |└UpdateDate|String|2015-01-23T12:33:18Z|更新时间。
 
  |
-|└UserId|String|1227489245380721|用户唯一标识。
+|└UserId|String|122748924538\*\*\*\*|用户唯一标识。
 
  |
-|└UserName|String|zhangqiang|用户名称。
+|└UserName|String|zhangq\*\*\*\*|用户名称。
 
  |
 
@@ -85,21 +85,21 @@ https://ram.aliyuncs.com/?Action=ListUsers
   <RequestId>4B450CA1-36E8-4AA2-8461-86B42BF4CC4E</RequestId>
   <Users>
     <User>
-      <UserId>1227489245380721</UserId>
-      <UserName>zhangqiang</UserName>
-      <DisplayName>张强</DisplayName>
-      <MobilePhone>86-18600008888</MobilePhone>
-      <Email>zhangqiang@example.com</Email>
+      <UserId>122748924538****</UserId>
+      <UserName>zhangq****</UserName>
+      <DisplayName>张*</DisplayName>
+      <MobilePhone>86-1860000****</MobilePhone>
+      <Email>zhangq****@example.com</Email>
       <Comments>这是一位云计算工程师</Comments>
       <CreateDate>2015-01-23T12:33:18Z</CreateDate>
       <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
     </User>
     <User>
-      <UserId>1406498224724456</UserId>
-      <UserName>lili</UserName>
-      <DisplayName>李丽</DisplayName>
-      <MobilePhone>86-18600009999</MobilePhone>
-      <Email>lili@example.com</Email>
+      <UserId>140649822472****</UserId>
+      <UserName>li****</UserName>
+      <DisplayName>李*</DisplayName>
+      <MobilePhone>86-1860000****</MobilePhone>
+      <Email>li****@example.com</Email>
       <Comments>权限管理员</Comments>
       <CreateDate>2015-02-18T17:22:08Z</CreateDate>
       <UpdateDate>2015-02-18T17:22:08Z</UpdateDate>
@@ -119,22 +119,22 @@ https://ram.aliyuncs.com/?Action=ListUsers
 		"User":[
 			{
 				"Comments":"这是一位云计算工程师",
-				"Email":"zhangqiang@example.com",
-				"UserName":"zhangqiang",
+				"Email":"zhangq****@example.com",
+				"UserName":"zhangq****",
 				"UpdateDate":"2015-01-23T12:33:18Z",
-				"UserId":"1227489245380721",
-				"MobilePhone":"86-18600008888",
-				"DisplayName":"张强",
+				"UserId":"122748924538****",
+				"MobilePhone":"86-1860000****",
+				"DisplayName":"张*",
 				"CreateDate":"2015-01-23T12:33:18Z"
 			},
 			{
 				"Comments":"权限管理员",
-				"Email":"lili@example.com",
-				"UserName":"lili",
+				"Email":"li****@example.com",
+				"UserName":"li****",
 				"UpdateDate":"2015-02-18T17:22:08Z",
-				"UserId":"1406498224724456",
-				"MobilePhone":"86-18600009999",
-				"DisplayName":"李丽",
+				"UserId":"140649822472****",
+				"MobilePhone":"86-1860000****",
+				"DisplayName":"李*",
 				"CreateDate":"2015-02-18T17:22:08Z"
 			}
 		]
