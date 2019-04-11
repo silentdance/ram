@@ -1,4 +1,4 @@
-# ListRoles {#doc_api_977676 .reference}
+# ListRoles {#doc_api_Ram_ListRoles .reference}
 
 列出角色。
 
@@ -40,7 +40,7 @@
 |Roles| | |角色名称列表。
 
  |
-|└Arn|String|acs:ram::1234567890123456:role/ECSAdmin|角色的资源描述符。
+|└Arn|String|acs:ram::123456789012\*\*\*\*:role/ECSAdmin|角色的资源描述符。
 
  |
 |└CreateDate|String|2015-01-23T12:33:18Z|创建时间。
@@ -49,7 +49,7 @@
 |└Description|String|ECS管理角色|角色的文字描述。
 
  |
-|└RoleId|String|901234567890123|角色ID。
+|└RoleId|String|901234567890\*\*\*\*|角色ID。
 
  |
 |└RoleName|String|ECSAdmin|角色名称。
@@ -81,17 +81,17 @@ https://ram.aliyuncs.com/?Action=ListRoles
   <Marker>EXAMPLE</Marker>
   <Roles>
     <Role>
-      <RoleId>901234567890123</RoleId>
+      <RoleId>901234567890****</RoleId>
       <RoleName>ECSAdmin</RoleName>
-      <Arn>acs:ram::1234567890123456:role/ECSAdmin</Arn>
+      <Arn>acs:ram::123456789012****:role/ECSAdmin</Arn>
       <Description>ECS管理角色</Description>
       <CreateDate>2015-01-23T12:33:18Z</CreateDate>
       <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
     </Role>
     <Role>
-      <RoleId>901234567890456</RoleId>
+      <RoleId>901234567890****</RoleId>
       <RoleName>OSSReadonlyAccess</RoleName>
-      <Arn>acs:ram::1234567890123456:role/OSSReadonlyAccess</Arn>
+      <Arn>acs:ram::123456789012****:role/OSSReadonlyAccess</Arn>
       <Description>OSS只读访问角色</Description>
       <CreateDate>2015-01-23T12:33:18Z</CreateDate>
       <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
@@ -113,17 +113,17 @@ https://ram.aliyuncs.com/?Action=ListRoles
 				"RoleName":"ECSAdmin",
 				"Description":"ECS管理角色",
 				"UpdateDate":"2015-01-23T12:33:18Z",
-				"Arn":"acs:ram::1234567890123456:role/ECSAdmin",
+				"Arn":"acs:ram::123456789012****:role/ECSAdmin",
 				"CreateDate":"2015-01-23T12:33:18Z",
-				"RoleId":"901234567890123"
+				"RoleId":"901234567890****"
 			},
 			{
 				"RoleName":"OSSReadonlyAccess",
 				"Description":"OSS只读访问角色",
 				"UpdateDate":"2015-01-23T12:33:18Z",
-				"Arn":"acs:ram::1234567890123456:role/OSSReadonlyAccess",
+				"Arn":"acs:ram::123456789012****:role/OSSReadonlyAccess",
 				"CreateDate":"2015-01-23T12:33:18Z",
-				"RoleId":"901234567890456"
+				"RoleId":"901234567890****"
 			}
 		]
 	},
