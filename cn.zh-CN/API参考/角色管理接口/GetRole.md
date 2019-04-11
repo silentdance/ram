@@ -1,4 +1,4 @@
-# GetRole {#doc_api_977719 .reference}
+# GetRole {#doc_api_Ram_GetRole .reference}
 
 获取角色信息。
 
@@ -29,10 +29,10 @@
 |Role| | |角色信息。
 
  |
-|└Arn|String|acs:ram::1234567890123456:role/ECSAdmin|角色的资源描述符。
+|└Arn|String|acs:ram::123456789012\*\*\*\*:role/ECSAdmin|角色的资源描述符。
 
  |
-|└AssumeRolePolicyDocument|String|\{ "Statement": \[ \{ "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": \{ "RAM": "acs:ram::123456789012345678:root" \} \} \], "Version": "1" \}|角色扮演授权策略。
+|└AssumeRolePolicyDocument|String|\{ "Statement": \[ \{ "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": \{ "RAM": "acs:ram::123456789012\*\*\*\*:root" \} \} \], "Version": "1" \}|角色扮演授权策略。
 
  |
 |└CreateDate|String|2015-01-23T12:33:18Z|创建时间。
@@ -41,7 +41,7 @@
 |└Description|String|ECS管理角色|角色的文字描述。
 
  |
-|└RoleId|String|901234567890123|角色ID。
+|└RoleId|String|901234567890\*\*\*\*|角色ID。
 
  |
 |└RoleName|String|ECSAdmin|角色名称。
@@ -71,11 +71,11 @@ https://ram.aliyuncs.com/?Action=GetRole
 <GetRoleResponse>
   <RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
   <Role>
-    <RoleId>901234567890123</RoleId>
+    <RoleId>901234567890****</RoleId>
     <RoleName>ECSAdmin</RoleName>
-    <Arn>acs:ram::1234567890123456:role/ECSAdmin</Arn>
+    <Arn>acs:ram::123456789012****:role/ECSAdmin</Arn>
     <Description>ECS管理角色</Description>
-    <AssumeRolePolicyDocument>{ "Statement": [ { "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": { "RAM": "acs:ram::123456789012345678:root" } } ], "Version": "1" }</AssumeRolePolicyDocument>
+    <AssumeRolePolicyDocument>{ "Statement": [ { "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": { "RAM": "acs:ram::123456789012****:root" } } ], "Version": "1" }</AssumeRolePolicyDocument>
     <CreateDate>2015-01-23T12:33:18Z</CreateDate>
     <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
   </Role>
@@ -91,11 +91,11 @@ https://ram.aliyuncs.com/?Action=GetRole
 	"Role":{
 		"RoleName":"ECSAdmin",
 		"Description":"ECS管理角色",
-		"AssumeRolePolicyDocument":"{ \"Statement\": [ { \"Action\": \"sts:AssumeRole\", \"Effect\": \"Allow\", \"Principal\": { \"RAM\": \"acs:ram::123456789012345678:root\" } } ], \"Version\": \"1\" }",
+		"AssumeRolePolicyDocument":"{ \"Statement\": [ { \"Action\": \"sts:AssumeRole\", \"Effect\": \"Allow\", \"Principal\": { \"RAM\": \"acs:ram::123456789012****:root\" } } ], \"Version\": \"1\" }",
 		"UpdateDate":"2015-01-23T12:33:18Z",
-		"Arn":"acs:ram::1234567890123456:role/ECSAdmin",
+		"Arn":"acs:ram::123456789012****:role/ECSAdmin",
 		"CreateDate":"2015-01-23T12:33:18Z",
-		"RoleId":"901234567890123"
+		"RoleId":"901234567890****"
 	}
 }
 ```
