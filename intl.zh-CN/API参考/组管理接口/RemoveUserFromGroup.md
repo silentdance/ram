@@ -1,6 +1,6 @@
-# RemoveUserFromGroup {#doc_api_977715 .reference}
+# RemoveUserFromGroup {#doc_api_Ram_RemoveUserFromGroup .reference}
 
-将子用户从用户组中移除。
+将RAM用户从用户组中移除。
 
 ## 调试 {#apiExplorer .section}
 
@@ -16,7 +16,7 @@
 |GroupName|String|是|Dev-Team|组名称。
 
  |
-|UserName|String|是|zhangqiang|子用户名称。
+|UserName|String|是|zhangq\*\*\*\*|子用户名称。
 
  |
 
@@ -35,7 +35,7 @@
 ``` {#request_demo}
 
 https://ram.aliyuncs.com/?Action=RemoveUserFromGroup
-&UserName=zhangqiang
+&UserName=zhangq****
 &GroupName=Dev-Team
 &<公共请求参数>
 
