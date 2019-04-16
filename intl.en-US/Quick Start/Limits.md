@@ -14,8 +14,10 @@ This topic lists the limitations of RAM, such as the maximum number of users and
 |Maximum number of versions that a custom policy can have|5|
 |Maximum number of custom policies that can be attached to a user|5|
 |Maximum number of custom policies that can be attached to a user group|5|
+|Maximum number of custom policies that can be attached to a role|5|
 |Maximum number of system policies that can be attached to a user|20|
 |Maximum number of system policies that can be attached to a user group|20|
+|Maximum number of system policies that can be attached to a role|20|
 |Maximum number of characters that a username can contain|64|
 |Maximum number of characters that a user group name can contain|64|
 |Maximum number of characters that a policy name can contain|128|
