@@ -2,10 +2,6 @@
 
 ActionTrail 可以记录主账号或 RAM 用户进行的操作，通过 ActionTrail 可以查看所有用户对资源实例进行操作的记录。
 
-## 前提条件 {#section_a5m_mf4_tgb .section}
-
-RAM 已经与 ActionTrail 服务进行了集成，可以联合使用。
-
 ## 使用 ActionTrail 查看 RAM 操作记录的步骤 {#section_hyp_ll4_tgb .section}
 
 1.  登录 [ActionTrail 控制台](https://actiontrail.console.aliyun.com)。
@@ -20,7 +16,7 @@ RAM 已经与 ActionTrail 服务进行了集成，可以联合使用。
 
 ActionTrail 可以记录 RAM 的如下操作信息：
 
--   主账号或 RAM 用户的登录信息，详情请参考 [ConsoleSignin](../../../../../intl.zh-CN/用户指南/操作事件(Event)样例/ConsoleSignin.md#)。
+-   主账号或 RAM 用户的登录信息，详情请参考 [ConsoleSignin](../../../../intl.zh-CN/用户指南/操作事件(Event)样例/ConsoleSignin.md#)。
 -   RAM 控制台的操作，例如：
 
     ```language-json
@@ -93,5 +89,5 @@ ActionTrail 可以记录 RAM 的如下操作信息：
 
 ## 更多信息 {#section_qqw_pf4_tgb .section}
 
-关于操作记录的详细信息，请参考[操作事件\(Event\)结构定义](../../../../../intl.zh-CN/用户指南/操作事件(Event)结构定义.md#)。
+关于操作记录的详细信息，请参考[操作事件\(Event\)结构定义](../../../../intl.zh-CN/用户指南/操作事件(Event)结构定义.md#)。
 
