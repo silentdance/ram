@@ -15,7 +15,7 @@ The following table lists some common policies that can be created in RAM to man
 
 ## Attach custom policies to RAM users {#section_z9a_zmd_ey3 .section}
 
-1.  Create custom policies by referring to [SLB authorization examples](#section_hwy_ypl_5gb).
+1.  Create custom policies according to the subsequent SLB authorization examples.
 
     For more information, see [Policy management](../../../../reseller.en-US/User Guide/Permission management/Policy management.md#).
 
