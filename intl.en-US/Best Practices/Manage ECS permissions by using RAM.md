@@ -15,7 +15,7 @@ The following table lists some common policies that can be created in RAM to man
 
 ## Attach custom policies to RAM users {#section_03 .section}
 
-1.  Create custom policies by referring to [ECS authorization examples](#section_01).
+1.  Create custom policies according to the subsequent ECS authorization examples.
 
     For more information, see [Policy management](../../../../reseller.en-US/User Guide/Permission management/Policy management.md#).
 
