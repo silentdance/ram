@@ -33,7 +33,7 @@ The endpoint for API access is `https://ram.aliyuncs.com`.
 
 ## Alibaba Cloud products supporting RAM {#section_e4d_dmk_xdb .section}
 
-RAM can be integrated with a wide range of Alibaba Cloud products. For more information, see [Cloud services supporting RAM](../../../../../reseller.en-US/Product Introduction/Cloud services supporting RAM.md).
+RAM can be integrated with a wide range of Alibaba Cloud products. For more information, see [Alibaba Cloud services that work with RAM](../../../../reseller.en-US/Product Introduction/Alibaba Cloud services that work with RAM.md).
 
 ## Pricing {#section_f4d_dmk_xdb .section}
 
