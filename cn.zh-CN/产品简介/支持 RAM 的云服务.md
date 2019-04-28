@@ -14,7 +14,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 ## 支持 RAM/STS 的云服务列表 {#section_00 .section}
 
-以下表格分别罗列了阿里云各个模块下支持 RAM/STS 的云服务：[弹性计算](#section_01)、[云数据库](#section_02)、[存储与 CDN](#section_03)、[网络](#section_04)、[分析](#section_05)、[云通信](#section_06)、[监控与管理](#section_07)、[应用服务](#section_08)、[互联网中间件](#section_09)、[消息队列 MQ](#section_10)、[移动云](#section_11)、[视频服务](#section_12)、[大数据（数加）](#section_13)、[安全（云盾）](#section_14)、[云市场](#section_15)、[域名与网站](#section_16)、[费用中心](#section_17)[工单](#section_18)、[企业控制台](#section_19)。
+以下表格分别罗列了阿里云各个模块下支持 RAM/STS 的云服务：[弹性计算](#section_01)、[云数据库](#section_02)、[存储与 CDN](#section_03)、[网络](#section_04)、[分析](#section_05)、[云通信](#section_06)、[监控与管理](#section_07)、[应用服务](#section_08)、[互联网中间件](#section_09)、[消息队列 MQ](#section_10)、[移动云](#section_11)、[视频服务](#section_12)、[大数据（数加）](#section_13)、[安全（云盾）](#section_14)、[云市场](#section_15)、[域名与网站](#section_16)、[费用中心](#section_17)[工单](#section_18)。
 
 每个表格具体包含如下信息：
 
@@ -256,16 +256,6 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|企业级分布式应用服务 EDAS|√|√|×|×|服务级别|AliyunEDASFullAccess|[子账号管理](https://www.alibabacloud.com/help/zh/doc-detail/44023.htm)|
-|分布式关系型数据库服务 DRDS|√|√|×|√|资源级别| -   AliyunDRDSFullAccess
--   AliyunDRDSReadOnlyAccess
-
- | -
-
- |
-|业务实时监控服务 ARMS|√|√|×|×|服务级别|AliyunARMSFullAccess|[创建 RAM 子账号并授权](../../../../intl.zh-CN/访问控制/创建 RAM 子账号并授权.md#)|
-|应用配置管理|√|√|√|√|资源级别|AliyunACMFullAccess|[访问权限控制](../../../../intl.zh-CN/访问控制/访问权限控制.md#)|
-|链路追踪|√|○|×|○|服务级别|AliyunTracingAnalysisFullAccess|-|
 
 ## 消息队列 MQ {#section_10 .section}
 
@@ -403,9 +393,4 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
 |工单|√|○|×|○|服务级别|AliyunSupportFullAccess|-|
-
-## 企业控制台 {#section_19 .section}
-
-|服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
-|:--|:-------|:-------|:-------|:-------|:---|:---|:---|
 
