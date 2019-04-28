@@ -256,6 +256,15 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
+|企业级分布式应用服务 EDAS|√|√|×|×|服务级别|AliyunEDASFullAccess|[子账号管理](https://www.alibabacloud.com/help/zh/doc-detail/44023.htm)|
+|分布式关系型数据库服务 DRDS|√|√|×|√|资源级别| -   AliyunDRDSFullAccess
+-   AliyunDRDSReadOnlyAccess
+
+ | -
+
+ |
+|业务实时监控服务 ARMS|√|√|×|×|服务级别|AliyunARMSFullAccess|[创建 RAM 子账号并授权](../../../../intl.zh-CN/访问控制/创建 RAM 子账号并授权.md#)|
+|应用配置管理|√|√|√|√|资源级别|AliyunACMFullAccess|[访问权限控制](../../../../intl.zh-CN/访问控制/访问权限控制.md#)|
 
 ## 消息队列 MQ {#section_10 .section}
 
