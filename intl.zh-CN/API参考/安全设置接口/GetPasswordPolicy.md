@@ -1,4 +1,4 @@
-# GetPasswordPolicy {#doc_api_977673 .reference}
+# GetPasswordPolicy {#doc_api_Ram_GetPasswordPolicy .reference}
 
 获取子用户密码强度等策略。
 
@@ -21,7 +21,12 @@
 |PasswordPolicy| | |密码策略。
 
  |
-|└HardExpiry|Boolean|false|过期后是否可以登录。默认为false，过期后可登录。
+|└HardExpiry|Boolean|false|密码是否过期。
+
+ 取值为`true`或`false`，如果未指定此参数的值，系统默认为`false`。
+
+ -   如果取值为`true`，此时必须由主账号重置密码后，RAM用户才能正常登录。
+-   如果取值为`false`，此时RAM用户可以在密码过期后自行更改密码，并继续以用户身份登录。
 
  |
 |└MaxLoginAttemps|Integer|5|一小时内使用错误密码尝试登录最大次数（重置密码可清除尝试登录计数）。
