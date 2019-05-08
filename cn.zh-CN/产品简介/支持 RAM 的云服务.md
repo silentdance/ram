@@ -14,7 +14,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 ## 支持 RAM/STS 的云服务列表 {#section_00 .section}
 
-以下表格分别罗列了阿里云各个模块下支持 RAM/STS 的云服务：[弹性计算](#section_01)、[云数据库](#section_02)、[存储与 CDN](#section_03)、[网络](#section_04)、[分析](#section_05)、[云通信](#section_06)、[监控与管理](#section_07)、[应用服务](#section_08)、[互联网中间件](#section_09)、[消息队列 MQ](#section_10)、[移动云](#section_11)、[视频服务](#section_12)、[大数据（数加）](#section_13)、[安全（云盾）](#section_14)、[云市场](#section_15)、[域名与网站](#section_16)、[费用中心](#section_17)、[工单](#section_18)。
+以下表格分别罗列了阿里云各个模块下支持 RAM/STS 的云服务：[弹性计算](#section_01)、[云数据库](#section_02)、[存储与 CDN](#section_03)、[网络](#section_04)、[分析](#section_05)、[云通信](#section_06)、[监控与管理](#section_07)、[应用服务](#section_08)、[互联网中间件](#section_09)、[消息队列 MQ](#section_10)、[移动云](#section_11)、[视频服务](#section_12)、[大数据（数加）](#section_13)、[安全（云盾）](#section_14)、[云市场](#section_15)、[域名与网站](#section_16)、[费用中心](#section_17)、[工单](#section_18)、[消息](#section_19)。
 
 每个表格具体包含如下信息：
 
@@ -38,7 +38,10 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunESSReadOnlyAccess
 
  |[API使用须知](../../../../intl.zh-CN/API参考/API使用须知.md#)|
-|容器服务|√|√|×|√|服务级别|AliyunCSFullAccess|[使用子账号](../../../../intl.zh-CN/用户指南/授权管理/使用子账号.md#)|
+|容器服务|√|√|×|√|服务级别| -   AliyunCSFullAccess
+-   AliyunCSReadOnlyAccess
+
+ |[使用子账号](../../../../intl.zh-CN/用户指南/授权管理/使用子账号.md#)|
 |容器镜像服务|√|√|×|×|资源级别| -   AliyunContainerRegistryFullAccess
 -   AliyunContainerRegistryReadOnlyAccess
 
@@ -96,7 +99,10 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunDTSReadOnlyAccess
 
  |[使用子账号访问DTS](https://www.alibabacloud.com/help/zh/doc-detail/47568.htm)|
-|数据库备份 DBS|√|√|√|√|服务级别|AliyunDBSFullAccess|-|
+|数据库备份 DBS|√|√|√|√|服务级别| -   AliyunDBSFullAccess
+-   AliyunDBSReadOnlyAccess
+
+ |-|
 |分布式关系型数据库 DRDS|√|√|√|√|资源级别| -   AliyunDRDSReadOnlyAccessyAccess
 -   AliyunDRDSFullAccess
 
@@ -117,7 +123,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 |文件存储 NAS|√|○|×|○|操作级别| -   AliyunNASFullAccess
 -   AliyunNASReadOnlyAccess
 
- |[管理文件系统数据访问权限](../../../../intl.zh-CN/使用指南/管理文件系统数据访问权限.md#)|
+ |[管理文件系统数据访问权限](../../../../intl.zh-CN/用户指南/管理文件系统数据访问权限.md#)|
 |表格存储|√|√|×|√|资源级别| -   AliyunOTSFullAccess
 -   AliyunOTSReadOnlyAccess
 -   AliyunOTSWriteOnlyAccess
@@ -402,4 +408,10 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
 |工单|√|○|×|○|服务级别|AliyunSupportFullAccess|-|
+
+## 消息 {#section_19 .section}
+
+|服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
+|:--|:-------|:-------|:-------|:-------|:---|:---|:---|
+|消息中心|√|○|×|○|服务级别|AliyunNotificationsFullAccess|-|
 
