@@ -117,9 +117,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 |对象存储 OSS|√|√|√|√|资源级别| -   AliyunOSSFullAccess
 -   AliyunOSSReadOnlyAccess
 
- | [如何构建RAM Policy](../../../../intl.zh-CN/开发指南/权限控制/基于RAM Policy的权限控制/如何构建RAM Policy.md#)
-
- |
+ |[如何构建RAM Policy](../../../../intl.zh-CN/开发指南/权限控制/基于RAM Policy的权限控制/如何构建RAM Policy.md#)|
 |文件存储 NAS|√|○|×|○|操作级别| -   AliyunNASFullAccess
 -   AliyunNASReadOnlyAccess
 
