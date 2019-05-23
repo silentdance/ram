@@ -46,7 +46,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunContainerRegistryReadOnlyAccess
 
  |[仓库访问控制](https://www.alibabacloud.com/help/zh/doc-detail/67992.htm)|
-|资源编排 ROS|√|√|×|×|服务级别| -   AliyunROSFullAccess
+|资源编排 ROS|√|√|√|√|服务级别| -   AliyunROSFullAccess
 -   AliyunROSReadOnlyAccess
 
  |[使用 RAM 控制资源访问](../../../../intl.zh-CN/快速入门/使用 RAM 控制资源访问.md#)|
@@ -224,7 +224,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 |访问控制|√|√|√|√|资源级别| -   AliyunRAMFullAccess
 -   AliyunRAMReadOnlyAccess
 
- |[RAM鉴权](../../../../intl.zh-CN/API参考/RAM鉴权.md#)|
+ |[RAM鉴权](../../../../intl.zh-CN/API参考（RAM）/RAM鉴权.md#)|
 |密钥管理服务|√|√|√|√|资源级别| -   AliyunKMSFullAccess
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
@@ -303,7 +303,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
  |[子帐号使用控制台说明](../../../../intl.zh-CN/用户指南/子帐号使用控制台说明.md#)|
 |视频点播|√|√|√|√|服务级别|AliyunVODFullAccess|-|
-|视频直播|√|√|×|√|服务级别|AliyunLiveFullAccess|[API鉴权规则](../../../../intl.zh-CN/API参考/API鉴权规则.md#)|
+|视频直播|√|√|×|√|资源级别|AliyunLiveFullAccess|[API鉴权规则](../../../../intl.zh-CN/API参考/API鉴权规则.md#)|
 |音视频通信 RTC|√|√|×|×|资源级别| -
 
  | -
