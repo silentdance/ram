@@ -19,7 +19,7 @@ To maintain account security, follow these account security practice principles:
 
 AKs have the same permissions as logon passwords. However, AKs are used for program access while logon passwords are used to log on to the console. Because AKs are stored in cleartext in configuration files, there is a higher disclosure risk.
 
-Configure RAM user identities for all application systems and follow the minimum authorization principle in the case of [attaching policies to a RAM user](../../../../../reseller.en-US/Quick Start/Authorize RAM users.md#).
+Configure RAM user identities for all application systems and follow the minimum authorization principle in the case of [attaching policies to a RAM user](../../../../reseller.en-US/Quick Start/Authorize RAM users.md#).
 
 ## Principle 4: Use policies with IP restrictions {#section_r5n_xkk_xdb .section}
 
@@ -33,7 +33,7 @@ All users that are granted special operation permissions must be configured with
 
 Therefore, even if a RAM user's logon password or AK is disclosed, attackers will be unable to obtain account information as long as the MFA device is not lost.
 
-For more restrictions, see [Policy language syntax](../../../../../reseller.en-US/User Guide/Permission management/Policy language/Policy language syntax.md#).
+For more restrictions, see [Policy structure and syntax](../../../../reseller.en-US/User Guide/Permission management/Policy language/Policy structure and syntax.md#).
 
 There is no such thing as absolute security, but only best practices. In combination with these protection mechanisms, adherence to the best security practice principles will significantly secure your account assets.
 
