@@ -106,7 +106,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 |分布式关系型数据库 DRDS|√|√|√|√|资源级别| -   AliyunDRDSReadOnlyAccessyAccess
 -   AliyunDRDSFullAccess
 
- |[DRDS 支持的资源授权](https://help.aliyun.com/document_detail/51480.html) -
+ | -
 
  |
 
@@ -292,7 +292,6 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|移动数据分析|√|○|×|○|服务级别|-|[RAM子账号访问](https://help.aliyun.com/document_detail/56608.html)|
 
 ## 视频服务 {#section_12 .section}
 
