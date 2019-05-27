@@ -39,7 +39,7 @@
 
 1.  Alice 使用程序向企业 IdP 发起登录请求。
 2.  IdP 生成一个 SAML 响应，其中包含关于登录用户的 SAML 断言，并将此响应返回给程序。
-3.  程序调用阿里云 STS 服务提供的 API AssumeRoleWithSAM，并传递以下信息：阿里云中身份提供商的 ARN、要扮演的角色的 ARN 以及来自企业 IdP 的 SAML 断言。
+3.  程序调用阿里云 STS 服务提供的 API AssumeRoleWithSAML，并传递以下信息：阿里云中身份提供商的 ARN、要扮演的角色的 ARN 以及来自企业 IdP 的 SAML 断言。
 4.  STS 服务将校验 SAML 断言并返回临时安全凭证给程序。
 5.  程序可以开始使用临时安全凭证来调用阿里云 API。
 

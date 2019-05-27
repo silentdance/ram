@@ -4,7 +4,7 @@ This topic describes the scenario, process, and configuration of role-based SSO.
 
 ## Scenario {#section_t5k_rhp_chb .section}
 
-In scenarios where Alibaba Cloud and the identity management system of an enterprise work together to perform role-based SSO, Alibaba Cloud is the SP and the the enterprise system is the IdP. Through role-based SSO, the enterprise can manage users in the local IdP without synchronizing users from your IdP to Alibaba Cloud, and the enterprise employee can log on to Alibaba Cloud using a specific RAM role.
+In scenarios where Alibaba Cloud and the identity management system of an enterprise work together to perform role-based SSO, Alibaba Cloud is the service provider \(SP\) and the enterprise system is the identity provider \(IdP\). Through role-based SSO, the enterprise can manage users in the local IdP without synchronizing users from your IdP to Alibaba Cloud, and the enterprise employee can log on to Alibaba Cloud by using a specific RAM role.
 
 ## Role-based SSO process {#section_wcm_shp_chb .section}
 
@@ -16,15 +16,15 @@ Through role-based SSO, you can access Alibaba Cloud either by logging on to the
 
 As shown in the figure, after the administrator configures role-based SSO, the employee \(Alice\) can log on to Alibaba Cloud after the following steps are completed:
 
-1.  Alice uses the browser to select Alibaba Cloud as the target service on logon page of the IdP.
+1.  Alice uses the browser to select Alibaba Cloud as the target service on the logon page of the IdP.
 
-    For example: If the IdP is Microsoft Active Directory Federation Service \(AD FS\), the log on URL will be `https://ADFSServiceName/adfs/ls/IdpInitiatedSignOn.aspx`.
+    For example, if the IdP is Microsoft Active Directory Federation Service \(AD FS\), the log on URL will be `https://ADFSServiceName/adfs/ls/IdpInitiatedSignOn.aspx`.
 
     **Note:** Some IdPs require users to log on first and then select an SSO application that represents Alibaba Cloud.
 
 2.  The IdP generates an SAML response to the browser.
 3.  The browser redirects to the page of the SSO service, and forwards the SAML response.
-4.  The SSO service uses the SAML response to request an STS token from Alibaba Cloud STS service, and generates a URL that can log on to the Alibaba Cloud console with the STS token.
+4.  The SSO service uses the SAML response to request an STS token from the Alibaba Cloud STS service, and generates a URL that can log on to the Alibaba Cloud console with the STS token.
 
     **Note:** If the SAML response contains attributes that map to multiple RAM roles, the user is prompted to select a role firstly.
 
@@ -39,13 +39,13 @@ As shown in the figure, the employee \(Alice\) can log on to Alibaba Cloud after
 
 1.  Alice initiates an authentication request to the IdP through a program.
 2.  The IdP generates an SAML response that contains the user's SAML assertion, and returns the SAML response to the program.
-3.  The program calls Alibaba Cloud STS service API action [AssumeRoleWithSAML](../../../../../intl.en-US/API Reference (STS)/Operation interfaces/AssumeRoleWithSAML.md#), and forwards the information including the ARN of an Alibaba Cloud identity provider, the ARN of the role to be assumed, and the SAML assertion obtained from the IdP.
-4.  STS service verifies the SAML assertion and returns an STS token to the program.
+3.  The program calls the AssumeRoleWithSAML API action of the Alibaba Cloud STS service, and forwards the information including the ARN of an Alibaba Cloud IdP, the ARN of the role to be assumed, and the SAML assertion obtained from the IdP.
+4.  The STS service verifies the SAML assertion and returns an STS token to the program.
 5.  The program calls an Alibaba Cloud API action with the STS token.
 
-## Role-based SSO configuration {#section_kq5_wwr_bhb .section}
+## Configure role-based SSO {#section_kq5_wwr_bhb .section}
 
-Before you use role-based SSO, you must set configurations to establish trust between Alibaba Cloud and your IdP. 
+Before you use role-based SSO, you must set configurations to establish trust between Alibaba Cloud and your IdP.
 
 1.  To make sure your IdP is trusted by Alibaba Cloud, you must configure the IdP in the Alibaba Cloud console.
 
