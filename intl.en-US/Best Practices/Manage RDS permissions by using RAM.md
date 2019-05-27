@@ -11,20 +11,20 @@ The following table lists some common policies that can be created in RAM to man
 |AliyunRDSFullAccess|Grants a RAM user full management permissions for RDS instances.|
 |AliyunRDSReadOnlyAccess|Grants a RAM user read-only permission for RDS instances.|
 
-**Note:** For more information about RDS permissions, see [Use RAM for RDS resource authorization](../../../../intl.en-US/API Reference/Use RAM for RDS resource authorization.md#).
+**Note:** For more information about RDS permissions, see [RAM authorization](../../../../reseller.en-US/API Reference/RAM authorization.md#).
 
 ## Attach custom policies to RAM users {#section_hcn_ich_5qp .section}
 
 1.  Create custom policies according to the subsequent RDS authorization examples.
 
-    For more information, see [Policy management](../../../../intl.en-US/User Guide/Permission management/Policy management.md#).
+    For more information, see [Policy management](../../../../reseller.en-US/User Guide/Permission management/Policy management.md#).
 
 2.  Locate the target policy and click the policy name.
 3.  On the **References** tab, click **Grant Permission**.
 4.  In the **Principal** field, enter the ID or name of the target RAM user.
 5.  Click **OK**.
 
-    **Note:** You can also attach policies to a RAM user or a RAM user group as needed. For more information, see [Permission granting in RAM](../../../../intl.en-US/User Guide/Permission management/Permission granting/Permission granting in RAM.md#).
+    **Note:** You can also attach policies to a RAM user or a RAM user group as needed. For more information, see [Permission granting in RAM](../../../../reseller.en-US/User Guide/Permission management/Permission granting/Permission granting in RAM.md#).
 
 
 ## RDS authorization examples {#section_en0_f0b_60y .section}
