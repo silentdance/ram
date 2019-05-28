@@ -1,34 +1,12 @@
 # Scenarios {#concept_xrp_jt2_xdb .concept}
 
-RAM is applicable to user account management and authorization in an enterprise, resource management and authorization between enterprises, and temporary authorization and management for apps running on untrusted user equipment \(UE\).
+This topic describes some of the common application scenarios of Resource Access Management \(RAM\).
 
-## Account management and authorization in an enterprise {#section_rvv_kt2_xdb .section}
-
-Assume that Enterprise A purchases several types of Alibaba Cloud resources \(such as ECS instances, RDS instances, SLB instances, and OSS buckets\), and its employees need to operate on these resources \(such as purchase new resources and perform O&M\). Different employees require different permissions because the employees have different responsibilities.
-
-Requirements:
-
--   For security and reliability, Enterprise A does not want to disclose its account key to its employees. Enterprise A prefers to create different RAM user accounts for their employees.
--   The employees can operate on resources only after they are authorized. All the fees incurred by the employees will not be charged independently but be paid by Enterprise A.
--   Enterprise A can revoke the permissions of a RAM user account or delete a RAM user account at any time.
-
-## Resource management and authorization between enterprises {#section_tvv_kt2_xdb .section}
-
-Assume that there are Enterprises A and B, and Enterprise A has purchased many Alibaba Cloud resources \(such as ECS instances, RDS instances, SLB instances, and OSS buckets\) for its business requirements.
-
-Requirements:
-
--   Enterprise A wants to focus on its business systems, so it entrusts O&M, monitoring, and management for its cloud resources to Enterprise B, and grants Enterprise B permissions for RAM.
--   Enterprise B can assign O&M tasks to its employees. In this way, Enterprise B can precisely control the employees' permissions on the cloud resources of Enterprise A.
--   If Enterprises A and B terminate their O&M entrustment contract, Enterprise A can revoke the permissions of Enterprise B at any time.
-
-## Temporary authorization and management for apps running on untrusted UE {#section_vvv_kt2_xdb .section}
-
-Assume that Enterprise A has developed a mobile app and has purchased OSS for it. Enterprise A can then upload data to and download data from their OSS bucket for app data.
-
-Requirements:
-
--   Enterprise A does not want to use their application server to transmit data to and from OSS. Instead, they want their application to have direct permission to send data to OSS.
--   Because the mobile application runs on untrusted UE that is not controlled by Enterprise A, the enterprise does not want to store their security key in the application.
--   Enterprise A wants to minimize security risks by, for example, giving the app a temporary access token with the minimum permissions that the app needs to connect to OSS and restricting the access duration to a 30 minute window.
+|Application scenario|Description|
+|--------------------|-----------|
+|[User management and access control](../../../../reseller.en-US/User Guide/Scenarios/User management and access control.md#)|Enterprise A has bought several types of Alibaba Cloud resources, such as ECS instances, RDS instances, SLB instances, and OSS buckets for a project. During this project, many employees need to perform operations on these cloud resources, but different employees require different permissions to complete different operations.|
+|[Temporary authorization for mobile apps](../../../../reseller.en-US/User Guide/Scenarios/Grant temporary permissions to mobile apps.md#)|Enterprise A has developed a mobile app, which runs on users' own devices. Enterprise A cannot manage these devices directly and wants to use Alibaba Cloud OSS so that the app can upload data to and download data from OSS.|
+|[Cross-account resource authorization and access](../../../../reseller.en-US/User Guide/Scenarios/Cross-account resource authorization and access.md#)|Account A and Account B are Alibaba Cloud accounts of two different enterprises \(Enterprise A and Enterprise B, respectively\). Enterprise A has bought various cloud resources \(such as ECS instances, RDS instances, SLB instances, and OSS buckets\) to support its business. Account A is the resource owner and wants to grant Account B the relevant permissions to perform operations on resources of Account A.|
+|[Dynamic identity and permission management of cloud applications](../../../../reseller.en-US/User Guide/Scenarios/Dynamic identity and permission management of cloud applications.md#)|An enterprise has bought ECS instances and wants to deploy its applications in ECS. The enterprise wants to allow the applications to access other Alibaba Cloud APIs by using AccessKeys.|
+|[Externally authorized account logon](../../../../reseller.en-US/User Guide/Scenarios/Use an externally authorized account to log on to Alibaba Cloud.md#)|Enterprise A has two departments that use Alibaba Cloud resources. Each department has its own Alibaba Cloud account \(named A1 and A2\). Enterprise A also has its own domain account system, namely Microsoft Active Directory \(AD\) and Active Directory Federation Services \(AD FS\).|
 
