@@ -1,5 +1,7 @@
 # Error messages {#reference_j1t_zmv_xdb .reference}
 
+This topic describes information about RAM API errors. For more information, see [API Error Center](https://error-center.alibabacloud.com/status/product/Ram).
+
 ## HTTP status 400 {#section_ogq_dnv_xdb .section}
 
 **InvalidParameter**
