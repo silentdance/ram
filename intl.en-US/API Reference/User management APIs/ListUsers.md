@@ -118,7 +118,7 @@ Response example
 }
 ```
 
-## Error codes { .section}
+## Errors { .section}
 
 For a list of error codes, visit the [API Error Center](https://error-center.alibabacloud.com/status/product/Ram?spm=5176.10421674.0.0.29c5cav7cav7Io).
 
