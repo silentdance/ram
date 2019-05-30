@@ -4,13 +4,13 @@
 
 ## 前提条件 {#section_01 .section}
 
-Native 应用扮演登录用户访问阿里云首先需要创建应用，为应用提供恰当的名称、OAuth 范围、回调地址等关键信息。详情请参考：[创建应用](cn.zh-CN/用户指南/开放授权管理（OAuth）/管理 OAuth 应用/创建应用.md#)。由于 Native 应用运行在非可信环境，无法有效保护应用密钥，因此 Native 应用不使用应用密钥。
+Native 应用扮演登录用户访问阿里云首先需要创建应用，为应用提供恰当的名称、OAuth 范围、回调地址等关键信息。详情请参考：[创建应用](intl.zh-CN/用户指南/开放授权管理（OAuth）/管理 OAuth 应用/创建应用.md#)。由于 Native 应用运行在非可信环境，无法有效保护应用密钥，因此 Native 应用不使用应用密钥。
 
 **说明：** 应用创建成功之后，可以在云账号内直接扮演用户。
 
 ## 基本流程 {#section_02 .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23751/155868652814376_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23751/155920092814376_zh-CN.png)
 
 1.  用户通过浏览器登录 Native 应用。
 2.  Native 应用重定向到阿里云 OAuth 2.0 服务并将 URL 返回给浏览器。
