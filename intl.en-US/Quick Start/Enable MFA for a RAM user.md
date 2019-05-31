@@ -15,7 +15,7 @@ This topic describes how to enable Multi-Factor Authentication \(MFA\) for a RAM
 6.  Open Google Authenticator and tap **BEGIN SETUP**. 
     -   Tap **Scan barcode** and scan the following QR code.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/221961/155912189747637_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/221961/155928376447637_en-US.png)
 
     -   Tap **Manual entry**, enter the account name and key, and then tap the check mark \(**√**\) icon.
 
