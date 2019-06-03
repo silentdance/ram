@@ -6,7 +6,7 @@ This topic describes how to use RAM SDKs. Before using a RAM SDKs, we recommend 
 
  **Languages or environments supported by RAM SDKs** 
 
--   [Java SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/Java SDK.md#)
+-   [Java SDK](reseller.en-US//Java SDK.md#)
 -   [.Net SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/.Net SDK/Samples.md#)
 -   [Python SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/Python SDK/Samples.md#)
 -   [PHP SDK](reseller.en-US/SDK Reference/SDK Reference - RAM/PHP SDK/Samples.md#)
