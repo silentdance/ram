@@ -229,7 +229,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
 
- |[使用RAM实现KMS资源授权](../../../../intl.zh-CN/用户指南/使用RAM实现KMS资源授权.md#)|
+ |[使用 RAM 实现 KMS 资源授权](../../../../intl.zh-CN/用户指南/使用 RAM 实现 KMS 资源授权.md#)|
 |智能顾问|-|-|-|-|操作级别|-|-|
 
 ## 应用服务 {#section_08 .section}
