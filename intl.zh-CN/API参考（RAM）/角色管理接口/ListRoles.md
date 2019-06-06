@@ -1,6 +1,6 @@
 # ListRoles {#doc_api_Ram_ListRoles .reference}
 
-列出角色。
+调用ListRoles接口列出角色。
 
 ## 调试 {#apiExplorer .section}
 
@@ -10,17 +10,15 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-|Action|String|是|ListRoles| 系统规定参数。取值：ListRoles
+|Action|String|是|ListRoles|系统规定参数。取值：ListRoles
 
  |
-|Marker|String|否|EXAMPLE| 当请求的返回结果被截断时，可以使用 `Marker` 获取从当前截断位置之后的内容。
+|Marker|String|否|EXAMPLE|当请求的返回结果被截断时，可以使用`Marker`获取从当前截断位置之后的内容。
 
  |
-|MaxItems|Integer|否|100| 指定返回结果的条数。当返回结果达到 `MaxItems` 限制被截断时，返回参数 `IsTruncated` 将等于 `true` 。
+|MaxItems|Integer|否|100|指定返回结果的条数。当返回结果达到`MaxItems`限制被截断时，返回参数`IsTruncated`将等于`true`。
 
- 取值范围：1
-
- -   1000，默认值：100。
+ 取值范围：1 ~ 1000，默认值：100。
 
  |
 
@@ -28,34 +26,34 @@
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|IsTruncated|Boolean|true| 请求返回结果是否被截断。
+|IsTruncated|Boolean|true|请求返回结果是否被截断。
 
  |
-|Marker|String|EXAMPLE| 当IsTruncated为true时才有此字段。当返回true时，需要继续调用此接口，并且使用Marker获取截断后的内容。
+|Marker|String|EXAMPLE|当`IsTruncated`为`true`时才有此字段。当返回`true`时，需要继续调用此接口，并且使用`Marker`获取截断后的内容。
 
  |
-|RequestId|String|7B8A4E7D-6CFF-471D-84DF-195A7A241ECB| 请求ID。
+|RequestId|String|7B8A4E7D-6CFF-471D-84DF-195A7A241ECB|请求ID。
 
  |
-|Roles| | | 角色名称列表。
+|Roles| | |角色信息。
 
  |
-|└Arn|String|acs:ram::123456789012\*\*\*\*:role/ECSAdmin| 角色的资源描述符。
+|└Arn|String|acs:ram::123456789012\*\*\*\*:role/ECSAdmin|角色的资源描述符。
 
  |
-|└CreateDate|String|2015-01-23T12:33:18Z| 创建时间。
+|└CreateDate|String|2015-01-23T12:33:18Z|创建时间。
 
  |
-|└Description|String|ECS管理角色| 角色的文字描述。
+|└Description|String|ECS管理角色|角色的备注。
 
  |
-|└RoleId|String|901234567890\*\*\*\*| 角色ID。
+|└RoleId|String|901234567890\*\*\*\*|角色ID。
 
  |
-|└RoleName|String|ECSAdmin| 角色名称。
+|└RoleName|String|ECSAdmin|角色名称。
 
  |
-|└UpdateDate|String|2015-01-23T12:33:18Z| 更新时间。
+|└UpdateDate|String|2015-01-23T12:33:18Z|更新时间。
 
  |
 
