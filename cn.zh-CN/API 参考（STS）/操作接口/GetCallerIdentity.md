@@ -22,13 +22,8 @@
 请求示例
 
 ``` {#codeblock_39p_4iy_qco}
-
-
-
-
 https://sts.aliyuncs.com?Action=GetCallerIdentity
-&<公共请求参数>
-			
+&<公共请求参数>        
 ```
 
 返回示例
