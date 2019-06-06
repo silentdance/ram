@@ -17,7 +17,7 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
  |
 |RoleName|String|Yes|ECSAdmin| The RAM role name. It must be 1 to 64 characters in length.
 
- Patter: `^[a-zA-Z0-9\.@\-]+$`
+ Pattern: `^[a-zA-Z0-9\.@\-]+$`
 
  |
 |AssumeRolePolicyDocument|String|Yes|\{"Statement":\[\{"Action":"sts:AssumeRole","Effect":"Allow","Principal":\{"RAM":"acs:ram::123456789012\*\*\*\*:root"\}\}\],"Version":"1"\}|The policy text that specifies one or more entities entrusted to assume the RAM role. The entrusted entity can be an Alibaba Cloud account, an Alibaba Cloud service, or an identity provider \(IdP\).|
@@ -27,7 +27,7 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
 
 -   The following policy allows the RAM role to be assumed by RAM users under the entrusted Alibaba Cloud account \(ID: 123456789012\*\*\*\*\):
 
-    ```
+    ``` {#codeblock_42b_8ed_xi3}
     {
     "Statement": [
     {
@@ -46,7 +46,7 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
 
 -   The following policy allows the RAM role to be assumed by the RAM user \(testuser\) under the entrusted Alibaba Cloud account \(ID: 123456789012\*\*\*\*\):
 
-    ```
+    ``` {#codeblock_six_a47_akl}
     {
     "Statement": [
     {
@@ -65,7 +65,7 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
 
 -   The following policy allows the RAM role to be assumed by ECS under the current Alibaba Cloud account:
 
-    ```
+    ``` {#codeblock_tz5_drp_quv}
     {
     "Statement": [
     {
@@ -86,7 +86,7 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
 
 -   The following policy allows the RAM role to be assumed by users under the IdP \(testprovider\) in the current Alibaba Cloud account \(ID: 123456789012\*\*\*\*\):
 
-    ```
+    ``` {#codeblock_2di_2l2_90t}
     {
         "Statement": [
             {
@@ -168,7 +168,7 @@ Response example
 }
 ```
 
-## Errors { .section}
+## Errors {#section_iqc_x1d_1u6 .section}
 
 For a list of error codes, visit the [API Error Center](https://error-center.alibabacloud.com/status/product/Ram?spm=5176.10421674.0.0.29c5cav7cav7Io).
 
