@@ -1,6 +1,6 @@
 # GetCallerIdentity {#reference_yyw_ssv_xdb .reference}
 
-调用 GetCallerIdentity 接口，获取当前调用者的身份信息。
+调用 GetCallerIdentity 接口获取当前调用者的身份信息。
 
 ## 请求参数 {#section_it1_ksv_xdb .section}
 
@@ -15,7 +15,7 @@
 |RequestId|String|2C9BE469-4A35-44D5-9529-CAA280B11603|请求 ID。|
 |Arn|String|acs:ram::196813200012\*\*\*\*:user/admin|当前调用者的 ARN。|
 |AccountId|String|196813200012\*\*\*\*|当前调用者所属主帐号的数字 ID。|
-|UserId|String|216959339000\*\*\*\*|当前调用者的用户 ID。如果当前调用者是主帐号，则返回值与`AccountId`相同。|
+|UserId|String|216959339000\*\*\*\*|当前调用者的用户 ID。如果当前调用者是主帐号，则返回值与AccountId相同。|
 
 ## 示例 {#section_tdy_lsv_xdb .section}
 
