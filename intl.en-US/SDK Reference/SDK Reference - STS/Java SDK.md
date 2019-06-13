@@ -42,9 +42,9 @@ Yo can use Maven to manage project dependencies or download the STS SDK JAR pack
 
         **Note:** The `aliyun-java-sdk` artifact is added to the [Maven repository](https://maven-repository.com/artifact/com.aliyun). Therefore, you do not need to configure the settings.xml file.
 
-    3.  Download the target JAR package and add the package to the project.
-        -   [Java SDK](https://develop.aliyun.com/tools/sdk#/java)
-        -   [GitHub](https://github.com/aliyun/aliyun-openapi-java-sdk/tree/master/aliyun-java-sdk-sts)
+-   Download the target JAR package and add the package to the project.
+    -   [Java SDK](https://develop.aliyun.com/tools/sdk#/java)
+    -   [GitHub](https://github.com/aliyun/aliyun-openapi-java-sdk/tree/master/aliyun-java-sdk-sts)
 
 ## Example {#section_be7_hph_1z9 .section}
 
