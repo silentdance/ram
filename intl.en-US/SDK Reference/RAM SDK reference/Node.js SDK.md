@@ -22,7 +22,7 @@ ALY = require("aliyun-sdk")
 // Alibaba Cloud Resource Access Management (RAM) is a global service. Its API endpoint is China (Hangzhou). Here, set "Region" to "cn-hangzhou".
 var ram = new ALY.RAM({
         accessKeyId: "<access-key-id>",
-        secretAccessKey: "<access-key-secret>",
+        AccessKeysecret: "<access-key-secret>",
         endpoint: 'https://ram.aliyuncs.com',
         apiVersion: '2015-05-01'
 });
