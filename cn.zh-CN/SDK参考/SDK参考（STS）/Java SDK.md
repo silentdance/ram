@@ -115,6 +115,6 @@ public class StsServiceSample {
 **说明：** 
 
 -   请修改 access key ID 和 access key secret 为有效值。
--   STS 各区域的 endpoint 请参考：[接入地址](../../../../intl.zh-CN/API 参考（STS）/调用方式/接入地址.md#)。
+-   STS 各区域的 endpoint，请参考：[接入地址](../../../../intl.zh-CN/API 参考（STS）/调用方式/接入地址.md#)。
 -   AssumeRole 接口相关信息，请参考：[AssumeRole](../../../../intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md#)。
 
