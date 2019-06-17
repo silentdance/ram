@@ -4,7 +4,7 @@
 
 ## Node.js SDK 的安装 {#section_egk_sbz_xdb .section}
 
-通过 npm 安装：
+通过 npm 安装 Node.js SDK：
 
 ``` {#codeblock_rfl_xaf_zql}
 npm install aliyun-sdk
@@ -23,7 +23,7 @@ const Core = require('@alicloud/pop-core');
 // 构建阿里云 Client 时需要设置 access key ID 和 access key secret
 var client = new Core({
   accessKeyId: '<accessKeyId>',
-  secretAccessKey: '<accessSecret>',
+  AccessKeysecret: '<accessSecret>',
   endpoint: 'https://sts.aliyuncs.com',
   apiVersion: '2015-04-01'
 });
@@ -44,6 +44,6 @@ client.request('AssumeRole', params).then((result) => {
 
 **说明：** 
 
--   STS 各区域的 endpoint 请参考：[接入地址](../../../../intl.zh-CN/API 参考（STS）/调用方式/接入地址.md#)。
+-   STS 各区域的 endpoint，请参考：[接入地址](../../../../intl.zh-CN/API 参考（STS）/调用方式/接入地址.md#)。
 -   AssumeRole 接口相关信息，请参考：[AssumeRole](../../../../intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md#)。
 

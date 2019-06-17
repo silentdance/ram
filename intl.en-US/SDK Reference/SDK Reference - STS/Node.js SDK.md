@@ -23,7 +23,7 @@ const Core = require('@alicloud/pop-core');
 // Set the access key ID and access key secret.
 var client = new Core({
   accessKeyId: '<accessKeyId>',
-  secretAccessKey: '<accessSecret>',
+  AccessKeysecret: '<accessSecret>',
   endpoint: 'https://sts.aliyuncs.com',
   apiVersion: '2015-04-01'
 });
