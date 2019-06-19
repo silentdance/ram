@@ -19,9 +19,7 @@ ActionTrail 可以记录 RAM 的如下操作信息：
 -   主账号或 RAM 用户的登录信息，详情请参考 [ConsoleSignin](../../../../intl.zh-CN/用户指南/操作事件(Event)样例/ConsoleSignin.md#)。
 -   RAM 控制台的操作，例如：
 
-    ```language-json
-    
-    
+    ``` {#codeblock_9xd_uro_jdr .language-json}
     {
         "apiVersion":"2015-05-01",
         "eventId":"2cc52dee-d8d2-40c2-8de0-3a2cf1df****",
@@ -35,7 +33,7 @@ ActionTrail 可以记录 RAM 的如下操作信息：
             "GroupName":"grp1",
         },
         "serviceName":"Ram",
-        "sourceIpAddress":"42.120.74.90",
+        "sourceIpAddress":"42.120.XX.XX",
         "userAgent":"AliyunConsole",
         "userIdentity":{
             "type":"ram-user",
@@ -49,15 +47,12 @@ ActionTrail 可以记录 RAM 的如下操作信息：
                 }
             }
         }
-    }
-    						
+    }                        
     ```
 
 -   RAM/STS 的所有创建、变更、删除类 API 调用信息，例如：
 
-    ```language-json
-    
-    
+    ``` {#codeblock_z9g_6yp_y5y .language-json}
     {
         "apiVersion": "2015-05-01",
         "eventId": "234ef3c7-8938-4bd7-bb80-11754b7b****",
@@ -82,8 +77,7 @@ ActionTrail 可以记录 RAM 的如下操作信息：
             "accessKeyId": "f6Iz********EI4d",
             "userName": "Alice"
         }
-    }
-    						
+    }                        
     ```
 
 
