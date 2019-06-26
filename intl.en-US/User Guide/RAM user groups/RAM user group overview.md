@@ -1,6 +1,6 @@
 # RAM user group overview {#concept_662721 .concept}
 
-Alibaba Cloud RAM allows you to create RAM user groups to classify and organize these RAM users for easier user and permission management.
+Alibaba Cloud RAM allows you to create RAM user groups to classify and organize RAM users under your Alibaba Cloud account for easier user and permission management.
 
 -   If the responsibilities of a RAM user change, you only need to move the user to a RAM user group with the appropriate permissions. This action does not affect other RAM users.
 
