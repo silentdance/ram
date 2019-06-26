@@ -8,6 +8,6 @@ This topic describes how to delete a custom policy. You can delete a custom poli
 1.   Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram). 
 2.   Choose **Permissions** \> **Policies**. 
 3.   From the **Policy Type** drop-down list, select **Custom Policy**. 
-4.   In the **Policy Name** column, locate the target custom policy and click **Delete**. 
+4.   In the **Policy Name** column, find the target custom policy and click **Delete**. 
 5.   Click **OK**. 
 
