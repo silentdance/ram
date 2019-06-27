@@ -14,7 +14,7 @@
 3.  找到需要绑定多因素认证的 RAM 用户，单击其名称。
 4.  在**认证管理**页签下的**多因素认证设备**区域，单击**启用虚拟 MFA 设备**。
 5.  在移动设备端，下载并安装Google Authenticator应用。 
-    -   iOS：在 App Store 中搜索阿里云 Google Authenticator。
+    -   iOS：在 App Store 中搜索 Google Authenticator。
     -   Android：在应用市场中搜索 Google Authenticator。
 
         **说明：** 安卓版 Google Authenticator 还依赖外部二维码扫描组件，所以您还需要在应用市场中搜索安装条行码扫描器。
@@ -23,7 +23,7 @@
 7.  选择合适的方式添加多因素认证设备。 
     -   扫码添加：单击**开始设置** \> **扫描条形码**，扫描以下二维码。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/221961/156163233847637_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/221961/156163344547637_zh-CN.png)
 
     -   手动添加：单击**手动输入**，填写用户名和密钥，单击**√**。
 

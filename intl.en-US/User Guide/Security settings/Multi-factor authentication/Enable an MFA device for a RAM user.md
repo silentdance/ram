@@ -22,7 +22,7 @@ The following section uses the Google Authenticator app as an example.
 6.  Open Google Authenticator and tap **BEGIN SETUP**. 
     -   Tap **Scan barcode** and scan the QR code displayed on the **Scan the code** tab in the console.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/221961/156163234647637_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/221961/156163345347637_en-US.png)
 
     -   Tap **Manual entry**, enter the username and key, and then tap the check mark \(**√**\) icon.
 
