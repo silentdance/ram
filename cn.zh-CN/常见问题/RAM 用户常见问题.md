@@ -4,11 +4,11 @@
 
 ## RAM 用户登录地址在哪里？ {#section_x1f_w4x_ydb .section}
 
-RAM 用户登录地址如下： [RAM 用户登录页](https://signin-intl.aliyun.com/login.htm) 。
+RAM 用户登录地址如下： [RAM 用户登录页](https://signin-intl.aliyun.com/login.htm)。
 
-**说明：** 通过登录 [RAM 控制台](https://ram.console.aliyun.com/)，在概览页可以快速查询登录 RAM 用户登录地址。
+**说明：** 通过登录 [RAM 控制台](https://ram.console.aliyun.com/)，在概览页可以快速查询登录 RAM 用户登录地址。当您使用此地址登录时，系统会为您自动填写默认域名，您只需补齐 RAM 用户名称即可。
 
-RAM 用户的登录有以下几种：
+RAM 用户的登录有以下几种方式：
 
 -   方式一：<$username\>@<$AccountAlias\>.onaliyun.com 。例如：username@company-alias.onaliyun.com。
 
@@ -22,8 +22,6 @@ RAM 用户的登录有以下几种：
 
     **说明：** <$username\>为 RAM 用户名称，<$DomainAlias\> 为域别名。
 
-
-**说明：** 当您使用 RAM 控制台概览页的 RAM 用户登录链接登录时，系统会为您自动填写默认域名，您只需补齐 RAM 用户名称即可。
 
 关于 RAM 用户的登录地址和登录方式，请参考：[RAM 用户登录控制台](../../../../intl.zh-CN/用户指南/用户/RAM 用户登录控制台.md#)。
 
@@ -136,7 +134,7 @@ RAM 用户的登录有以下几种：
 
 目前续费管理没有统一的权限策略，需要根据具体产品自定义权限策略。一般需要授权给 RAM 用户购买该产品所需要的权限以及支付订单的权限。
 
-例如：RAM 用户进行 ECS 的续费管理所需权限，请参考：[RAM 用户采购云产品需要什么权限？](#section_ic3_fms_qfb)。给 RAM 用户授权，同时需要授予 `AliyunBSSOrderAccess`权限策略。
+例如：RAM 用户进行 ECS 的续费管理所需权限，请参考：[RAM 用户采购云产品需要什么权限？](#section_ic3_fms_qfb)给 RAM 用户授权，同时需要授予 `AliyunBSSOrderAccess`权限策略。
 
 ## RAM 用户使用资源所产生的费用怎么计算？ {#section_qqy_n1h_chb .section}
 
