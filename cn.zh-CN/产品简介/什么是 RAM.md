@@ -41,7 +41,7 @@ RAM 允许在一个云账号下创建并管理多个身份，并允许给单个�
 
 RAM 不收取服务费用，开通后即可使用该服务。
 
-请访问 [RAM 开通页面](https://buy-intl.aliyun.com/ram) 开通 RAM。
+请访问 [RAM 开通页面](https://buy-intl.aliyun.com/ram)开通 RAM。
 
 ## 支持 RAM 的云服务 {#section_o3g_i0s_tg3 .section}
 
