@@ -6,7 +6,7 @@
 
 RAM 用户和云账号的登录地址不同，RAM 用户不能通过云账户登录页面进行登录。
 
-RAM 用户登录地址如下：[RAM 用户登录地址](https://signin.aliyun.com/login.htm) 。
+RAM 用户登录地址如下：[RAM 用户登录地址](https://signin.alibabacloud.com/login.htm)。
 
 **说明：** 通过登录 [RAM 控制台](https://ram.console.aliyun.com/)，在概览页可以快速查询登录 RAM 用户登录地址。
 
