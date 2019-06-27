@@ -4,17 +4,17 @@ This topic describes how to enable a multi-factor authentication \(MFA\) device 
 
 The following section uses the Google Authenticator app as an example.
 
-1.   Log on to the [Alibaba Cloud console](https://partners-intl.console.aliyun.com/#/ram). 
-2.   Move the pointer over the account icon and click **Security Settings**. 
-3.   In the **Account Protection** section, click **Edit**. 
+1.  Log on to the [Alibaba Cloud console](https://partners-intl.console.aliyun.com/#/ram).
+2.  Move the pointer over the account icon and click **Security Settings**.
+3.  In the **Account Protection** section, click **Edit**. 
 
     **Note:** Virtual MFA is now renamed TOTP.
 
-4.   On the displayed page, select a scenario and select **TOTP**. 
-5.   Click **Submit**. 
-6.   On the displayed page, click **Verify now**. 
-7.   Enter the verification code and click **Submit**. 
-8.   Download and install Google Authenticator on you mobile phone. 
+4.  On the displayed page, select a scenario and select **TOTP**.
+5.  Click **Submit**.
+6.  On the displayed page, click **Verify now**.
+7.  Enter the verification code and click **Submit**.
+8.  Download and install Google Authenticator on you mobile phone. 
 
     **Note:** If you already installed Google Authenticator, click **Next**.
 
@@ -23,10 +23,10 @@ The following section uses the Google Authenticator app as an example.
 
         **Note:** You need to install a QR code scanner from the Google Play Store for Google Authenticator to identify QR codes.
 
-9.   After you install Google Authenticator, go back to the Identity Verification page and click **Next**. 
-10.  Open Google Authenticator and tap **BEGIN SETUP**. 
-    1.   Tap **Scan barcode** and scan the QR code on the Identity Verification page. 
-11.  On the Identity Verification page, enter the 6-digit verification code obtained from Google Authenticator and click **Next**. 
+9.  After you install Google Authenticator, go back to the Identity Verification page and click **Next**.
+10. Open Google Authenticator and tap **BEGIN SETUP**. 
+    1.  Tap **Scan barcode** and scan the QR code on the Identity Verification page.
+11. On the Identity Verification page, enter the 6-digit verification code obtained from Google Authenticator and click **Next**. 
 
     **Note:** The verification code is refreshed at an interval of 30 seconds.
 
