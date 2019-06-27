@@ -3,7 +3,7 @@
 本文主要介绍企业在使用角色 SSO 时，如何在企业身份提供商（IdP）中配置阿里云为可信 SAML 服务提供商（SP）。
 
 1.  企业 IdP 的 SAML SP 配置需要使用阿里云的 SAML 服务提供商元数据 URL：`https://signin.alibabacloud.com/saml-role/sp-metadata.xml`。 
-    1.  登录[RAM 控制台](https://ram.console.aliyun.com/)。
+    1.  登录 [RAM 控制台](https://ram.console.aliyun.com/)。
     2.  在左侧导航栏，单击 **SSO 管理**。
     3.  在**角色 SSO** 页签下查看 **SAML 服务提供商元数据 URL**。
 2.  在企业 IdP 中创建一个 SAML SP，并根据实际情况选择下面任意一种方式配置阿里云为依赖方： 
