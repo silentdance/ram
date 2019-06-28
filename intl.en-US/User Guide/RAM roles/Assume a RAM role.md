@@ -10,8 +10,8 @@ This topic describes how to assume a RAM role by using a RAM user under a truste
     -   For information about how to set a password, see [Change the password for an Alibaba Cloud account](reseller.en-US/User Guide/Security settings/Passwords/Change the password for an Alibaba Cloud account.md#).
 3.  The system policy `AliyunSTSAssumeRoleAccess` is attached to the RAM user. For information about how to grant permission to a RAM role, see [Grant permission to a RAM role](reseller.en-US/User Guide/RAM roles/Grant permission to a RAM role.md#).
 
-1.  Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram) as a RAM user.
-2.  Move the pointer over your account icon in the upper-right corner and click **Switch Role**.
+1.  Log on to the as a RAM user.
+2.  Move the pointer over the account icon in the upper-right corner and click **Switch Role**.
 3.  On the displayed Switch Role page, enter the enterprise alias or the default domain name in the **Enterprise Alias/Default Domain Name** filed and the RAM role name in the **Role Name** field. Then, click **Switch**.
 4.  Click **Switch Back to Logon User** to switch back to your logon identity. 
 
