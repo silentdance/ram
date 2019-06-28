@@ -4,7 +4,7 @@ This topic describes how to delete a RAM user. You can delete a RAM user when th
 
 1.  Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram).
 2.  Choose **Identities** \> **Users**.
-3.  In the **User Logon Name/Display Name** column, select target RAM user and click **Delete**.
+3.  In the **User Logon Name/Display Name** column, select the target RAM user and click **Delete**.
 4.  Click **OK**. 
 
     **Note:** Deleting an active RAM user may result in service failure. Exercise caution when performing this action.
