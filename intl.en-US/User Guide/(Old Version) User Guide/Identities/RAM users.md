@@ -14,7 +14,7 @@ An Alibaba Cloud Resource Access Management \(RAM\) user is an entity that you c
 
 After you create one or more RAM users, you can customize user settings as needed.
 
--   Modify basic information about a RAM user
+-   Modify basic information about a RAM user.
     1.  In the left-side navigation pane of the RAM console, click Users.
     2.  In the **User Name/Display Name** column, click the username of the target RAM user.
 
