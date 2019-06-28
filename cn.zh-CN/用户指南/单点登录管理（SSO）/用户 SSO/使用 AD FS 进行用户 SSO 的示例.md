@@ -45,19 +45,19 @@
 
 1.  在**服务器管理器**的**工具**菜单中选择**AD FS 管理** 。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832814260_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505514260_zh-CN.png)
 
 2.  在 **AD FS** 管理工具中**添加信赖方信任**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832814261_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505614261_zh-CN.png)
 
 3.  为新创建的信赖方设置阿里云的 SAML 元数据。
 
     阿里云账号的 SAML 服务提供商元数据 URL 可以登录 [RAM 控制台](https://ram.console.aliyun.com/)，在左侧菜单栏，单击 **SSO 管理**，在 **用户 SSO**页签下的 **SSO 登录设置**区域下查看。AD FS 信赖方可以直接配置元数据的 URL。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832814262_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505614262_zh-CN.png)
 
-    完成配置信赖方之后，阿里云和 AD FS 就产生了互信，阿里云会将`secloud.onaliyun.com`域名的 RAM 用户认证请求转发到 AD FS：`adfs.secloud.club`上，AD FS 也会接受来自于阿里云的认证请求并向阿里云转发认证响应。
+    完成配置信赖方之后，阿里云和 AD FS 就产生了互信，阿里云会将默认域名为`secloud.onaliyun.com`的云账号下所有 RAM 用户的认证请求转发到 AD FS：`adfs.secloud.club`，AD FS 也会接受来自于阿里云的认证请求并向阿里云转发认证响应。
 
 
 ## 为阿里云 SP 配置 SAML 断言属性 {#section_u32_zdd_mfb .section}
@@ -68,17 +68,17 @@
 
 1.  为信赖方**编辑声明规则**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832814263_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505614263_zh-CN.png)
 
 2.  添加**颁发转换规则**。
 
     **说明：** 颁发转换规则（Issuance Transform Rules）：指如何将一个已知的用户属性，经过转换后颁发为 SAML 断言中的属性。由于我们要将用户在 AD 中的 UPN 颁发为`NameID`，因此需要添加一个新的规则。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832814264_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505614264_zh-CN.png)
 
 3.  **声明规则模版**选择**转换传入声明**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832914265_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505614265_zh-CN.png)
 
 4.  **编辑规则**。
 
@@ -92,7 +92,7 @@
 
         完成设置后，在编辑规则窗口，将 UPN 映射为名称 ID（`NameID`）。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832914266_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505714266_zh-CN.png)
 
     2.  方法二：在 AD FS 中设置域名转换。
 
@@ -100,14 +100,14 @@
 
         在 AD FS 给阿里云颁发的 SAML 断言中必须将 UPN 的域名后缀从 `secloud.club` 替换为：`secloud.onaliyun.com`。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832914267_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505714267_zh-CN.png)
 
-    3.  方法三：将 AD 域名设置为 RAM 用户的辅助域名。
+    3.  方法三：将 AD 域名设置为用户 SSO 的辅助域名。
 
-        如果域名`secloud.club`是企业的内网域名，那么阿里云将无法验证企业对域名的所有权。您可以将 `secloud.club` 设置为 RAM 的辅助域名，无需进行域名转换。关于如何设置辅助域名，请参考：[设置辅助域名](intl.zh-CN/用户指南/单点登录管理（SSO）/用户 SSO/阿里云用户 SSO 的 SAML 配置.md#)。
+        如果域名`secloud.club`是企业的内网域名，那么阿里云将无法验证企业对域名的所有权。您可以将 `secloud.club` 设置为用户 SSO 的辅助域名，无需进行域名转换。关于如何设置辅助域名，请参考：[设置辅助域名](intl.zh-CN/用户指南/单点登录管理（SSO）/用户 SSO/阿里云用户 SSO 的 SAML 配置.md#)。
 
     完成设置后，在编辑规则窗口，将 UPN 映射为名称 ID（`NameID`）。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170832914266_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171505714266_zh-CN.png)
 
 

@@ -35,7 +35,7 @@ The configuration details used in the example are as follows:
 2.  Download the metadata file in XML format.
 3.  In the RAM console, use the metadata file for SSO configuration.
 
-For more information, see [Configure the SAML for user-based SSO](intl.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#).
+For more information, see [Configure the SAML for user-based SSO](reseller.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#).
 
 ## Configure Alibaba Cloud as a trusted SAML SP in AD FS {#section_q32_zdd_mfb .section}
 
@@ -43,19 +43,19 @@ In AD FS, SAML SP is called relying party. To configure Alibaba Cloud as a trust
 
 1.  On the Server Manager page, choose **Tools** \> **AD FS Management**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170833714260_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507114260_en-US.png)
 
 2.  Select **Add Relying Party Trust**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170833814261_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507214261_en-US.png)
 
 3.  Set the SAML metadata of Alibaba Cloud for the relying party.
 
-    To view the SAML metadata URL, log on to the [RAM console](https://ram.console.aliyun.com/), click **SSO** in the left-side navigation pane, and click **User-based SSO**. You can enter the metadata URL when configuring the AD FS relying party.
+    To view the SAML metadata URL, log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram), click **SSO** in the left-side navigation pane, and click **User-based SSO**. You can enter the metadata URL when configuring the AD FS relying party.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170833814262_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507214262_en-US.png)
 
-    After the relying party is configured, Alibaba Cloud sends a request to authenticate the RAM user whose domain name is `secloud.onaliyun.com` to AD FS `adfs.secloud.club`. AD FS receives the request from Alibaba Cloud, authenticates the user, and sends a response to Alibaba Cloud.
+    After the relying party is configured, Alibaba Cloud sends a request to authenticate RAM users under the Alibaba Cloud account whose default domain name is `secloud.onaliyun.com` to AD FS `adfs.secloud.club`. AD FS receives the request from Alibaba Cloud, authenticates the user, and sends a response to Alibaba Cloud.
 
 
 ## Configure the SAML assertion attributes for the Alibaba Cloud SP {#section_u32_zdd_mfb .section}
@@ -66,17 +66,17 @@ You must set the UPN in the AD to the `NameID` in the SAML assertion. The proced
 
 1.  Right-click the display name of the relying party and select **Edit Claim Rules**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170833914263_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507314263_en-US.png)
 
 2.  Click **Issuance Transform Rules** to add a rule.
 
     **Note:** **Issuance Transform Rules** indicates how to transform a known user attribute and issue it as an attribute in the SAML assertion. You must issue the UPN of a user in Microsoft AD as a `NameID`. This means that a new rule is required.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170833914264_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507314264_en-US.png)
 
 3.  From the **Claim rule template** drop-down list, select **Transform an Incoming Claim**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170833914265_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507314265_en-US.png)
 
 4.  Select **Edit Rule**.
 
@@ -86,11 +86,11 @@ You must set the UPN in the AD to the `NameID` in the SAML assertion. The proced
 
     1.  Method 1: Set the domain name of Microsoft AD to the domain alias of your Alibaba Cloud account.
 
-        If the domain name `secloud.club` of Microsoft AD is registered in a DNS on the Internet, you can set `secloud.club` to the domain alias of RAM. For information about how to set a domain alias, see [Create a domain alias for an Alibaba Cloud account](intl.en-US/User Guide/Security settings/Advanced settings/Create a domain alias for an Alibaba Cloud account.md#).
+        If the domain name `secloud.club` of Microsoft AD is registered in a DNS on the Internet, you can set `secloud.club` to the domain alias of RAM. For information about how to set a domain alias, see [Create a domain alias for an Alibaba Cloud account](reseller.en-US/User Guide/Security settings/Advanced settings/Create a domain alias for an Alibaba Cloud account.md#).
 
         After the settings are completed, map the UPN to the `NameID` on the Edit Rule page.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170834014266_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507414266_en-US.png)
 
     2.  Method 2: Transform the domain names in AD FS.
 
@@ -98,14 +98,16 @@ You must set the UPN in the AD to the `NameID` in the SAML assertion. The proced
 
         In this case, in the SAML assertion issued by AD FS to Alibaba Cloud, you must replace the domain name suffix `secloud.club` of the UPN with `secloud.onaliyun.com`.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170834014267_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507414267_en-US.png)
 
-    3.  Method 3: Set the domain name of Microsoft AD to the auxiliary domain name of your Alibaba Cloud account.
+    3.  Method 3: Set the domain name of Microsoft AD to an auxiliary domain name.
 
-        If the domain name `secloud.club` is an intranet domain name of an enterprise, Alibaba Cloud cannot verify the domain ownership of the enterprise. In this case, you can set `secloud.onaliyun.com` to the auxiliary domain name of your Alibaba Cloud account. For information about how to set an auxiliary domain name, see [Set an auxiliary domain name](intl.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#).
+        **Note:** You can configure auxiliary domain by modifying SSO settings on the **User-based SSO** tab.
+
+        If the domain name `secloud.club` is an intranet domain name of an enterprise, Alibaba Cloud cannot verify the domain ownership of the enterprise. In this case, you can set `secloud.onaliyun.com` to the auxiliary domain name. For information about how to set an auxiliary domain name, see [Set an auxiliary domain name](reseller.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#).
 
     After the settings are completed, map the UPN to the `NameID` on the Edit Rule page.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156170834014266_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23741/156171507414266_en-US.png)
 
 
