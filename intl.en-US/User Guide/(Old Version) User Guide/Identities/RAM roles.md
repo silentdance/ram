@@ -48,8 +48,8 @@ The difference between entity users and virtual users is as follows:
 
 RAM roles are divided into the following types according to different trusted entities:
 
--    **User Role**: roles that RAM users can assume. The RAM users may belong to their own Alibaba Cloud accounts or other accounts. Such roles provide solutions to cross-account access and temporary authorization.
--    **Service Role**: roles that Alibaba Cloud services can assume. Such roles are used to authorize Alibaba Cloud services to operate on resources.
+-   **User Role**: roles that RAM users can assume. The RAM users may belong to their own Alibaba Cloud accounts or other accounts. Such roles provide solutions to cross-account access and temporary authorization.
+-   **Service Role**: roles that Alibaba Cloud services can assume. Such roles are used to authorize Alibaba Cloud services to operate on resources.
 
 ## Create a RAM role {#section_n10_ukv_vo1 .section}
 
@@ -83,11 +83,11 @@ To create a RAM role in the RAM console, follow these steps:
 3.  On the displayed page, click **Create Role**.
 4.  Click **Service Role** and select a trusted Alibaba Cloud service. Available services include:
 
-    -    **Media Transcoding Service \(MTS\):** You can create a role, configure MTS as its trusted service, and use MTS to assume the role and access Object Storage Service \(OSS\) data when you set OSS Bucket as the data source for MTS tasks.
-    -    **Archive Storage:** You can create a role, configure Archive Storage as its trusted service, and use Archive Storage to assume the role and access OSS data when you set OSS Bucket as the data source for Archive Storage.
-    -    **Log Service:** You can create a role, configure Log Service as its trusted service, and use Log Service to assume the role and write data into OSS when you import Log Service-collected logs into OSS.
-    -    **API Gateway:** You can create a role, configure API Gateway as its trusted service, and use API Gateway to assume the role and call the function service when you set the function service as the backend service of API Gateway.
-    -    **Elastic Compute Service \(ECS\):** You can create a role and use this role to authorize ECS to access your resources in other Alibaba Cloud services.
+    -   **Media Transcoding Service \(MTS\):** You can create a role, configure MTS as its trusted service, and use MTS to assume the role and access Object Storage Service \(OSS\) data when you set OSS Bucket as the data source for MTS tasks.
+    -   **Archive Storage:** You can create a role, configure Archive Storage as its trusted service, and use Archive Storage to assume the role and access OSS data when you set OSS Bucket as the data source for Archive Storage.
+    -   **Log Service:** You can create a role, configure Log Service as its trusted service, and use Log Service to assume the role and write data into OSS when you import Log Service-collected logs into OSS.
+    -   **API Gateway:** You can create a role, configure API Gateway as its trusted service, and use API Gateway to assume the role and call the function service when you set the function service as the backend service of API Gateway.
+    -   **Elastic Compute Service \(ECS\):** You can create a role and use this role to authorize ECS to access your resources in other Alibaba Cloud services.
     **Note:** For more information about the trusted services, see the RAM console.
 
 5.  Enter a role name in the **Role Name** field. You can also enter a description in the **Description** field. Then, click **Create**.
@@ -133,6 +133,6 @@ RAM users can assume roles either in the RAM console or by calling an API action
 
 ## Application scenarios of RAM roles {#section_yhg_nzp_4fb .section}
 
--    [Temporary authorization management for mobile apps](reseller.en-US/User Guide/(Old Version) User Guide/Scenarios/Temporary authorization management for mobile apps.md#) 
--    [Cross-account resource operation and authorization management](reseller.en-US/User Guide/(Old Version) User Guide/Scenarios/Cross-account resource operation and authorization management.md#) 
+-   [Temporary authorization management for mobile apps](reseller.en-US/User Guide/(Old Version) User Guide/Scenarios/Temporary authorization management for mobile apps.md#)
+-   [Cross-account resource operation and authorization management](reseller.en-US/User Guide/(Old Version) User Guide/Scenarios/Cross-account resource operation and authorization management.md#)
 
