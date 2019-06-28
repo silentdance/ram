@@ -7,7 +7,7 @@ This topic describes how to install Node.js SDK and provides an operation exampl
 You can use npm to install Node.js SDK.
 
 ``` {#codeblock_rfl_xaf_zql}
-npm install aliyun-sdk
+npm install -S @alicloud/pop-core
 ```
 
 ## Example {#section_c4w_0ax_p6c .section}

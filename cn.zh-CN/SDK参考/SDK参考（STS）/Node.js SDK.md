@@ -7,7 +7,7 @@
 通过 npm 安装 Node.js SDK：
 
 ``` {#codeblock_rfl_xaf_zql}
-npm install aliyun-sdk
+npm install -S @alicloud/pop-core
 ```
 
 ## Node.js SDK 示例 {#section_c4w_0ax_p6c .section}
