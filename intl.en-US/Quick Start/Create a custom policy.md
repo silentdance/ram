@@ -10,6 +10,6 @@ Before you create a custom policy, we recommend that you read about the basic st
 4.  Enter a policy name and description.
 5.  Set the configuration mode. 
     -   If you set the configuration mode to **Visualized**, click **Add Statement** and configure the permission effect, actions, and resources as prompted.
-    -   If you set the configuration mode to **Script**, edit the policy according to [Policy structure and grammar](reseller.en-US/User Guide/Policies/Policy language/Policy structure and grammar.md#).
+    -   If you set the configuration mode to **Script**, edit the policy according to [policy structure and grammar](reseller.en-US/User Guide/Policies/Policy language/Policy structure and grammar.md#).
 6.  Click **OK**.
 
