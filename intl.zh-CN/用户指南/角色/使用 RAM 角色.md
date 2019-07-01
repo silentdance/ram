@@ -28,5 +28,5 @@
 
 RAM 用户也可以使用 API 扮演 RAM 角色。
 
-当 RAM 用户被授予`AliyunSTSAssumeRoleAccess`权限策略之后，可以使用其访问密钥调用 STS [AssumeRole](../../../../intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md#) 接口，以获取某个角色的临时安全令牌，从而使用临时安全令牌访问阿里云。
+当 RAM 用户被授予`AliyunSTSAssumeRoleAccess` 权限策略之后，可以使用其访问密钥调用 STS [AssumeRole](../../../../intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md#) 接口，以获取某个角色的临时安全令牌，从而使用临时安全令牌访问阿里云。
 
