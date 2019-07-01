@@ -15,13 +15,16 @@
 
 ## STS 基本概念 {#section_kzx_rfh_vgb .section}
 
-|名称|描述|
-|:-|:-|
-|RAM 角色（RAM Role ）|一种虚拟的 RAM 用户。|
-|RAM 角色的全局资源描述符（Role ARN）|Role ARN 是角色的全局资源描述符（Aliyun Resource Name， 简称 ARN），用来指定具体角色。每个角色都有一个唯一的全局资源描述符。格式：`acs:ram::$accountID:role/$roleName` 。|
-|受信主体（Trusted Entity）|角色的受信主体是指可以扮演角色的实体用户身份。 -   创建角色时必须指定受信主体，角色只能被受信的主体扮演。
--   受信主体可以是受信的阿里云云账号，或者受信阿里云服务。
+ RAM 角色（RAM role ）
+ :   一种虚拟的 RAM 用户。
 
- |
-|扮演角色（Assume Role）|扮演角色是实体用户获取角色身份的安全令牌的方法。一个实体用户通过调用 [AssumeRole](intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md#) 的 API 可以获得角色的安全令牌，使用安全令牌可以访问云服务 API。|
+  RAM 角色的全局资源描述符（Role ARN）
+ :   Role ARN 是角色的全局资源描述符（Aliyun Resource Name， 简称 ARN），用来指定具体角色。每个角色都有一个唯一的全局资源描述符。格式：`acs:ram::$accountID:role/$roleName`。
 
+  可信实体（Trusted entity）
+ :   角色的可信实体是指可以扮演角色的实体用户身份。创建角色时必须指定可信实体，角色只能被受信的主体扮演。可信实体可以是受信的阿里云账号、受信的阿里1·云服务或身份提供商。
+
+  扮演角色（Assume role）
+ :   扮演角色是实体用户获取角色身份的安全令牌的方法。一个实体用户调用 STS API [AssumeRole](intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md#) 可以获得角色的安全令牌，使用安全令牌可以访问云服务 API。
+
+ 
