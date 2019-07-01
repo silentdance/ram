@@ -12,7 +12,7 @@ RAM 用户登录地址如下：[RAM 用户登录地址](https://signin.alibabacl
 
 ## 登录方式 {#section_j6p_xxj_mff .section}
 
-在 RAM 用户登录入口，用户可以两种使方式登录：
+RAM 用户有以下两种方式登录 RAM 控制台：
 
 -   方式一：<$username\>@<$AccountAlias\>.onaliyun.com 。例如：username@company-alias.onaliyun.com。
 
