@@ -9,11 +9,11 @@ The conventions used in a policy grammar are as follows:
 -   Characters in a policy:
     -   The following characters are JSON tokens and are included in policies:
 
-         `{ } [ ] " , :` 
+        `{ } [ ] " , :`
 
     -   The following characters are special characters in the grammar and are not included in policies:
 
-         `= < > ( ) |` 
+        `= < > ( ) |`
 
 -   Use of characters:
     -   If an element allows multiple values, you can:
@@ -29,7 +29,7 @@ The policy structure includes the version number and a list of statements.
 
 Each statement contains the following elements: effect, action, resource, and condition. The condition element is optional.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23770/156152314514403_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23770/156195103614403_en-US.png)
 
 ## Policy grammar {#section_cwl_gbk_xdb .section}
 
@@ -89,7 +89,7 @@ Description:
 
 ## Policy format check {#section_awl_gbk_xdb .section}
 
-Policies are stored in RAM as JSON documents. When you create or update a policy, RAM first checks whether the JSON format is correct
+Policies are stored in RAM as JSON documents. When you create or update a policy, RAM first checks whether the JSON format is correct.
 
 -   For more information about the JSON grammar standards, see [RFC 7159](http://tools.ietf.org/html/rfc7159).
 -   We recommend that you use tools such as JSON validators and editors to verify your policies to meet JSON grammar standards.
