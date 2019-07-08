@@ -1,8 +1,6 @@
 # Enable an MFA device for a RAM user {#task_268585 .task}
 
-This topic describes how to enable a multi-factor authentication \(MFA\) device for a RAM user to protect your Alibaba Cloud account.
-
-The following section uses the Google Authenticator app as an example.
+This topic describes how to enable a multi-factor authentication \(MFA\) device for a RAM user with the Google Authenticator app. After an MFA device is enabled, it provides additional security protection for your Alibaba Cloud account.
 
 1.  Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram) by using your Alibaba Cloud account. 
 
@@ -25,15 +23,15 @@ The following section uses the Google Authenticator app as an example.
 
         **Note:** You can obtain the username and key from the **Retrieval manually enter information** tab in the console.
 
-7.  On the **Scan the code** tab, enter the two consecutive security codes obtained from Google Authenticator and click **Enable**. 
+7.  On the **Scan the code** tab, enter the two consecutive verification codes obtained from Google Authenticator and click **Enable**. 
 
-    **Note:** The security code is refreshed at an interval of 30 seconds.
+    **Note:** The verification code is refreshed at an interval of 30 seconds.
 
 
-MFA is a simple but effective means for achieving a higher level security protection. When you log on to Alibaba Cloud with MFA enabled, the system requires the following two security factors:
+When a RAM user logs on to the RAM console with MFA enabled, the system requires the following two security factors:
 
--   Your username and password
--   Two consecutive security codes provided by your target virtual MFA device
+1.  Username and password of the RAM user
+2.  Two consecutive verification codes provided by the MFA device
 
-**Note:** Before you uninstall or remove an MFA device, you must first log on to the Alibaba Cloud console to disable the MFA device.
+**Note:** Before you uninstall or remove an MFA device from a RAM user, you must first log on to the Alibaba Cloud console to disable the MFA device.
 
