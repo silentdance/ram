@@ -61,7 +61,7 @@ ActionTrail 可以记录 RAM 的如下操作信息：
         "eventTime": "2016-01-04T08:58:50Z",
         "eventType": "ApiCall",
         "eventVersion": "1",
-        "recipientAccountId": "43274",
+        "recipientAccountId": "4****",
         "requestId": "1485748C-DB62-4693-AB7E-4BA3F3A970E1",
         "requestParameters": {
             "Comments": "this is a test group",
@@ -73,7 +73,7 @@ ActionTrail 可以记录 RAM 的如下操作信息：
         "userIdentity": {
             "type": "ram-user",
             "principalId": "27418064654829****",
-            "accountId": "43274",
+            "accountId": "4****",
             "accessKeyId": "f6Iz********EI4d",
             "userName": "Alice"
         }
