@@ -17,21 +17,21 @@ The following table lists some common policies that can be created in RAM to man
 
 1.  Create custom policies according to the subsequent OSS authorization examples.
 
-    For more information, see [Policy management](../../../../reseller.en-US/User Guide/Permission management/Policy management.md#).
+    For more information, see [Create a custom policy](../../../../reseller.en-US/User Guide/Policies/Custom policies/Create a custom policy.md#).
 
 2.  Locate the target policy and click the policy name.
 3.  On the **References** tab, click **Grant Permission**.
 4.  In the **Principal** field, enter the ID or name of the target RAM user.
 5.  Click **OK**.
 
-    **Note:** You can also attach policies to a RAM user or a RAM user group as needed. For more information, see [Permission granting in RAM](../../../../reseller.en-US/User Guide/Permission management/Permission granting/Permission granting in RAM.md#).
+    **Note:** You can also attach policies to a RAM user or a RAM user group as needed. For more information, see [Grant permission to a RAM user](../../../../reseller.en-US/User Guide/RAM users/Grant permission to a RAM user.md#)and [Grant permission to a RAM user group](../../../../reseller.en-US/User Guide/RAM user groups/Grant permission to a RAM user group.md#).
 
 
 ## OSS authorization examples {#section_rnr_j0s_mu9 .section}
 
 -   Example 1: As a RAM administrator, authorize a user to fully manage an OSS bucket.
 
-    ```
+    ``` {#codeblock_nvf_d4s_3zx}
     {
         "Version": "1",
         "Statement": [
@@ -50,7 +50,7 @@ The following table lists some common policies that can be created in RAM to man
 -   Example 2: As a RAM administrator, authorize a user to list and read resources in an OSS bucket.
     -   Authorize a RAM to list and read resources in an OSS bucket by using the OSS CLI or by using OSS SDKs. The name of the OSS bucket is `myphotos`.
 
-        ```
+        ``` {#codeblock_ktc_8k3_wkj}
         {
             "Version": "1",
             "Statement": [
@@ -72,13 +72,18 @@ The following table lists some common policies that can be created in RAM to man
 
         **Note:** When a RAM user logs on to the OSS console, the console calls the `ListBuckets`, `GetBucketAcl`, and `GetObjectAcl` actions to check whether the bucket is public.
 
-        ```
+        ``` {#codeblock_b6h_fwa_wyx}
         {
             "Version": "1",
             "Statement": [
                 {
                     "Effect": "Allow",
-                    "Action": "oss:ListBuckets",
+                    "Action": [
+                              "oss:ListBuckets",
+                              "oss:GetBucketStat",
+                              "oss:GetBucketInfo",
+                              "oss:GetBucketAcl" 
+                              ],    
                     "Resource": "acs:oss:*:*:*"
                 },
                 {
@@ -104,15 +109,18 @@ The following table lists some common policies that can be created in RAM to man
 -   Example 3: As a RAM administrator, authorize a RAM user to access OSS instances by using a specified IP address.
     -   Add the following condition in the `Allow` element. This allows the IP address segments `192.168.0.0/16` and `172.12.0.0/16` to read data in `myphotos`.
 
-        ```
+        ``` {#codeblock_opj_2qy_6ch}
         {
             "Version": "1",
             "Statement": [
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "oss:ListBuckets"
-                    ],
+                              "oss:ListBuckets",
+                              "oss:GetBucketStat",
+                              "oss:GetBucketInfo",
+                              "oss:GetBucketAcl" 
+                              ], 
                     "Resource": [
                         "acs:oss:*:*:*"
                     ]
@@ -139,15 +147,18 @@ The following table lists some common policies that can be created in RAM to man
 
     -   Add the following condition in the `Deny` element. If the IP address of a RAM user is not within the `192.168.0.0/16` segment, the user cannot perform any operations on OSS instances.
 
-        ```
+        ``` {#codeblock_fz1_n1q_e7f}
         {
             "Version": "1",
             "Statement": [
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "oss:ListBuckets"
-                    ],
+                              "oss:ListBuckets",
+                              "oss:GetBucketStat",
+                              "oss:GetBucketInfo",
+                              "oss:GetBucketAcl" 
+                              ], 
                     "Resource": [
                         "acs:oss:*:*:*"
                     ]
@@ -185,7 +196,7 @@ The following table lists some common policies that can be created in RAM to man
 
     You have a photo bucket named myphotos. The bucket contains directories that indicate the places where the photos were taken. Each directory contains sub-directories that indicate the years when the photos were taken.
 
-    ```
+    ``` {#codeblock_8rw_15w_4ba}
     myphotos[Bucket]
       ├── beijing
       │   ├── 2014
@@ -205,7 +216,7 @@ The following table lists some common policies that can be created in RAM to man
 
         In this scenario, the RAM user knows the complete paths of all files and can directly read the files by using the complete paths. Generally, a software system requires permission assignment for this.
 
-        ```
+        ``` {#codeblock_u3d_z5o_uod}
         {
             "Version": "1",
             "Statement": [
@@ -228,7 +239,7 @@ The following table lists some common policies that can be created in RAM to man
 
         In this scenario, the `ListObjects` permission is required.
 
-        ```
+        ``` {#codeblock_12v_qyk_dce}
         {
             "Version": "1",
             "Statement": [
@@ -268,16 +279,18 @@ The following table lists some common policies that can be created in RAM to man
         -   Permission to list all buckets
         -   Permission to list directories under `myphotos`
         -   Permission to list directories under `myphotos/hangzhou`
-        ```
+        ``` {#codeblock_1lz_o16_x5v}
         {
             "Version": "1",
             "Statement": [
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "oss:ListBuckets",
-                        "oss:GetBucketAcl"
-                    ],
+                              "oss:ListBuckets",
+                              "oss:GetBucketStat",
+                              "oss:GetBucketInfo",
+                              "oss:GetBucketAcl" 
+                              ], 
                     "Resource": [
                         "acs:oss:*:*:*"
                     ]
