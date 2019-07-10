@@ -81,9 +81,7 @@
                     "Action": [
                               "oss:ListBuckets",
                               "oss:GetBucketStat",
-        
                               "oss:GetBucketInfo",
-        
                               "oss:GetBucketAcl" 
                               ],    
                     "Resource": "acs:oss:*:*:*"
@@ -120,9 +118,7 @@
                     "Action": [
                               "oss:ListBuckets",
                               "oss:GetBucketStat",
-        
                               "oss:GetBucketInfo",
-        
                               "oss:GetBucketAcl" 
                               ], 
                     "Resource": [
@@ -160,9 +156,7 @@
                     "Action": [
                               "oss:ListBuckets",
                               "oss:GetBucketStat",
-        
                               "oss:GetBucketInfo",
-        
                               "oss:GetBucketAcl" 
                               ], 
                     "Resource": [
@@ -294,9 +288,7 @@
                     "Action": [
                               "oss:ListBuckets",
                               "oss:GetBucketStat",
-        
                               "oss:GetBucketInfo",
-        
                               "oss:GetBucketAcl" 
                               ], 
                     "Resource": [
