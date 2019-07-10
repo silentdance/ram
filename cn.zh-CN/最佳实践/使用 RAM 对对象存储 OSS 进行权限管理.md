@@ -17,21 +17,21 @@
 
 1.  根据下述 [OSS 授权样例](#section_mlc_ww2_vgb)创建相应的自定义策略。
 
-    详情请参考：[权限策略管理](../../../../intl.zh-CN/用户指南/权限管理/权限策略管理.md#)。
+    详情请参考：[创建自定义策略](../../../../intl.zh-CN/用户指南/权限策略/自定义策略/创建自定义策略.md#)。
 
 2.  找到创建好的权限策略，单击其**权限策略名称**。
 3.  单击**引用记录** \> **新增授权**。
 4.  **被授权主体**处输入需要授权的用户名称或 ID。
 5.  单击**确定**。
 
-    **说明：** 您也可以直接对**用户**或**用户组**授予创建好的权限策略，详情请参考：[RAM 授权](../../../../intl.zh-CN/用户指南/权限管理/授权管理/RAM 授权.md#)。
+    **说明：** 您也可以直接对**用户**或**用户组**授予创建好的权限策略，详情请参考：[为 RAM 用户授权](../../../../intl.zh-CN/用户指南/用户/为 RAM 用户授权.md#)和[为用户组授权](../../../../intl.zh-CN/用户指南/用户组/为用户组授权.md#)。
 
 
 ## OSS 授权样例 {#section_mlc_ww2_vgb .section}
 
 -   示例 1：授权 RAM 用户完全管理某个 Bucket 的权限。
 
-    ```
+    ``` {#codeblock_qgu_4s5_kig}
     {
         "Version": "1",
         "Statement": [
@@ -50,7 +50,7 @@
 -   示例 2：授权 RAM 用户列出并读取一个 Bucket 中的资源。
     -   授权 RAM 用户通过 OSS SDK 或 OSS 命令行工具列出并读取一个 Bucket 中的资源。Bucket 名称为：`myphotos`。
 
-        ```
+        ``` {#codeblock_zy7_sg0_ft0}
         {
             "Version": "1",
             "Statement": [
@@ -72,13 +72,20 @@
 
         **说明：** 用户登录 OSS 控制台时，为了操作体验的优化，OSS控制台会额外调用`ListBuckets`操作，以及`GetBucketAcl`和`GetObjectAcl`，以确定 bucket 属性是公开还是私有。
 
-        ```
+        ``` {#codeblock_1gm_yz1_gg8}
         {
             "Version": "1",
             "Statement": [
                 {
                     "Effect": "Allow",
-                    "Action": "oss:ListBuckets",
+                    "Action": [
+                              "oss:ListBuckets",
+                              "oss:GetBucketStat",
+        
+                              "oss:GetBucketInfo",
+        
+                              "oss:GetBucketAcl" 
+                              ],    
                     "Resource": "acs:oss:*:*:*"
                 },
                 {
@@ -104,15 +111,20 @@
 -   示例 3：授权 RAM 用户通过特定的 IP 地址访问 OSS。
     -   在`Allow`授权中增加 IP 限制：允许通过`192.168.0.0/16`, `172.12.0.0/16`两个 IP 段读取`myphotos`中的信息。
 
-        ```
+        ``` {#codeblock_zty_vu1_dmt}
         {
             "Version": "1",
             "Statement": [
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "oss:ListBuckets"
-                    ],
+                              "oss:ListBuckets",
+                              "oss:GetBucketStat",
+        
+                              "oss:GetBucketInfo",
+        
+                              "oss:GetBucketAcl" 
+                              ], 
                     "Resource": [
                         "acs:oss:*:*:*"
                     ]
@@ -139,15 +151,20 @@
 
     -   在`Deny`授权中增加 IP 限制：如果源 IP 不在`192.168.0.0/16`中，则禁止对 OSS 执行任何操作。
 
-        ```
+        ``` {#codeblock_kem_12e_9a3}
         {
             "Version": "1",
             "Statement": [
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "oss:ListBuckets"
-                    ],
+                              "oss:ListBuckets",
+                              "oss:GetBucketStat",
+        
+                              "oss:GetBucketInfo",
+        
+                              "oss:GetBucketAcl" 
+                              ], 
                     "Resource": [
                         "acs:oss:*:*:*"
                     ]
@@ -185,7 +202,7 @@
 
     假设用于存放照片的 Bucket：myphotos。这个 Bucket 下有一些目录，代表照片的拍摄地，每个拍摄地目录下又有年份子目录。
 
-    ```
+    ``` {#codeblock_a2h_agq_ltn}
     myphotos[Bucket]
       ├── beijing
       │   ├── 2014
@@ -205,7 +222,7 @@
 
         RAM 用户知道文件的完整路径，可以使用完整的文件路径直接去读取文件内容，通常会将这样的权限授予应用程序。
 
-        ```
+        ``` {#codeblock_ryw_93w_j8u}
         {
             "Version": "1",
             "Statement": [
@@ -228,7 +245,7 @@
 
         此场景需要新增`ListObjects`的权限。
 
-        ```
+        ``` {#codeblock_807_onv_q70}
         {
             "Version": "1",
             "Statement": [
@@ -268,16 +285,20 @@
         -   列出所有`Bucket`的权限
         -   列出`myphotos`下目录的权限。
         -   列出`myphotos/hangzhou`下的目录的权限。
-        ```
+        ``` {#codeblock_pyy_it4_vi1}
         {
             "Version": "1",
             "Statement": [
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "oss:ListBuckets",
-                        "oss:GetBucketAcl"
-                    ],
+                              "oss:ListBuckets",
+                              "oss:GetBucketStat",
+        
+                              "oss:GetBucketInfo",
+        
+                              "oss:GetBucketAcl" 
+                              ], 
                     "Resource": [
                         "acs:oss:*:*:*"
                     ]
