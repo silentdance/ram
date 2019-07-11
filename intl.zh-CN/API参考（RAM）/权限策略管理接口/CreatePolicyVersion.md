@@ -24,7 +24,7 @@
  目前包含：
 
  -   `None`: 关闭轮转机制。
--   `DeleteOldestNonDefaultVersionWhenLimitExceeded`：当权限策略版本数量超限时，删除最早和非活跃的版本。
+-   `DeleteOldestNonDefaultVersionWhenLimitExceeded`：当权限策略版本数量超限时，删除最早且非活跃的版本。
 
  默认值：`None`
 
