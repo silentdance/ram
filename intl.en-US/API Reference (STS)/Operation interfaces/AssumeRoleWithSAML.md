@@ -13,7 +13,7 @@ Uses an SAML assertion to obtain a temporary identity for assuming a role.
  |
 |SAMLProviderArn|String|Yes|acs:ram::123456789012\*\*\*\*:saml-provider/company1| The Alibaba Cloud Resource Name \(ARN\) of the identity provider \(IdP\) created in RAM.
 
- Pattern: `acs:ram::$account_ID:saml-provider/provider1`
+ Pattern: `acs:ram::$account_ID:saml-provider/$saml_provider_ID`
 
  |
 |RoleArn|String|Yes|acs:ram::123456789012\*\*\*\*:role/adminrole| The ARN of the role to be assumed.
@@ -21,7 +21,7 @@ Uses an SAML assertion to obtain a temporary identity for assuming a role.
  Pattern: `acs:ram::$accountID:role/$roleName`
 
  |
-|SAML Assertion|String|Yes|<base64\_encoded\_saml\_assertion\>|The SAML assertion that is encoded by using Base64. The value must be 4 to 100000 bytes in length.|
+|SAMLAssertion|String|Yes|<base64\_encoded\_saml\_assertion\>|The SAML assertion that is encoded by using Base64. The value must be 4 to 100000 bytes in length.|
 |Policy|String|No|<url\_encoded\_policy\>|The policy that specifies the permission of the STS token. If this parameter is left unspecified, the STS token has all permissions of a specific role. This parameter must be 1 to 1024 bytes in length.|
 |DurationSeconds|String|No|3,600| The expiration time.
 
@@ -52,29 +52,19 @@ Uses an SAML assertion to obtain a temporary identity for assuming a role.
 |└AssumedRoleUserId|String|34458433936495\*\*\*\*:alice|The ID of the temporary identity to assume the role.|
 |SAMLAssertionInfo|N/A|N/A|The information in the SAML assertion.|
 |└SubjectType|String|persistent|The format of the `NameID` field in the SAML assertion. If the `NameID` contains the `urn:oasis:names:tc:SAML:2.0:nameid-format:` prefix, the prefix will be removed. For example, if the prefix is `urn:oasis:names:tc:SAML:2.0:nameid-format:persistant/transient`, only `persistant/transient` is displayed.|
-|└Subject|String|admin@example.com|The `NameID` field in the SAML assertion.|
-|└Recipient|String|https://signin.aliyun.com/saml-role/SSO|The `Recipient` field in the SAML assertion.|
-|└Issuer|String|http://example.com/adfs/services/trust|The `Issuer` field in the SAML assertion.|
+|└Subject|String|alice@example.com|The value of the `Subject - NameID` field in the SAML assertion.|
+|└Recipient|String|https://signin.aliyun.com/saml-role/SSO|The `Recipient` attribute of the `Subject - SubjectConfirmation - SubjectConfirmationData` field in the SAML assertion.|
+|└Issuer|String|http://example.com/adfs/services/trust|The value of the `Issuer` field in the SAML assertion.|
 
 ## Example {#section_tdy_lsv_xdb .section}
 
-Request example
-
-``` {#codeblock_5jn_9x0_90e}
-https://sts.aliyuncs.com?Action=AssumeRoleWithSAML 
-&PrincipalArn=acs:ram::123456789012****:saml-provider/company1 
-&RoleArn=acs:ram::1234567890123****:role/adminrole 
-&SAMLAssertion=<base64_encoded_saml_assertion>
-&DurationSeconds=3600 
-&Policy=<url_encoded_policy>
-&<Common parameters>        
-```
+**Note:** The SAMLAssertion parameter may have a large amount of body text. Therefore, we recommend that you use POST rather than GET when sending a request.
 
 Response example
 
 `XML` format
 
-``` {#codeblock_yzq_nfq_xji}
+``` {#codeblock_c3r_m4i_fh0}
 <AssumeRoleResponse>
     <RequestId>6894B13B-6D71-4EF5-88FA-F32781734A7F</RequestId>
     <AssumedRoleUser>
@@ -89,7 +79,7 @@ Response example
     </Credentials>
     <SAMLAssertionInfo>
         <SubjectType>persistent</SubjectType>
-        <Subject>admin@example.com</Subject>
+        <Subject>alice@example.com</Subject>
         <Recipient>https://signin.aliyun.com/saml-role/SSO</Recipient>
         <Issuer>http://example.com/adfs/services/trust</Issuer>
     </SAMLAssertionInfo>
@@ -98,7 +88,7 @@ Response example
 
 `JSON` format
 
-``` {#codeblock_uv1_wz5_v7j}
+``` {#codeblock_xqh_oe6_8se}
 {
     "Credentials": {
         "AccessKeyId": "STS.L4aBSCSJVMuKg5U1****",
@@ -112,7 +102,7 @@ Response example
         },
     "SAMLAssertionInfo": {
         "SubjectType": "persistent",
-        "Subject": "admin@example.com",
+        "Subject": "alice@example.com",
         "Recipient": "https://signin.aliyun.com/saml-role/SSO",
         "Issuer": "http://example.com/adfs/services/trust"
     },
