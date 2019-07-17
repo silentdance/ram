@@ -1,35 +1,35 @@
-# 支持 RAM 的云服务 {#concept_ofk_yt2_xdb .concept}
+# 支持RAM的云服务 {#concept_ofk_yt2_xdb .concept}
 
-许多阿里云服务都与 RAM/STS 相集成，本文按服务类别罗列了这些服务，并提供每个服务支持的 RAM 授权粒度、系统策略，以及相关文档的链接，方便您使用及查询。
+许多阿里云服务都与RAM/STS相集成，本文按服务类别罗列了这些服务，并提供每个服务支持的RAM授权粒度、系统策略，以及相关文档的链接，方便您使用及查询。
 
 RAM（Resource Access Management）是阿里云为客户提供的用户身份管理与资源访问控制服务。
 
 STS（Security Token Service）是阿里云提供的一种临时访问权限管理服务。
 
-在集成 RAM 功能时，各产品针对 RAM 用户定义了不同级别的授权粒度，具体有：
+在集成RAM功能时，各产品针对RAM用户定义了不同级别的授权粒度，具体有：
 
--   服务级别：将云产品作为一个整体进行授权；一个 RAM 用户只能处于对这个产品拥有所有权限和没有任何权限两种状态。
--   操作级别：在 API 级别进行授权；一个 RAM 用户可以对指定云产品的某类资源执行某几个指定的操作。
--   资源级别：对执行资源的指定操作进行授权，这是最细的授权粒度；例如：授权一个 RAM 用户仅可对某一台云服务器进行重启操作。
+-   服务级别：将云产品作为一个整体进行授权。一个RAM用户只能处于对这个产品拥有所有权限和没有任何权限两种状态。
+-   操作级别：在API级别进行授权。一个RAM用户可以对指定云产品的某类资源执行某几个指定的操作。
+-   资源级别：对执行资源的指定操作进行授权，这是最细的授权粒度。例如：授权一个RAM用户仅可对某一台云服务器进行重启操作。
 
-## 支持 RAM/STS 的云服务列表 {#section_00 .section}
+## 支持RAM/STS的云服务列表 {#section_00 .section}
 
-以下表格分别罗列了阿里云各个模块下支持 RAM/STS 的云服务：[弹性计算](#section_01)、[云数据库](#section_02)、[存储与 CDN](#section_03)、[网络](#section_04)、[分析](#section_05)、[云通信](#section_06)、[监控与管理](#section_07)、[应用服务](#section_08)、[互联网中间件](#section_09)、[消息队列 MQ](#section_10)、[移动云](#section_11)、[视频服务](#section_12)、[大数据（数加）](#section_13)、[安全（云盾）](#section_14)、[云市场](#section_15)、[域名与网站](#section_16)、[备案](#section_17)、[费用中心](#section_18)、[工单](#section_19)、[消息](#section_20)、[企业控制台](#section_21)。
+以下表格分别罗列了阿里云各个模块下支持 RAM/STS 的云服务：[弹性计算](#section_01)、[云数据库](#section_02)、[存储与CDN](#section_03)、[网络](#section_04)、[分析](#section_05)、[云通信](#section_06)、[监控与管理](#section_07)、[应用服务](#section_08)、[互联网中间件](#section_09)、[消息队列MQ](#section_10)、[移动云](#section_11)、[视频服务](#section_12)、[大数据（数加）](#section_13)、[安全（云盾）](#section_14)、[云市场](#section_15)、[域名与网站](#section_16)、[备案](#section_17)、[费用中心](#section_18)、[工单](#section_19)、[消息](#section_20)、[企业控制台](#section_21)。
 
 每个表格具体包含如下信息：
 
--   服务名：支持 RAM/STS 的云服务的名称。
+-   服务名：支持RAM/STS的云服务的名称。
 -   控制台：当前服务是否支持在控制台进行访问控制，“√”表示支持，“×”表示不支持，“○”表示不提供。
 -   API（RAM/STS）：当前服务是否支持通过 API 进行访问控制，“√”表示支持，“×”表示不支持，“○”表示不提供。
 -   授权粒度：当前服务提供的最小授权粒度，“-”表示暂无。
 -   系统策略：当前服务支持的系统策略，“-”表示暂无。
--   相关文档：当前服务应用 RAM/STS 相关的文档链接，“-”表示暂无。
+-   相关文档：当前服务应用RAM/STS相关的文档链接，“-”表示暂无。
 
 ## 弹性计算 {#section_01 .section}
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|云服务器 ECS|√|√|√|√|资源级别| -   AliyunECSFullAccess
+|云服务器ECS|√|√|√|√|资源级别| -   AliyunECSFullAccess
 -   AliyunECSReadOnlyAccess
 
  |[ECS鉴权规则](../../../../cn.zh-CN/API参考/鉴权规则.md#)|
@@ -45,11 +45,11 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunContainerRegistryReadOnlyAccess
 
  |[仓库访问控制](https:/alibabacloud.com/help/doc-detail/67992.html)|
-|资源编排 ROS|√|√|√|√|服务级别| -   AliyunROSFullAccess
+|资源编排ROS|√|√|√|√|服务级别| -   AliyunROSFullAccess
 -   AliyunROSReadOnlyAccess
 
  |[使用 RAM 控制资源访问](../../../../cn.zh-CN/快速入门/使用 RAM 控制资源访问.md#)|
-|批量计算 BatchCompute|√|√|√|√|服务级别| AliyunBatchComputeFullAccess
+|批量计算BatchCompute|√|√|√|√|服务级别| AliyunBatchComputeFullAccess
 
  |-|
 |函数计算|√|√|√|√|资源级别| -   AliyunFCFullAccess
@@ -63,7 +63,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
  |-|
 |轻量应用服务器|√|○|×|○|服务级别|AliyunSWASFullAccess|-|
 |图形工作站|√|○|×|○|服务级别|-|-|
-|弹性容器实例 ECI|√|√|√|√|资源级别| -   AliyunECIFullAccess
+|弹性容器实例ECI|√|√|√|√|资源级别| -   AliyunECIFullAccess
 -   AliyunECIReadOnlyAccess
 
  |[如何为子账号授权](https://help.aliyun.com/document_detail/92790.html)|
@@ -72,73 +72,73 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|云数据库 POLARDB|√|√|√|√|操作级别| -   AliyunPolardbReadOnlyAccess
+|云数据库POLARDB|√|√|√|√|操作级别| -   AliyunPolardbReadOnlyAccess
 -   AliyunPolardbFullAccess
 
  |[创建和使用子账号](../../../../cn.zh-CN/POLARDB for MySQL用户指南/账号管理/创建和使用子账号.md#)|
-|云数据库 RDS 版|√|√|√|√|资源级别| -   AliyunRDSFullAccess
+|云数据库RDS 版|√|√|√|√|资源级别| -   AliyunRDSFullAccess
 -   AliyunRDSReadOnlyAccess
 
  |[RAM资源授权](../../../../cn.zh-CN/API参考/RAM资源授权.md#)|
-|云数据库 MongoDB 版|√|√|√|√|资源级别| -   AliyunMongoDBFullAccess
+|云数据库MongoDB版|√|√|√|√|资源级别| -   AliyunMongoDBFullAccess
 -   AliyunMongoDBReadOnlyAccess
 
  |[MongoDB API的鉴权规则](../../../../cn.zh-CN/API参考/如何使用RAM授权/MongoDB API的鉴权规则.md#)|
-|云数据库 Redis 版|√|√|√|√|资源级别| -   AliyunKvstoreFullAccess
+|云数据库Redis版|√|√|√|√|资源级别| -   AliyunKvstoreFullAccess
 -   AliyunKvstoreReadOnlyAccess
 
  |[RAM鉴权](../../../../cn.zh-CN/API参考/RAM鉴权.md#)|
-|云数据库 Memcache 版|√|√|√|√|服务级别| -   AliyunOCSFullAccess
+|云数据库Memcache版|√|√|√|√|服务级别| -   AliyunOCSFullAccess
 -   AliyunOCSReadOnlyAccess
 
  |-|
-|云数据库 HybridDB for MySQL|√|√|√|√|资源级别| -   AliyunPetaDataFullAccess
+|云数据库HybridDB for MySQL|√|√|√|√|资源级别| -   AliyunPetaDataFullAccess
 -   AliyunPetaDataReadOnlyAccess
 
  |[API鉴权规则](../../../../cn.zh-CN/API参考/如何使用RAM授权/API鉴权规则.md#)|
-|云数据库 Hbase 版|√|√|√|√|资源级别|-|-|
-|时序时空数据库 TSDB|√|√|√|√|操作级别| -   AliyunHiTSDBReadOnlyAccess
+|云数据库Hbase版|√|√|√|√|资源级别|-|-|
+|时序时空数据库TSDB|√|√|√|√|操作级别| -   AliyunHiTSDBReadOnlyAccess
 -   AliyunHiTSDBFullAccess
 
  |-|
-|云数据库 HybridDB for PostgreSQL|√|√|√|√|资源级别| -   AliyunGPDBFullAccess
+|云数据库HybridDB for PostgreSQL|√|√|√|√|资源级别| -   AliyunGPDBFullAccess
 -   AliyunGPDBReadOnlyAccess
 
  |[API的鉴权规则](../../../../cn.zh-CN/API参考/如何使用RAM授权/API的鉴权规则.md#)|
-|云数据库 OceanBase|×|×|×|×|-|-|-|
+|云数据库OceanBase|×|×|×|×|-|-|-|
 |分析型数据库|√|×|×|×|服务级别|-|[使用阿里云访问控制（RAM）进行权限管理](https://help.aliyun.com/document_detail/95521.html)|
-|数据传输服务 DTS|√|√|√|√|服务级别| -   AliyunDTSFullAccess
+|数据传输服务DTS|√|√|√|√|服务级别| -   AliyunDTSFullAccess
 -   AliyunDTSReadOnlyAccess
 
- |[DTS 授权和子账号管理 DTS 实例](https://help.aliyun.com/document_detail/52589.html)|
-|数据管理 DMS|×|×|×|×|-|-|[云资源授权](https://help.aliyun.com/document_detail/47571.html)|
-|数据库备份 DBS|√|√|√|√|服务级别| -   AliyunDBSFullAccess
+ |[DTS授权和子账号管理DTS实例](https://help.aliyun.com/document_detail/52589.html)|
+|数据管理DMS|×|×|×|×|-|-|[云资源授权](https://help.aliyun.com/document_detail/47571.html)|
+|数据库备份DBS|√|√|√|√|服务级别| -   AliyunDBSFullAccess
 -   AliyunDBSReadOnlyAccess
 
  |-|
-|混合云数据库管理 HDM|√|○|√|○|服务级别| -   AliyunHDMReadOnlyAccess
+|混合云数据库管理HDM|√|○|√|○|服务级别| -   AliyunHDMReadOnlyAccess
 -   AliyunHDMFullAccess
 
  |[子账号如何使用HDM](https://help.aliyun.com/knowledge_detail/66674.html)|
-|分布式关系型数据库 DRDS|√|√|√|√|资源级别| -   AliyunDRDSReadOnlyAccessyAccess
+|分布式关系型数据库DRDS|√|√|√|√|资源级别| -   AliyunDRDSReadOnlyAccessyAccess
 -   AliyunDRDSFullAccess
 
- |[DRDS 支持的资源授权](https://help.aliyun.com/document_detail/51480.html) |
-|图数据库 GDB|√|√|×|×|资源级别|-|-|
+ |[DRDS支持的资源授权](https://help.aliyun.com/document_detail/51480.html) |
+|图数据库GDB|√|√|×|×|资源级别|-|-|
 |数据库和应用迁移|√|○|×|○|服务级别| -   AliyunADAMReadOnlyAccess
 -   AliyunADAMFullAccess
 
  |-|
 
-## 存储与 CDN {#section_03 .section}
+## 存储与CDN {#section_03 .section}
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|对象存储 OSS|√|√|√|√|资源级别| -   AliyunOSSFullAccess
+|对象存储OSS|√|√|√|√|资源级别| -   AliyunOSSFullAccess
 -   AliyunOSSReadOnlyAccess
 
  |[如何构建RAM Policy](../../../../cn.zh-CN/开发指南/权限控制/基于RAM Policy的权限控制/如何构建RAM Policy.md#)|
-|文件存储 NAS|√|○|×|○|操作级别| -   AliyunNASFullAccess
+|文件存储NAS|√|○|×|○|操作级别| -   AliyunNASFullAccess
 -   AliyunNASReadOnlyAccess
 
  |[../../../../dita-oss-bucket/SP\_111/DNnas1882233/ZH-CN\_TP\_18697.md\#](../../../../cn.zh-CN/控制台用户指南/管理权限/管理权限组.md#)|
@@ -169,7 +169,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
  |-|
 |混合云容灾|√|○|×|○|服务级别|AliyunHDRFullAccess|-|
-|安全加速 SCDN|√|√|×|×|资源级别| -   AliyunSCDNReadOnlyAccess
+|安全加速SCDN|√|√|×|×|资源级别| -   AliyunSCDNReadOnlyAccess
 -   AliyunSCDNFullAccess
 
  |-|
@@ -178,17 +178,17 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
  |[子账户使用指南](https://help.aliyun.com/document_detail/73265.html)|
 |闪电立方|√|○|×|○|服务级别|AliyunMGWFullAccess|-|
-|边缘节点服务 ENS|√|√|×|×|资源级别| -   AliyunENSReadOnlyAccess
+|边缘节点服务ENS|√|√|×|×|资源级别| -   AliyunENSReadOnlyAccess
 -   AliyunENSFullAccess
 
  |-|
-|文件存储 HDFS|√|√|×|×|资源级别|-|[使用RAM授权访问](../../../../cn.zh-CN/用户指南/使用RAM授权访问.md#)|
+|文件存储HDFS|√|√|×|×|资源级别|-|[使用RAM授权访问](../../../../cn.zh-CN/用户指南/使用RAM授权访问.md#)|
 
 ## 网络 {#section_04 .section}
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|专有网络 VPC|√|√|√|√|资源级别| -   AliyunVPCFullAccess
+|专有网络VPC|√|√|√|√|资源级别| -   AliyunVPCFullAccess
 -   AliyunVPCReadOnlyAccess
 
  |[RAM鉴权](../../../../cn.zh-CN/API参考/RAM鉴权.md#)|
@@ -197,11 +197,11 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
  |[RAM鉴权](../../../../cn.zh-CN/API参考/RAM鉴权.md#)|
 |共享流量包|√|○|√|○|服务级别|-|-|
-|弹性公网 IP|√|√|√|√|资源级别| -   AliyunEIPFullAccess
+|弹性公网IP|√|√|√|√|资源级别| -   AliyunEIPFullAccess
 -   AliyunEIPReadOnlyAccess
 
  |[RAM鉴权](../../../../cn.zh-CN/API参考/RAM鉴权.md#)|
-|高速通道 ExpressConnect|√|√|√|√|资源级别| -   AliyunExpressConnectFullAccess
+|高速通道ExpressConnect|√|√|√|√|资源级别| -   AliyunExpressConnectFullAccess
 -   AliyunExpressConnectReadOnlyAccess
 
  |[RAM鉴权](../../../../cn.zh-CN/API参考/RAM鉴权.md#)|
@@ -306,7 +306,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
 
- |[使用 RAM 实现 KMS 资源授权](../../../../cn.zh-CN/用户指南/使用 RAM 实现 KMS 资源授权.md#)|
+ |[使用RAM实现KMS资源授权](../../../../cn.zh-CN/用户指南/使用 RAM 实现 KMS 资源授权.md#)|
 |智能顾问|√|√|√|√|操作级别| -   AliyunAdvisorFullAccess
 -   AliyunAdvisorReadOnlyAccess
 
@@ -321,12 +321,12 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
  |[鉴权规则](../../../../cn.zh-CN/API 参考/RAM__STS/鉴权规则.md#)|
 |开放搜索|√|√|×|×|资源级别|AliyunOpenSearchFullAccess|[访问鉴权规则](https://help.aliyun.com/document_detail/53744.html)|
-|性能测试 PTS|√|√|√|√|服务级别|AliyunPTSFullAccess|-|
+|性能测试PTS|√|√|√|√|服务级别|AliyunPTSFullAccess|-|
 |邮件推送|√|√|√|√|服务级别| -   AliyunDirectMailFullAccess
 -   AliyunDirectMailReadOnlyAccess
 
  |-|
-|API 网关|√|√|√|√|服务级别| -   AliyunApiGatewayFullAccess
+|API网关|√|√|√|√|服务级别| -   AliyunApiGatewayFullAccess
 -   AliyunApiGatewayReadOnlyAccess
 
  | -
@@ -379,12 +379,12 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|企业级分布式应用服务 EDAS|√|√|×|×|服务级别|AliyunEDASFullAccess|[子账号管理](https://help.aliyun.com/document_detail/44023.html)|
-|分布式关系型数据库服务 DRDS|√|√|×|√|资源级别| -   AliyunDRDSFullAccess
+|企业级分布式应用服务EDAS|√|√|×|×|服务级别|AliyunEDASFullAccess|[子账号管理](https://help.aliyun.com/document_detail/44023.html)|
+|分布式关系型数据库服务DRDS|√|√|×|√|资源级别| -   AliyunDRDSFullAccess
 -   AliyunDRDSReadOnlyAccess
 
  |[DRDS支持的资源授权](https://help.aliyun.com/document_detail/51480.html) |
-|业务实时监控服务 ARMS|√|√|×|×|服务级别|AliyunARMSFullAccess|[创建 RAM 子账号并授权](../../../../cn.zh-CN/访问控制/借助 RAM 用户实现分权.md#)|
+|业务实时监控服务ARMS|√|√|×|×|服务级别|AliyunARMSFullAccess|[创建 RAM 子账号并授权](../../../../cn.zh-CN/访问控制/借助 RAM 用户实现分权.md#)|
 |云服务总线|√|√|√|√|资源级别|AliyunCSBFullAccess|[子账号支持](https://help.aliyun.com/document_detail/66522.html)|
 |全局事务服务|×|×|×|×|-|-|-|
 |应用配置管理|√|√|√|√|资源级别|AliyunACMFullAccess|[访问权限控制](../../../../cn.zh-CN/访问控制/访问权限控制.md#)|
@@ -394,25 +394,25 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
  |-|
 
-## 消息队列 MQ {#section_10 .section}
+## 消息队列MQ {#section_10 .section}
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|消息队列 RocketMQ|√|√|×|√|资源级别| -   AliyunMQFullAccess
+|消息队列RocketMQ|√|√|×|√|资源级别| -   AliyunMQFullAccess
 -   AliyunMQPubOnlyAccess
 -   AliyunMQSubOnlyAccess
 
- |[RAM 子账号授权](https://help.aliyun.com/document_detail/61382.html) |
-|消息队列 Kafka|√|√|×|×|服务级别| -   AliyunKafkaFullAccess
+ |[RAM子账号授权](https://help.aliyun.com/document_detail/61382.html) |
+|消息队列Kafka|√|√|×|×|服务级别| -   AliyunKafkaFullAccess
 -   AliyunKafkaPubOnlyAccess
 -   AliyunKafkaSubOnlyAccess
 
- |[RAM 访问控制](https://help.aliyun.com/document_detail/68338.html)|
-|消息队列 AMQP|√|√|×|×|资源级别| -   AliyunAMQPFullAccess
+ |[RAM访问控制](https://help.aliyun.com/document_detail/68338.html)|
+|消息队列AMQP|√|√|×|×|资源级别| -   AliyunAMQPFullAccess
 -   AliyunAMQPReadOnlyAccess
 
- |[RAM 子账户授权](https://help.aliyun.com/document_detail/110522.html)|
-|微消息队列 for IoT|√|√|×|×|服务级别|-|-|
+ |[RAM子账户授权](https://help.aliyun.com/document_detail/110522.html)|
+|微消息队列for IoT|√|√|×|×|服务级别|-|-|
 |消息服务MNS|√|√|×|√|资源级别| -   AliyunMNSFullAccess
 -   AliyunMNSReadOnlyAccess
 
@@ -450,7 +450,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
  |[子帐号使用控制台说明](../../../../cn.zh-CN/用户指南/子帐号使用控制台说明.md#)|
 |视频点播|√|√|√|√|服务级别|AliyunVODFullAccess|-|
 |视频直播|√|√|×|√|资源级别|AliyunLiveFullAccess|[API鉴权规则](../../../../cn.zh-CN/API参考/API鉴权规则.md#)|
-|音视频通信 RTC|√|√|×|×|资源级别| -   AliyunRTCFullAccess
+|音视频通信RTC|√|√|×|×|资源级别| -   AliyunRTCFullAccess
 -   AliyunRTCReadOnlyAccess
 
  |[RAM资源授权](https://help.aliyun.com/document_detail/74559.html) |
@@ -466,7 +466,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 |机器学习|√|√|×|×|服务级别|-|-|
 |推荐引擎|√|√|×|×|服务级别|-|-|
 |公众趋势分析|√|√|×|×|服务级别|-|-|
-|DataV 数据可视化|√|√|×|×|服务级别|-|-|
+|DataV数据可视化|√|√|×|×|服务级别|-|-|
 |MaxCompute|√|√|×|×|服务级别|-|-|
 |智能语音交互|√|√|×|×|服务级别| -   AliyunSCAFullAccess
 -   AliyunSCAReadOnlyAccess
@@ -502,11 +502,11 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunYundunAegisReadOnlyAccess
 
  |-|
-|DDoS 基础防护|√|○|√|○|服务级别| -   AliyunYundunDDosFullAccess
+|DDoS基础防护|√|○|√|○|服务级别| -   AliyunYundunDDosFullAccess
 -   AliyunYundunDDosReadOnlyAccess
 
  |-|
-|DDoS 高防 IP|√|○|√|○|服务级别| -   AliyunYundunHighFullAccess
+|DDoS高防IP|√|○|√|○|服务级别| -   AliyunYundunHighFullAccess
 -   AliyunYundunHighReadOnlyAccess
 
  |-|
