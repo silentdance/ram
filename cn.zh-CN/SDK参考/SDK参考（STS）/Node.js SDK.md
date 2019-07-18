@@ -1,16 +1,12 @@
 # Node.js SDK {#concept_fvb_xzy_xdb .concept}
 
-本文简要介绍了 Node.js SDK 的安装并提供一个简单的操作示例。
+本文简要介绍了Node.js SDK的安装并提供一个简单的操作示例。
 
-## Node.js SDK 的安装 {#section_egk_sbz_xdb .section}
+## Node.js SDK的安装 {#section_egk_sbz_xdb .section}
 
-通过 npm 安装 Node.js SDK：
+通过npm安装Node.js SDK：`npm install -S @alicloud/pop-core`。
 
-``` {#codeblock_rfl_xaf_zql}
-npm install -S @alicloud/pop-core
-```
-
-## Node.js SDK 示例 {#section_c4w_0ax_p6c .section}
+## Node.js SDK示例 {#section_c4w_0ax_p6c .section}
 
 ``` {#codeblock_vxy_igi_mt4}
 /*
@@ -19,8 +15,8 @@ npm install -S @alicloud/pop-core
 */
 
 const Core = require('@alicloud/pop-core');
-// 构建一个阿里云 Client, 用于发起请求
-// 构建阿里云 Client 时需要设置 access key ID 和 access key secret
+// 构建一个阿里云client, 用于发起请求
+// 构建阿里云client时需要设置AccessKey ID和AccessKey Secret
 var client = new Core({
   accessKeyId: '<accessKeyId>',
   AccessKeysecret: '<accessSecret>',
@@ -28,13 +24,13 @@ var client = new Core({
   apiVersion: '2015-04-01'
 });
 
-//设置参数，指定角色 ARN
+//设置参数，指定角色ARN
 var params = {
   'RoleArn': '<role-arn>',
   'RoleSessionName': 'session-name'
 };
 
-//构建 AssumeRole 请求
+//构建AssumeRole请求
 client.request('AssumeRole', params).then((result) => {
   console.log(result);
 }, (ex) => {
@@ -44,6 +40,6 @@ client.request('AssumeRole', params).then((result) => {
 
 **说明：** 
 
--   STS 各区域的 endpoint，请参考：[接入地址](../../../../intl.zh-CN/API 参考（STS）/调用方式/接入地址.md#)。
--   AssumeRole 接口相关信息，请参考：[AssumeRole](../../../../intl.zh-CN/API 参考（STS）/操作接口/AssumeRole.md#)。
+-   STS各区域的endpoint，请参见[接入地址](../../../../cn.zh-CN/API 参考（STS）/调用方式/接入地址.md#)。
+-   AssumeRole接口相关信息，请参见[AssumeRole](../../../../cn.zh-CN/API 参考（STS）/操作接口/AssumeRole.md#)。
 
