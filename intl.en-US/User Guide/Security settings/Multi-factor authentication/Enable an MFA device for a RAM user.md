@@ -10,8 +10,8 @@ This topic describes how to enable a multi-factor authentication \(MFA\) device 
     -   If you allow a RAM user under your Alibaba Cloud account to manage its own MFA device, the user can also enable an MFA device in the RAM console. The procedure is as follows: Click **Security**. In the left-side navigation pane, click **MFA Device Management**. Then, click **Enable MFA Device**.
 2.  Choose **Identities** \> **Users**.
 3.  In the **User Logon Name/Display Name** column, click the username of the target RAM user.
-4.  In the **MFA Device** section, click **Enable Virtual MFA Device**.
-5.  Download and install Google Authenticator on you mobile phone. 
+4.  In the **MFA Device** section, click **Enable the device**.
+5.  Download and install Google Authenticator on your mobile phone. 
     -   For iOS: Install Google Authenticator from the App Store.
     -   For Android: Install Google Authenticator from the Google Play Store.
 
