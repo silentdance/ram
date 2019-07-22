@@ -4,7 +4,7 @@
 
 ## 前提条件 {#section_m72_l8e_f9v .section}
 
-请确保您已经注册了阿里云账号。如还未注册，请先完成账号注册。详情请参见[账号注册](https://account.alibabacloud.com/register/intl_register.htm)。
+请确保您已经注册了阿里云账号。如还未注册，请先完成账号注册。详情请参见[账号注册](https://account.aliyun.com/register/register.htm)。
 
 ## 背景信息 {#section_01 .section}
 
@@ -35,11 +35,11 @@
 
 资源组是在阿里云账号下进行资源分组管理的一种机制，公司A只需使用1个账号，创建3个资源组（对应3个项目）。
 
-![资源组解决方案](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23774/156378660414357_zh-CN.png)
+![资源组解决方案](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23774/156378758014357_zh-CN.png)
 
 1.  创建3个RAM用户：`alice@secloud.onaliyun.com`、`bob@secloud.onaliyun.com`和`charlie@secloud.onaliyun.com`。
 
-    详情请参考：[创建RAM用户](../intl.zh-CN/用户指南/用户/创建 RAM 用户.md#)。
+    详情请参考：[创建RAM用户](../cn.zh-CN/用户指南/用户/创建 RAM 用户.md#)。
 
     **说明：** 下面的操作均以RAM用户Alice为例，介绍如何将其设为项目的管理员。
 
