@@ -12,7 +12,7 @@ This topic describes how to enable a multi-factor authentication \(MFA\) device 
 5.  Click **Submit**.
 6.  On the displayed page, click **Verify now**.
 7.  Enter the verification code and click **Submit**.
-8.  Download and install Google Authenticator on you mobile phone. 
+8.  Download and install Google Authenticator on your mobile phone. 
 
     **Note:** If you already installed Google Authenticator, click **Next**.
 
