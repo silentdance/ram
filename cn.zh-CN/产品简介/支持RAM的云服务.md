@@ -111,7 +111,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunDTSReadOnlyAccess
 
  |[DTS授权和子账号管理DTS实例](https://help.aliyun.com/document_detail/52589.html)|
-|数据管理DMS|×|×|×|×|-|-|[云资源授权](https://help.aliyun.com/document_detail/47571.html)|
+|数据管理DMS|√|○|√|○|资源级别|-|[云资源授权](https://help.aliyun.com/document_detail/47571.html)|
 |数据库备份DBS|√|√|√|√|服务级别| -   AliyunDBSFullAccess
 -   AliyunDBSReadOnlyAccess
 
@@ -178,7 +178,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
  |[子账户使用指南](https://help.aliyun.com/document_detail/73265.html)|
 |闪电立方|√|○|×|○|服务级别|AliyunMGWFullAccess|-|
-|边缘节点服务ENS|√|√|×|×|资源级别| -   AliyunENSReadOnlyAccess
+|边缘节点服务ENS|√|√|√|√|资源级别| -   AliyunENSReadOnlyAccess
 -   AliyunENSFullAccess
 
  |-|
@@ -251,7 +251,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|消息服务|√|√|×|×|资源级别| -   AliyunMNSFullAccess
+|消息服务|√|√|√|√|资源级别| -   AliyunMNSFullAccess
 -   AliyunMNSReadOnlyAccess
 
  |-|
@@ -413,7 +413,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
  |[RAM子账户授权](https://help.aliyun.com/document_detail/110522.html)|
 |微消息队列for IoT|√|√|×|×|服务级别|-|-|
-|消息服务MNS|√|√|×|√|资源级别| -   AliyunMNSFullAccess
+|消息服务MNS|√|√|√|√|资源级别| -   AliyunMNSFullAccess
 -   AliyunMNSReadOnlyAccess
 
  |[授权子账号访问MNS](https://help.aliyun.com/document_detail/27446.html) |
@@ -536,10 +536,10 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 |安全管家 （安全服务）|√|○|√|○|服务级别|-|-|
 |加密服务 （数据安全）|√|○|√|○|服务级别|AliyunYundunHSMFullAccess|-|
 |内容安全（业务安全）|√|○|√|○|服务级别|AliyunYundunGreenWebFullAccess|-|
-|数据风控（业务安全）|√|○|×|○|服务级别|AliyunYundunAFSFullAccess|-|
+|数据风控（业务安全）|√|○|√|○|服务级别|AliyunYundunAFSFullAccess|-|
 |移动安全|√|○|×|○|服务级别|AliyunYundunJaqFullAccess|-|
 |合作伙伴中心|√|○|×|○|服务级别|AliyunYundunPartnerFullAccess|-|
-|数据库审计|√|○|×|○|服务级别|AliyunYundunDbAuditFullAccess|-|
+|数据库审计|√|○|√|○|服务级别|AliyunYundunDbAuditFullAccess|-|
 |堡垒机|√|○|√|○|服务级别|AliyunYundunBastionHostFullAccess|-|
 |爬虫风险管理|√|○|√|○|服务级别| -   AliyunYundunAntibotFullAccess
 -   AliyunYundunAntibotReadOnlyAccess
