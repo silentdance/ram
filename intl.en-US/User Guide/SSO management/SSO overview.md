@@ -1,19 +1,17 @@
 # SSO overview {#concept_etn_fjc_mfb .concept}
 
-Alibaba Cloud supports SAML 2.0-based Single Sign On \(SSO, also known as identity federation\). This topic introduces how to implement SSO between enterprises and Alibaba Cloud.
+This topic describes the concepts and methods of Single Sign On \(SSO\), also known as identity federation. Enterprises can implement SSO to their Alibaba Cloud accounts by using SAML 2.0.
 
-## Terms {#section_khp_n4p_pgb .section}
-
-The following are some basic terms related to SAML and SSO:
+## Concepts {#section_khp_n4p_pgb .section}
 
  Identity provider \(IdP\)
- :   Provides identity management services. IdPs are generally classified into the following types:
+ :   A RAM entity that provides identity management services. IdPs are generally classified into the following types:
 
     -   Locally deployed IdPs, such as Microsoft Active Directory Federation Service \(AD FS\) and Shibboleth
     -   Cloud-based IdPs, such as Azure AD, Google G Suite, Okta, and OneLogin
 
   Service provider \(SP\)
- :   Uses the identity management function of an IdP to provide users with specific services. An SP uses the user information provided by an IdP. In some identity systems \(such as OpenID Connect\) that do not comply with the SAML protocol, SP is known as relying party, which means the relying party of an IdP.
+ :   An application that uses the identity management function of an IdP to provide users with specific services. An SP uses the user information provided by an IdP. In some identity systems \(such as OpenID Connect\) that do not comply with the SAML protocol, SP is known as relying party, which means the relying party of an IdP.
 
   Security Assertion Markup Language 2.0 \(SAML 2.0\)
  :   A protocol for enterprise-level user identity authentication. It can be used to achieve communication between an SP and an IdP. SAML 2.0 is a standard that enterprises can use to implement enterprise-level SSO.
@@ -28,8 +26,8 @@ The following are some basic terms related to SAML and SSO:
 
 Enterprises can implement SSO with Alibaba Cloud through SAML 2.0-based IdPs \(for example, AD FS\). Alibaba Cloud offers the following two SAML 2.0-based SSO methods:
 
--   User-based SSO: The RAM user that you can use to log on to Alibaba Cloud can be determined through a SAML assertion. After logon, you can use the RAM user to access Alibaba Cloud. For more information, see [User-based SSO overview](intl.en-US/User Guide/SSO management/User-based SSO/User-based SSO overview.md#).
--   Role-based SSO: The RAM role that you can use to log on to Alibaba Cloud can be determined through SAML assertions. After logon, you can use the role specified in the SAML assertion to access Alibaba Cloud. For more information, see [Role-based SSO overview](intl.en-US/User Guide/SSO management/Role-based SSO (beta version)/Role-based SSO overview.md#).
+-   User-based SSO: The RAM user that you can use to log on to Alibaba Cloud can be determined through a SAML assertion. After logon, you can use the RAM user to access Alibaba Cloud. For more information, see [Overview of user-based SSO](intl.en-US/User Guide/SSO management/User-based SSO/Overview of user-based SSO.md#).
+-   Role-based SSO: The RAM role that you can use to log on to Alibaba Cloud can be determined through SAML assertions. After logon, you can use the role specified in the SAML assertion to access Alibaba Cloud. For more information, see [Overview of role-based SSO](intl.en-US/User Guide/SSO management/Role-based SSO/Overview of role-based SSO.md#).
 
 ## Comparison between role-based SSO and user-based SSO {#section_kyq_l1m_bhb .section}
 
