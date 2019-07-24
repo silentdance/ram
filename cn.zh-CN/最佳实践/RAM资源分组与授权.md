@@ -35,7 +35,7 @@
 
 资源组是在阿里云账号下进行资源分组管理的一种机制，公司A只需使用1个账号，创建3个资源组（对应3个项目）。
 
-![资源组解决方案](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23774/156378758014357_zh-CN.png)
+![资源组解决方案](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23774/156396240814357_zh-CN.png)
 
 1.  创建3个RAM用户：`alice@secloud.onaliyun.com`、`bob@secloud.onaliyun.com`和`charlie@secloud.onaliyun.com`。
 
