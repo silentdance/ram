@@ -4,3 +4,5 @@ This topic describes how to activate Alibaba Cloud Resource Access Management \(
 
 To activate the RAM service, go to the RAM activation page.
 
+**Note:** The RAM service cannot be deactivated after you activate it.
+
