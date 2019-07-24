@@ -1,28 +1,10 @@
 # Features {#concept_thl_ct2_xdb .concept}
 
-RAM helps you with **user identity management** and **resource access management**. Features are shown as follows:
+RAM allows you to create and manage multiple identities under an Alibaba Cloud account and to attach different policies to different identities or identity groups. That is, RAM grants different resource access permissions to different RAM users.
 
-## Manage RAM users and their access keys {#section_wsz_dt2_xdb .section}
-
-Under your Alibaba Cloud account, you can create and manage RAM users and their access keys, and enable or disable MFA devices for RAM users.
-
-## Grant access permissions to RAM users {#section_xsz_dt2_xdb .section}
-
-You can attach one or more authorization policies to a user, a user group or a role, to grant necessary operation permissions on specified resources.
-
-## Restrict user access to cloud resources {#section_ysz_dt2_xdb .section}
-
-You can specify that users use security channels \(such as SSL\) to request access to specific cloud resources at a designated time or from a specified source IP address.
-
-## Authorize roles for external account identities {#section_zsz_dt2_xdb .section}
-
-You can associate RAM roles with external identity systems \(such as your local enterprise domain accounts, or your app accounts\). In this way, you can directly use an external identity to log on to a RAM role to access the Alibaba Cloud console or an API.
-
-## Centrally control cloud resources {#section_atz_dt2_xdb .section}
-
-You can control the instances and data created by RAM users in a centralized manner. Therefore, when a user leaves your organization, these instances and data are still under your full control.
-
-## Consolidate bills {#section_btz_dt2_xdb .section}
-
-Your account receives a single bill for all expenses incurred from resource operations performed by all RAM users.
+-   You can create and manage RAM users and their access keys under your Alibaba Cloud account and attach or deactivate MFA devices for them.
+-   You can attach one or more policies to a RAM user or a RAM user group to restrict users' operation permissions for Alibaba Cloud resources.
+-   You can specify that RAM users use security channels \(for example, SSL\) to operate on the specified Alibaba Cloud resources at a specified time or from specified source IP addresses.
+-   You can centrally control the instances and data created by RAM users. Therefore, when a user leaves your organization, you can still fully control the user's instances and data.
+-   You can implement Single Sign On \(SSO\), such as user-based SSO or role-based SSO, between your enterprise IdPs and Alibaba Cloud.
 
