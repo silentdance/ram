@@ -3,13 +3,19 @@
 This topic describes how to configure the SAML of an identity provider \(IdP\) during user-based Single Sign On \(SSO\). You can configure Alibaba Cloud as a trusted SAML service provider \(SP\), and configure an SAML assertion in the IdP.
 
 1.  Obtain the SAML SP metadata URL from Alibaba Cloud. 
-    1.  Log on to the [RAM console](https://partners-intl.console.aliyun.com/#/ram).
+    1.  Log on to the [RAM console](https://ram.console.aliyun.com/) by using your Alibaba Cloud account.
     2.  In the left-side navigation pane, click **SSO**.
     3.  Click the **User-based SSO** tab.
     4.  Copy the SAML SP metadata URL.
-2.  Create an SAML SP in the target IdP and configure the SAML SP metadata URL of Alibaba Cloud. 
+2.  Create an SAML SP in your IdP and then configure Alibaba Cloud as the relying party by using one of the following methods: 
+    -   Copy and paste the SAML SP metadata URL of Alibaba Cloud into your IdP.
+    -   If your IdP does not support URL configuration, click **Copy** next to **SAML Service Provider Metadata URL** to download an XML file. Then, when you create an SAML SP, you can upload the XML file.
+    -   If you fail to upload an XML file to your IdP, configure the following parameters:
+        -   `Entity ID`: The value of the `entityID` attribute in the `md:EntityDescriptor` element of the metadata XML file.
+        -   `ACS URL`: The value of the `Location` attribute in the `md:AssertionConsumerService` element of the metadata XML file.
+        -   `RelayState`: Optional. If the `RelayState` parameter is available in your IdP, you can set this parameter to the URL to be directed after SSO succeeds. If this parameter is left unspecified, the home page of the Alibaba Cloud console is directed after SSO succeeds.
 
-    **Note:** If your IdP does not support URL configuration, click **Copy** next to **SAML Service Provider Metadata URL** to download an XML file. Then, when you create an SAML SP, you can upload the XML file.
+            **Note:** Only the URL in the `*.console.aliyun.com`or `*.console.alibabacloud.com` domain can be set for `RelayState`.
 
 
 After you configure Alibaba Cloud as a trusted SAML SP, you need to configure an SAML assertion in the IdP.
@@ -18,12 +24,12 @@ Alibaba Cloud uses a User Principal Name \(UPN\) to locate a RAM user. Therefore
 
 If you configure the SAML assertion issued by the IdP, you must map the UPN of the target RAM user to the `NameID` element in the SAML assertion. The `NameID` element must contain one of the following suffixes:
 
--   The domain alias of your Alibaba Cloud account, for example, `<username>@<domain_alias>`. Here, the **<username\>** sub-element is the username of a RAM user, and the `<domain_alias>` sub-element is the domain alias. For information about how to set a domain alias, see [Create a domain alias for an Alibaba Cloud account](reseller.en-US/User Guide/Security settings/Advanced settings/Create a domain alias for an Alibaba Cloud account.md#).
--   The auxiliary domain name that is set for user-based SSO, for example, `<username>@<auxiliary_domain>`. Here, the **<username\>** sub-element is the username of a RAM user, and the `<auxiliary_alias>` sub-element is the auxiliary domain name. For information about how to set an auxiliary domain name, see [Set an auxiliary domain name](reseller.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#).
+-   The domain alias of your Alibaba Cloud account, for example, `<username>@<domain_alias>`. Here, the **<username\>** sub-element is the username of a RAM user, and the `<domain_alias>` sub-element is the domain alias. For information about how to set a domain alias, see [Create a domain alias for an Alibaba Cloud account](intl.en-US/User Guide/Security settings/Advanced settings/Create a domain alias for an Alibaba Cloud account.md#).
+-   The auxiliary domain name that is set for user-based SSO, for example, `<username>@<auxiliary_domain>`. Here, the **<username\>** sub-element is the username of a RAM user, and the `<auxiliary_alias>` sub-element is the auxiliary domain name. For information about how to set an auxiliary domain name, see [Set an auxiliary domain name](intl.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#).
 
     **Note:** If you set a domain alias and an auxiliary domain name at the same time, only the domain alias can be used as the suffix of the `NameID` element.
 
--   The default domain name of your Alibaba Cloud account, for example, `<username>@<default_domain>`. Here, the **<username\>** sub-element is the username of a RAM user, and the `<default_domain>` sub-element is the default domain name. For information about how to set a default domain name, see [Manage the default domain name of an Alibaba Cloud account](reseller.en-US/User Guide/Security settings/Advanced settings/Manage the default domain name of an Alibaba Cloud account.md#).
+-   The default domain name of your Alibaba Cloud account, for example, `<username>@<default_domain>`. Here, the **<username\>** sub-element is the username of a RAM user, and the `<default_domain>` sub-element is the default domain name. For information about how to set a default domain name, see [Manage the default domain name of an Alibaba Cloud account](intl.en-US/User Guide/Security settings/Advanced settings/Manage the default domain name of an Alibaba Cloud account.md#).
 
     **Note:** You can use the default domain name of your Alibaba Cloud account as the suffix of the `NameID` element regardless of whether you set a domain alias or an auxiliary domain name.
 
