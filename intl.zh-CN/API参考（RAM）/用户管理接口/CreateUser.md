@@ -2,9 +2,9 @@
 
 调用CreateUser接口创建RAM用户。
 
-## 调试 {#api_explorer .section}
+## 调试 {#apiExplorer .section}
 
-[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Ram&api=CreateUser&type=RPC&version=2015-05-01)
+前往【[API Explorer](https://api.aliyun.com/#product=Ram&api=CreateUser)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
 
 ## 请求参数 {#parameters .section}
 
@@ -35,7 +35,7 @@
 
  |
 
-## 返回数据 {#resultMapping .section}
+## 返回参数 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -45,25 +45,25 @@
 |User| | |用户信息。
 
  |
-|Comments|String|这是一位云计算工程师|备注。
+|└Comments|String|这是一位云计算工程师|备注。
 
  |
-|CreateDate|String|2015-01-23T12:33:18Z|创建时间。
+|└CreateDate|String|2015-01-23T12:33:18Z|创建时间。
 
  |
-|DisplayName|String|张强|显示名称。
+|└DisplayName|String|张强|显示名称。
 
  |
-|Email|String|zhangq\*\*\*\*@example.com|RAM用户的邮箱。
+|└Email|String|zhangq\*\*\*\*@example.com|RAM用户的邮箱。
 
  |
-|MobilePhone|String|86-1860000\*\*\*\*|RAM用户手机号。
+|└MobilePhone|String|86-1860000\*\*\*\*|RAM用户手机号。
 
  |
-|UserId|String|122748924538\*\*\*\*|用户唯一标识。
+|└UserId|String|122748924538\*\*\*\*|用户唯一标识。
 
  |
-|UserName|String|zhangq\*\*\*\*|用户名称。
+|└UserName|String|zhangq\*\*\*\*|用户名称。
 
  |
 
@@ -90,17 +90,18 @@ https://ram.aliyuncs.com/?Action=CreateUser
 
 ``` {#xml_return_success_demo}
 <CreateUserResponse>
-      <RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
-      <User>
-            <UserId>122748924538****</UserId>
-            <UserName>zhangq****</UserName>
-            <DisplayName>zhangq****</DisplayName>
-            <MobilePhone>86-1860000****</MobilePhone>
-            <Email>zhangq****@example.com</Email>
-           <Comments>这是一位云计算工程师</Comments>
-           <CreateDate>2015-01-23T12:33:18Z</CreateDate>
-      </User>
+  <RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
+  <User>
+    <UserId>122748924538****</UserId>
+    <UserName>zhangq****</UserName>
+    <DisplayName>zhangq****</DisplayName>
+    <MobilePhone>86-1860000****</MobilePhone>
+    <Email>zhangq****@example.com</Email>
+    <Comments>这是一位云计算工程师</Comments>
+    <CreateDate>2015-01-23T12:33:18Z</CreateDate>
+  </User>
 </CreateUserResponse>
+
 ```
 
 `JSON` 格式
@@ -122,5 +123,5 @@ https://ram.aliyuncs.com/?Action=CreateUser
 
 ## 错误码 { .section}
 
-访问[错误中心](https://error-center.alibabacloud.com/status/product/Ram)查看更多错误码。
+[查看本产品错误码](https://error-center.aliyun.com/status/product/Ram)
 
