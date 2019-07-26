@@ -348,7 +348,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
  |-|
 |云AP|×|×|×|×|-|-|-|
 |云桌面|√|○|√|○|服务级别|-|-|
-|CodePipeline|√|√|×|√|资源级别|AliyunCodePipelineFullAccess|[授权策略示例](https://help.aliyun.com/document_detail/63799.html)|
+|CodePipeline|√|√|√|√|资源级别|AliyunCodePipelineFullAccess|[授权策略示例](https://help.aliyun.com/document_detail/63799.html)|
 |云客服|×|○|×|○|-|-|-|
 |云小蜜|√|√|×|×|服务级别|AliyunChatbotFullAccess|-|
 |云呼叫中心|√|√|×|×|服务级别|AliyunCCCFullAccess|-|
