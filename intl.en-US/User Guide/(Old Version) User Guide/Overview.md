@@ -11,26 +11,6 @@ Identity management
 -   [RAM roles](reseller.en-US/User Guide/RAM roles/Overview of a RAM role.md#)
 -   [RAM role management](reseller.en-US/User Guide/RAM roles/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud account.md#)
 
-Identity integration
-
--   [Application scenarios of SSO](reseller.en-US/User Guide/SSO management/Application scenarios of SSO.md#)
--   [SSO overview](reseller.en-US/User Guide/SSO management/SSO overview.md#)
-
-User-based SSO
-
--   [Overview of user-based SSO](reseller.en-US/User Guide/SSO management/User-based SSO/Overview of user-based SSO.md#)
--   [EN-US\_TP\_23740.md\#](reseller.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#)
--   [EN-US\_TP\_41887.md\#](reseller.en-US/User Guide/SSO management/User-based SSO/Configure the SAML of an IdP during user-based SSO.md#)
--   [Implement user-based SSO by using AD FS](reseller.en-US/User Guide/SSO management/User-based SSO/Implement user-based SSO by using AD FS.md#)
-
-Role-based SSO
-
--   [Overview of role-based SSO](reseller.en-US/User Guide/SSO management/Role-based SSO/Overview of role-based SSO.md#)
--   [SAML assertions for role-based SSO](reseller.en-US/User Guide/SSO management/Role-based SSO/SAML assertions for role-based SSO.md#)
--   [EN-US\_TP\_135641.md\#](reseller.en-US/User Guide/SSO management/Role-based SSO/Configure the SAML for role-based SSO.md#)
--   [EN-US\_TP\_136785.md\#](reseller.en-US/User Guide/SSO management/Role-based SSO/Configure the SAML of an IdP during role-based SSO.md#)
--   [Implement role-based SSO by using AD FS](reseller.en-US/User Guide/SSO management/Role-based SSO/Implement role-based SSO by using AD FS.md#)
-
 Policy management
 
 -   [Policy management](reseller.en-US/User Guide/Policies/Custom policies/Create a custom policy.md#)
