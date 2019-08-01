@@ -16,7 +16,7 @@ Identities can be created in RAM to allow or deny access to resources in your Al
 
 ## Default domain name {#section_okb_3dj_e1w .section}
 
-A unique identifier of an Alibaba Cloud account that is used in scenarios such as RAM user logon and Single Sign On \(SSO\) management. Alibaba Cloud assigns a default domain name for each Alibaba Cloud account in the `<AccountAlias>.onaliyun.com` format.
+A unique identifier of an Alibaba Cloud account that is used in scenarios such as RAM user logon. Alibaba Cloud assigns a default domain name for each Alibaba Cloud account in the `<AccountAlias>.onaliyun.com` format.
 
 For information about how to set a default domain name, see [Manage the default domain name of an Alibaba Cloud account](../../../../reseller.en-US/User Guide/Security settings/Advanced settings/Manage the default domain name of an Alibaba Cloud account.md#).
 
@@ -99,62 +99,11 @@ RAM roles are divided into the following types according to different trusted en
 
 -   Alibaba Cloud account: roles that RAM users can assume. The RAM users may belong to their own Alibaba Cloud accounts or other Alibaba Cloud accounts. Such roles provide solutions to cross-account access and temporary authorization.
 -   Alibaba Cloud service: roles that Alibaba Cloud services can assume. Such roles are used to authorize Alibaba Cloud services to operate resources as stand-alone applications.
--   Identity provider \(IdP\): roles that users in an entrusted IdP can assume. Such roles are used to implement SSO to Alibaba Cloud.
 
-For information about how to create a RAM role, see [Create a RAM role for a trusted Alibaba Cloud account](../../../../reseller.en-US/User Guide/RAM roles/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud account.md#), [Create a RAM role for a trusted Alibaba Cloud service](../../../../reseller.en-US/User Guide/RAM roles/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud service.md#), and [Create a RAM role for a trusted IdP](../../../../reseller.en-US/User Guide/RAM roles/Create a RAM role/Create a RAM role for a trusted IdP.md#).
+For information about how to create a RAM role, see
 
-## Single Sign On \(SSO\) {#section_a9y_j4h_fmm .section}
-
-Alibaba Cloud supports SAML 2.0-based SSO, also known as identity federation.
-
-Enterprises can implement SSO with Alibaba Cloud through SAML 2.0-based IdPs \(for example, AD FS\). Alibaba Cloud offers the following two SAML 2.0-based SSO methods:
-
--   User-based SSO: The RAM user that you can use to log on to Alibaba Cloud can be determined through a SAML assertion. After logon, you can use the RAM user to access Alibaba Cloud. For more information, see [Overview of user-based SSO](../../../../reseller.en-US/User Guide/SSO management/User-based SSO/Overview of user-based SSO.md#).
--   Role-based SSO: The RAM role that you can use to log on to Alibaba Cloud can be determined through SAML assertions. After logon, you can use the role specified in the SAML assertion to access Alibaba Cloud. For more information, see [Overview of role-based SSO](../../../../reseller.en-US/User Guide/SSO management/Role-based SSO/Overview of role-based SSO.md#).
-
-## Metadata file {#section_irv_i8k_5pq .section}
-
-A file, usually in XML format, provided by an IdP. It contains the IdP's logon service address and X.509 public key certificate that is used to verify the validity of the SAML assertion issued by the IdP.
-
-## Identity provider \(IdP\) {#section_d2y_ptj_jzj .section}
-
-A RAM entity that provides identity management services. IdPs are generally classified into the following types:
-
--   Locally deployed IdPs, such as Microsoft Active Directory Federation Service \(AD FS\) and Shibboleth
--   Cloud-based IdPs, such as Azure AD, Google G Suite, Okta, and OneLogin
-
-## Service provider \(SP\) {#section_vsk_xjo_ji4 .section}
-
-An application that uses the identity management function of an IdP to provide users with specific services. An SP uses the user information provided by an IdP. In some identity systems \(such as OpenID Connect\) that do not comply with the SAML protocol, SP is known as relying party, which means the relying party of an IdP.
-
-## Security Assertion Markup Language 2.0 \(SAML 2.0\) {#section_uk4_svo_nld .section}
-
-A protocol for enterprise-level user identity authentication. It can be used to achieve communication between an SP and an IdP. SAML 2.0 is a standard that enterprises can use to implement enterprise-level SSO.
-
-## SAML assertion {#section_z74_fcm_nge .section}
-
-A core element in the SAML protocol to describe the authentication request and response. For example, specific properties of a user are contained in the authentication response assertion.
-
-## Trust {#section_oj9_86t_hun .section}
-
-A mutual trust mechanism between an SP and an IdP. It is usually implemented by using public and private keys. An SP obtains SAML metadata of an IdP in a trusted way. The metadata includes the public key for verifying the SAML Assertion issued by the IdP. The SP can use the public key to verify the assertion integrity.
-
-## Alibaba Cloud OAuth 2.0 service {#section_j14_ovh_d9w .section}
-
-The Alibaba Cloud OAuth 2.0 service is used to authenticate users and generate tokens for applications to access specific Alibaba Cloud resources on behalf of users.
-
-## OAuth application {#section_qyx_zdm_tlp .section}
-
-The application that can access Alibaba Cloud resources after it is authorized by a user and obtains tokens of the user.
-
-Currently, the following types are supported by the OAuth 2.0 service:
-
--   **WebApp**: This type interacts with a web browser.
--   **NativeApp**: This type runs locally on an operating system, such as a desktop operating system or a mobile operating system.
-
-## OAuth Scope {#section_3d0_scp_xnt .section}
-
-The scope within which an application is allowed to access Alibaba Cloud resources on behalf of a user.
+-   [Create a RAM role for a trusted Alibaba Cloud account](../../../../reseller.en-US/User Guide/RAM roles/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud account.md#)
+-   [Create a RAM role for a trusted Alibaba Cloud service](../../../../reseller.en-US/User Guide/RAM roles/Create a RAM role/Create a RAM role for a trusted Alibaba Cloud service.md#)
 
 ## Terms related to access control {#section_op3_gvn_tdt .section}
 
