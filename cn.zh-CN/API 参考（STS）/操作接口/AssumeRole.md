@@ -7,12 +7,14 @@
 |名称|类型|是否必选|示例值|描述|
 |:-|:-|:---|:--|:-|
 |Action|String|是|AssumeRole|系统规定参数。取值：AssumeRole|
-|RoleArn|String|是|acs:ram::123456789012\*\*\*\*:role/adminrole|指定角色的ARN。格式：`acs:ram::$accountID:role/$roleName` 。|
+|RoleArn|String|是|acs:ram::123456789012\*\*\*\*:role/adminrole|指定角色的ARN。格式：`acs:ram::$accountID:role/$roleName` 。 **说明：** `$accountID`可以通过登录控制台，将鼠标悬停在右上角头像的位置，单击**安全设置**进行查看。
+
+ |
 |RoleSessionName|String|是|alice|用户自定义参数。此参数用来区分不同的令牌，可用于用户级别的访问审计。格式：`^[a-zA-Z0-9\.@\-_]+$`。 **说明：** 支持输入2~32个字符，请输入至少2个字符，如果只有1个字符，会出现错误。
 
  |
 |Policy|String|否|\{"Statement": \[\{"Action": \["\*"\],"Effect": "Allow","Resource": \["\*"\]\}\],"Version":"1"\}|长度限制为1024字节。此参数可以限制生成的STS token的权限，若不指定则返回的token拥有指定角色的所有权限。|
-|DurationSeconds|Integer|否|3600|指定的过期时间，单位为秒。过期时间范围：900~3600秒，默认值为3600秒。|
+|DurationSeconds|Long|否|3600|指定的过期时间，单位为秒。过期时间范围：900~3600秒，默认值为3600秒。|
 
 ## 返回数据 {#section_tqj_lsv_xdb .section}
 
@@ -25,7 +27,9 @@
 |└SecurityToken|String|\*\*\*\*\*\*\*\*|安全令牌。|
 |└Expiration|String|2015-04-09T11:52:19Z|失效时间。|
 |AssumedRoleUser| | |角色扮演临时身份。|
-|└Arn|String|acs:sts::123456789012\*\*\*\*:assumed-role/AdminRole/alice|指定角色的ARN。格式：`acs:ram::$accountID:role/$roleName` 。|
+|└Arn|String|acs:sts::123456789012\*\*\*\*:assumed-role/AdminRole/alice|指定角色的ARN。格式：`acs:ram::$accountID:role/$roleName` 。 **说明：** `$accountID`可以通过登录控制台，将鼠标悬停在右上角头像的位置，单击**安全设置**进行查看。
+
+ |
 |└AssumedRoleUserId|String|34458433936495\*\*\*\*:alice|该角色临时身份的用户ID。|
 
 ## 示例 {#section_tdy_lsv_xdb .section}
