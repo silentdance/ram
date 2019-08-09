@@ -16,12 +16,10 @@ RAM allows you to create and manage multiple identities under an Alibaba Cloud a
 
 |Application scenario|Description|
 |--------------------|-----------|
-|[User management and access control](../reseller.en-US/Best Practices/User management and access control.md#)| |
-|[Grant temporary permissions to mobile apps](../reseller.en-US/Best Practices/Grant temporary permissions to mobile apps.md#)| |
-|[Cross-account resource authorization and access](../reseller.en-US/Best Practices/Cross-account resource authorization and access.md#)| |
-|[Dynamic identity and permission management of cloud applications](../reseller.en-US/Best Practices/Use RAM to authorize applications to access Alibaba Cloud resources.md#)| An enterprise has bought ECS instances and wants to deploy its applications in ECS. To allow the applications to access other Alibaba Cloud APIs by using access keys, the enterprise can use one of the following methods:
-
- |
+|[../../../../dita-oss-bucket/SP\_65/DNRAM11894803/EN-US\_TP\_23773.md\#](../../../../reseller.en-US/Best Practices/User management and access control.md#)|Enterprise A has bought several types of Alibaba Cloud resources, such as ECS instances, RDS instances, SLB instances, and OSS buckets for a project. During this project, many employees need to perform operations on these cloud resources, but different employees require different permissions to complete different operations.|
+|[Grant temporary permissions to mobile apps](../../../../reseller.en-US/Best Practices/Grant temporary permissions to mobile apps.md#)|Enterprise A has developed a mobile app, which runs on users' own devices. Therefore, Enterprise A cannot manage these devices directly and wants to use Alibaba Cloud OSS so that the mobile app can upload data to or download data from OSS.|
+|[Cross-account resource authorization and access](../../../../reseller.en-US/Best Practices/Cross-account resource authorization and access.md#)|Enterprise A has bought various Alibaba Cloud resources \(such as ECS instances, RDS instances, SLB instances, and OSS buckets\) to support its business. Account A is the resource owner and wants to grant Account B the relevant permissions to perform operations on resources of Account A.|
+|[Use RAM to authorize applications to access Alibaba Cloud resources](../../../../reseller.en-US/Best Practices/Use RAM to authorize applications to access Alibaba Cloud resources.md#)|An enterprise has bought ECS instances and wants to deploy its applications in ECS. To allow the applications to access other Alibaba Cloud APIs by using access keys.|
 
 ## Accessing RAM {#section_84q_m6p_rlf .section}
 
@@ -32,6 +30,8 @@ The endpoint for accessing RAM by calling API actions is `https://ram.aliyuncs.c
 You can use RAM for free after you create an Alibaba Cloud account.
 
 To activate the RAM service, go to the RAM activation page.
+
+**Note:** The RAM service cannot be deactivated after you activate it.
 
 ## Alibaba Cloud services that work with RAM {#section_b13_vex_zdm .section}
 
