@@ -23,7 +23,7 @@ RAM可以限制用户只能通过指定的IP地址才能访问企业的云资源
 3.  填写**策略名称**和**备注**。
 4.  **配置模式**选择**脚本配置**，拷贝下述策略示例到[策略内容](https://ram.console.aliyun.com/policies/new)区域下并根据实际情况进行修改。 
 
-    ![限制用户登录IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280070/156568718454965_zh-CN.png)
+    ![限制用户登录IP地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280070/156568723354965_zh-CN.png)
 
     下述策略表示：用户只能通过192.168.0.0/16这个IP地址访问ECS。您可以通过设置`Condition`下`acs:SourceIp`的值为`192.168.0.0/16`来实现。
 
