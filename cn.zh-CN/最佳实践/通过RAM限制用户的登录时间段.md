@@ -1,6 +1,6 @@
 # 通过RAM限制用户的登录时间段 {#task_1614774 .task}
 
-RAM可以限制用户只能在指定的时间段才能访问企业的云资源，从而增强访问安全性。
+RAM可以限制用户只能在指定的时间段访问企业的云资源，从而增强访问安全性。
 
 -   请确保您已经注册了阿里云账号。如还未注册，请先完成账号注册。详情请参见[账号注册](https://account.aliyun.com/register/register.htm)。
 -   请确保您已经开通RAM服务并登录[RAM控制台](https://ram.console.aliyun.com/)。如还未开通，请先开通RAM服务。详情请参见[开通方法](https://help.aliyun.com/document_detail/28633.html#concept-ujy-rj1-ydb)。
@@ -23,9 +23,9 @@ RAM可以限制用户只能在指定的时间段才能访问企业的云资源�
 3.  填写**策略名称**和**备注**。
 4.  **配置模式**选择**脚本配置**，拷贝下述策略示例到[策略内容](https://ram.console.aliyun.com/policies/new)区域下并根据实际情况进行修改。 
 
-    ![限制用户登录时间段](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280574/156568726855096_zh-CN.png)
+    ![限制用户登录时间段](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280574/156568816855096_zh-CN.png)
 
-    下述策略表示：用户在特定时间段（北京时间2019年8月12日17：00之前）才能访问ECS。您可以通过设置`Condition`下`acs:CurrentTime`的值为`2019-08-12T17:00:00+08:00`来实现。
+    下述策略表示：RAM用户只能在特定时间段（北京时间2019年8月12日17：00之前）访问ECS。您可以通过设置`Condition`下`acs:CurrentTime`的值为`2019-08-12T17:00:00+08:00`来实现。
 
     ``` {#codeblock_6v5_m94_cvb .lanuage-xml}
     {
@@ -45,7 +45,7 @@ RAM可以限制用户只能在指定的时间段才能访问企业的云资源�
     }
     ```
 
-    **说明：** `Condition`限制条件）只针对当前权限策略描述的操作有效。您可以修改时间`2019-08-12T17:00:00+08:00`为企业允许访问的时间。
+    **说明：** `Condition`（限制条件）只针对当前权限策略描述的操作有效。您可以修改时间`2019-08-12T17:00:00+08:00`为企业允许访问的时间。
 
 5.  单击**确认**。
 
