@@ -313,7 +313,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 |服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
 |:--|:-------|:-------|:-------|:-------|:---|:---|:---|
-|DataWorks|√|√|×|×|服务级别|AliyunDataWorksFullAccess|[用户使用子账号](https://help.aliyun.com/document_detail/74302.html)|
+|DataWorks|√|√|×|×|服务级别|AliyunDataWorksFullAccess|[用户使用子账号](../../../../intl.zh-CN/准备工作/用户使用子账号.md#)|
 |Quick BI|√|√|×|×|服务级别|-|-|
 |机器学习|√|√|×|×|服务级别|-|-|
 |公众趋势分析|√|√|×|×|服务级别|-|-|
