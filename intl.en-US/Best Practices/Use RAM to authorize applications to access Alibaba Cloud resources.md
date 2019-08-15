@@ -18,7 +18,7 @@ However, if the preceding methods are used, the following issues occur:
 
 To resolve the preceding issues, the enterprise can combine ECS with the access control feature of RAM. Specifically, the administrator creates a RAM role for each ECS instance \(that is, the operating environment of the applications\) and grants each RAM role appropriate permissions. The applications can use the temporary STS token of the corresponding RAM role to call other Alibaba Cloud APIs.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23777/156505899614410_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23777/156586151614410_en-US.png)
 
 1.  The enterprise uses its Alibaba Cloud account to create a RAM role \(`MyApplicationRole`\).
 
@@ -28,7 +28,7 @@ To resolve the preceding issues, the enterprise can combine ECS with the access 
 
 2.  The enterprise uses its Alibaba Cloud account to grant relevant permissions to the RAM role.
 
-    For information about how to grant permission to a RAM role, see[Grant permission to a RAM role](../../../../reseller.en-US/User Guide/RAM roles/Grant permission to a RAM role.md#).
+    For information about how to grant permission to a RAM role, see [Grant permission to a RAM role](../../../../reseller.en-US/User Guide/RAM roles/Grant permission to a RAM role.md#).
 
     **Note:** If the temporary STS token does not have corresponding permissions, the enterprise needs to attach related policies to the RAM role. After the policies attached to the RAM role are updated, the permissions associated with the temporary STS token take effect immediately and the user does not need to restart the ECS instance.
 
