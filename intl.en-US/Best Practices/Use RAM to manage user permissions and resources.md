@@ -16,7 +16,7 @@ The requirements of Enterprise A are as follows:
 
 ## Solution {#section_abb_xdk_xdb .section}
 
-![Solution](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23773/156680392314406_en-US.png)
+![Solution](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23773/156680510514406_en-US.png)
 
 -   Set multi-factor authentication \(MFA\) for you Alibaba Cloud account to avoid risks associated with mistaken disclosure of the password. For more information, see [Enable an MFA device for an Alibaba Cloud account](../../../../reseller.en-US/User Guide/Security settings/Multi-factor authentication/Enable an MFA device for an Alibaba Cloud account.md#).
 -   Create RAM users for different employees \(or applications\) and set logon passwords or create AccessKey pairs. For more information, see [Create a RAM user](../../../../reseller.en-US/User Guide/RAM users/Create a RAM user.md#).
