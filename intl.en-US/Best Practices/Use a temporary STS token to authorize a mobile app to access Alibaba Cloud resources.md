@@ -16,7 +16,7 @@ The requirements of Enterprise A are as follows:
 
 Before you upload data to or download data from OSS, the mobile app must first apply for an access credential from the application server. The application server assumes a RAM role as a RAM user, calls the AssumeRole action of the STS API to obtain a temporary STS token, and then sends the STS token to the mobile app. After the STS token is sent, the mobile app uses the STS token to access OSS.
 
-![Use a temporary STS token to authorize a mobile app to access Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23775/156680396514407_en-US.png)
+![Use a temporary STS token to authorize a mobile app to access Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23775/156680415614407_en-US.png)
 
 1.  The mobile app applies for an access credential from the application server.
 2.  Enterprise A uses its Alibaba Cloud account to create a RAM role and grant relevant permissions to the role.
