@@ -15,7 +15,7 @@ When you migrate your business resources to the cloud, the traditional organizat
 
 To resolve the preceding issues, you can use RAM to create RAM users and grant resource access permissions to RAM users. Specifically, you can use RAM to separate the access key of your Alibaba Cloud account from RAM users and grant minimum permissions to users as needed to maintain the security of your resources.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/97386/156680332837013_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/97386/156680360537013_en-US.png)
 
 ## Security management solution {#section_gyq_2ny_pgb .section}
 
@@ -87,8 +87,6 @@ To resolve the preceding issues, you can use RAM to create RAM users and grant r
 
     For more information, see [What is STS?](../../../../reseller.en-US/API Reference (STS)/What is STS?.md#)
 
-
-**Note:** You must [register an Alibaba Cloud account](https://account.alibabacloud.com/register/intl_register.htm) before you use RAM to maintain security of your Alibaba Cloud resources.
 
 ## Result {#section_ybx_ssy_pgb .section}
 
