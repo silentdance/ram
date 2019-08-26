@@ -16,13 +16,11 @@ The requirements of Enterprise A are as follows:
 
 ## Solution {#section_abb_xdk_xdb .section}
 
-![Solution](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23773/156680293514406_en-US.png)
+![Solution](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23773/156680392314406_en-US.png)
 
 -   Set multi-factor authentication \(MFA\) for you Alibaba Cloud account to avoid risks associated with mistaken disclosure of the password. For more information, see [Enable an MFA device for an Alibaba Cloud account](../../../../reseller.en-US/User Guide/Security settings/Multi-factor authentication/Enable an MFA device for an Alibaba Cloud account.md#).
 -   Create RAM users for different employees \(or applications\) and set logon passwords or create AccessKey pairs. For more information, see [Create a RAM user](../../../../reseller.en-US/User Guide/RAM users/Create a RAM user.md#).
 -   If multiple RAM users require the same permissions, we recommend that you create a user group and add the corresponding users to this group. For more information, see [Create a RAM user group](../../../../reseller.en-US/User Guide/RAM user groups/Create a RAM user group.md#).
 -   Attach one or more system policies to the groups or users. For more information, see [Grant permission to a RAM user](../../../../reseller.en-US/User Guide/RAM users/Grant permission to a RAM user.md#) or [Grant permission to a RAM user group](../../../../reseller.en-US/User Guide/RAM user groups/Grant permission to a RAM user group.md#). For finer-grained permission management, you can create one or more custom policies and attach them to individual users or to a user group. For more information, see [Create a custom policy](../../../../reseller.en-US/User Guide/Policies/Custom policies/Create a custom policy.md#).
 -   Remove permissions from groups or RAM users when they no longer need the permissions. For more information, see [Remove permission from a RAM user](../../../../reseller.en-US/User Guide/RAM users/Remove permission from a RAM user.md#) or [Remove permission from a RAM user group](../../../../reseller.en-US/User Guide/RAM user groups/Remove permission from a RAM user group.md#).
-
-**Note:** You must [register an Alibaba Cloud account](https://account.alibabacloud.com/register/intl_register.htm) before you use RAM to manage user permissions and resources.
 
