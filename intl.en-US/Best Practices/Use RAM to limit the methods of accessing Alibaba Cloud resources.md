@@ -23,7 +23,7 @@ To only allow RAM users to access Alibaba Cloud resources by using the HTTPS met
 3.  On the page that appears, specify the **Policy Name** and **Note** parameters.
 4.  Under **Configuration Mode**, select **Script**. Copy and paste the following sample script to the **Policy Document** area, and edit the script based on your business needs. 
 
-    ![Limit the methods of accessing Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280575/156689773055110_en-US.png)
+    ![Limit the methods of accessing Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280575/156689891955110_en-US.png)
 
     If the following policy is attached to a RAM user, the RAM user can only access ECS instances by using the HTTPS method. In this case, the `acs:SecureTransport` parameter in `Condition` is set to `true`.
 
