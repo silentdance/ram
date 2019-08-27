@@ -23,7 +23,7 @@ To only allow RAM users to access Alibaba Cloud resources from the specified IP 
 3.  On the page that appears, specify the **Policy Name** and **Note** parameters.
 4.  Under **Configuration Mode**, select **Script**. Copy and paste the following sample script to the **Policy Document** area, and edit the script based on your business needs. 
 
-    ![Limit the IP addresses used for accessing Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280070/156689737954965_en-US.png)
+    ![Limit the IP addresses used for accessing Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280070/156689871354965_en-US.png)
 
     If the following policy is attached to a RAM user, the RAM user can only access ECS instances from the IP addresses in the CIDR block range of 192.168.0.0/16. In this case, the `acs:SourceIp` parameter in `Condition` is set to `192.168.0.0/16`.
 
