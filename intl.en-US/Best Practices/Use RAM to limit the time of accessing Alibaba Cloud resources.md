@@ -23,7 +23,7 @@ To only allow RAM users to access Alibaba Cloud resources during the specified p
 3.  On the page that appears, specify the **Policy Name** and **Note** parameters.
 4.  Under **Configuration Mode**, select **Script**. Copy and paste the following sample script to the **Policy Document** area, and edit the script based on your business needs. 
 
-    ![Limit the time of accessing Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280574/156689756055096_en-US.png)
+    ![Limit the time of accessing Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280574/156689875655096_en-US.png)
 
     If the following policy is attached to a RAM user, the RAM user can only access ECS instances before 17:00 on August 12, 2019 \(UTC+8\). In this case, the `acs:CurrentTime` parameter in `Condition` is set to `2019-08-12T17:00:00+08:00`.
 
