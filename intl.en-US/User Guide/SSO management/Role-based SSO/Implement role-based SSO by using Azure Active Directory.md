@@ -1,120 +1,144 @@
-# Implement role-based SSO by using Azure Active Directory {#concept_cnw_3lg_jhb .concept}
+# Implement role-based SSO by using Azure Active Directory {#task_cnw_3lg_jhb .task}
 
-This topic provides an example of how to implement role-based Single Sign On \(SSO\) to Alibaba Cloud from Azure Active Directory \(Azure AD\), detailing the end-to-end identity SSO process from a cloud identity provider \(IdP\) to Alibaba Cloud. After implementing role-based SSO, you can better manage your Azure AD users who have access to Alibaba Cloud, enable your users to automatically log on to Alibaba Cloud with their Azure AD accounts, and manage your accounts in the Azure portal.
+This topic provides an example of how to implement role-based single sign-on \(SSO\) to Alibaba Cloud from Azure Active Directory \(Azure AD\). It also helps you to learn about the end-to-end identity SSO process from a cloud identity provider \(IdP\) to Alibaba Cloud.
 
-## Scenario {#section_i32_zdd_mfb .section}
+In this example, you have an Alibaba Cloud account \(Account1\) and an Azure AD user \(u2\). You use Azure AD to manage your users and configure enterprise applications such as Alibaba Cloud. After implementing role-based SSO, you can better manage your Azure AD users who have access to Alibaba Cloud. You can also enable your users to log on to the Alibaba Cloud console with their Azure AD accounts, and manage your accounts in the Azure portal.
 
-You use Azure AD to manage your users and configure enterprise applications such as Alibaba Cloud. In this example, you have an Alibaba Cloud account \(Account1\) and a user named u2. You want u2 to implement SSO from Azure AD to Account1.
+![Scenario](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594744059_en-US.png)
 
-The following figure shows the basic SSO process.
+## Add Alibaba Cloud role-based SSO from the Azure AD gallery {#section_mjz_zwm_jhb .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951144059_en-US.png)
+1.  Log on to the [Azure portal](https://portal.azure.com/?l=en.en-us#home) as an administrator.
+2.  In the left-side navigation pane, choose **Azure Active Directory** \> **Enterprise applications** \> **All applications**. 
 
-## Configurations {#section_mjz_zwm_jhb .section}
+    ![Azure Active Directory](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594743719_en-US.png)
 
-To implement role-based SSO, you must configure Azure AD and Alibaba Cloud by following these steps:
+3.  Click **New application**. 
 
--   Add Alibaba Cloud role-based SSO from Azure AD gallery:
-    1.  Log on to the [Azure portal](https://login.microsoftonline.com/common/oauth2/authorize?resource=https%3a%2f%2fmanagement.core.windows.net%2f&response_mode=form_post&response_type=code+id_token&scope=user_impersonation+openid&state=OpenIdConnect.AuthenticationProperties%3d5FT_-vA-86sjnHvdYgae3xIrfEYWocMbFm6b-6ZkjvyDN7oGP-eWsavs5bEJ7Ui4QLqrvKnbzv4y2jHrhRevyBj_wkvale5omi5UmyapSuopu9DVqOUDOr_4NHTF8vx-8mFviu87A4pkroboR4O1UvvnTsM5_j52lxGUHiqwduqJTfjv5RI19crtYGbT0AYA3wnOUj0CgbDRsoNqfWB1l4oG3A381I9d94MvXPcuK3g&nonce=636903212631060810.OGU3ZjE3ZDQtNGU0ZS00NTY1LWEzZjItZDEzOGU4OGZkMTFjMThiZWE5YWItMGEwOC00ZTBlLTkzYmMtYTkxNTc4ZTdmZTM2&client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&redirect_uri=https%3a%2f%2fportal.azure.com%2fsignin%2findex%2f&site_id=501430&client-request-id=f7c9e806-ffd9-4d71-a38a-e28c89ff7ba3&x-client-SKU=ID_NET&x-client-ver=1.0.40306.1554).
-    2.  In the left-side navigation pane, choose **Azure Active Directory** \> **Enterprise applications** \> **All applications**.
+    ![New application](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594743721_en-US.png)
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951143719_en-US.png)
+4.  In the **Add from the gallery** section of the Add an application page, enter **Alibaba Cloud Service \(Role-based SSO\)** into the textbox and press Enter. Then, select Alibaba Cloud Service \(Role-based SSO\). 
 
-    3.  Click **New application**.
+    ![Alibaba Cloud Service (Role-based SSO)](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594743722_en-US.png)
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951143721_en-US.png)
+5.  On the page that appears, click **Add**. 
 
-    4.  On the displayed page, enter Alibaba Cloud Service \(Role-based SSO\) in the search box, press **Enter**, and select **Alibaba Cloud Service \(Role-based SSO\)**.
+    ![Add](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594843723_en-US.png)
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951143722_en-US.png)
+6.  On the Alibaba Cloud Service \(Role-based SSO\) page, click **Properties** in the left-side navigation pane, and copy and save the object ID for subsequent use. 
 
-    5.  On the displayed page, click **Add**.
+    ![Object ID](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594843726_en-US.png)
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951143723_en-US.png)
 
-    6.  On the **Alibaba Cloud Service \(Role-based SSO\)** page, click **Properties** in the left-side navigation pane, and copy and save the object ID for subsequent use.
+## Configure Azure AD SSO {#section_hcw_ey6_57b .section}
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951243726_en-US.png)
+1.  Log on to the **Azure portal** as an administrator.
+2.  In the left-side navigation pane, choose **Azure Active Directory** \> **Enterprise applications** \> **All applications**.
+3.  In the **NAME** column, click **Alibaba Cloud Service \(Role-based SSO\)**.
+4.  In the left-side navigation pane of the page that appears, click **Single sign-on**. 
 
--   Enable Azure AD SSO in Azure AD:
-    1.  In the Azure portal, choose **Azure Active Directory** \> **Enterprise applications** \> **All applications**.
-    2.  In the **NAME** column, click **Alibaba Cloud Service \(Role-based SSO\)**.
-    3.  On the displayed page, select **Single sign-on** from the left-side navigation pane.
+    ![Single sign-on](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594843729_en-US.png)
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951243729_en-US.png)
+5.  In the Select a single sign-on method section, click **SAML**. 
 
-    4.  In the **Select a single sign-on method** section, click **SAML**.
+    ![SAML](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594843727_en-US.png)
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951243727_en-US.png)
+6.  On the Set up Single Sign-On with SAML page, follow these steps: 
+    1.  In the upper-left corner, click **Upload metadata file**, select a file, and then click **Add**. 
 
-    5.  On the **Set up Single Sign-On with SAML** page, follow these steps:
-        1.  In the upper-left corner, click **Upload metadata file** to integrate Azure AD with Alibaba Cloud role-based SSO, and click **Save**.
+        ![Upload a metadata file](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594843731_en-US.png)
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951243731_en-US.png)
+        **Note:** You can obtain the metadata file from the URL: `https://signin.alibabacloud.com/saml-role/sp-metadata.xml`.
 
-            **Note:** You can obtain the metadata file from the URL `https://signin.alibabacloud.com/saml-role/sp-metadata.xml`.
+    2.  In the **User Attributes & Claims** section, click the edit icon. 
 
-        2.  In the **User Attributes & Claims** section, click the **Edit** icon.
+        ![User attributes and claims](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594844052_en-US.png)
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951244052_en-US.png)
+    3.  Click **Add new claim**, specify the following parameters, and then click **Save**. 
 
-        3.  Click **Add new claim**. In the **Name** field, enter `Role`. In the **Namespace** field, enter `https://www.aliyun.com/SAML-Role/Attributes`. Set **Source** to **Attribute**, select `user.assignedroles` from the **Source attribute** drop-down list, and click **Save**.
+        -   Specify the **Name** parameter as `Role`.
+        -   Specify the **Namespace** parameter as `https://www.aliyun.com/SAML-Role/Attributes`.
+        -   Select **Attribute** for the **Source** parameter.
+        -   Select `user.assignedroles` from the **Source attribute** drop-down list.
+        ![Manage user claims](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594844053_en-US.png)
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951244053_en-US.png)
+    4.  Repeat the preceding step to add another claim. 
+        -   Specify the **Name** parameter as `RoleSessionName`.
+        -   Specify the **Namespace** parameter as `https://www.aliyun.com/SAML-Role/Attributes`.
+        -   Select **Attribute** for the **Source** parameter.
+        -   Select `user.userprincipalname` from the **Source attribute** drop-down list.
+    5.  In the upper-right corner of the User Attributes & Claims page, click the close icon. On the page that appears, in the **SAML Signing Certificate** section, click **Download** next to **Federation Metadata XML** to download the federation metadata XML for subsequent use. 
 
-        4.  Repeat the preceding step to add a new claim with **Name** set to `RoleSessionName` and **Source attribute** set to `user.userprincipalname`, and click **Save**.
+        ![Download the federation metadata XML](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594844054_en-US.png)
 
-            **Note:** You can also enter `https://www.aliyun.com/SAML-Role/Attributes` in the **Namespace** field.
+    6.  In the **Set up Alibaba Cloud Service \(Role-based SSO\)** section, copy and save the **Login URL**, **Azure AD Identifier**, and **Logout URL** for subsequent use. 
 
-        5.  In the **SAML Signing Certificate** section, click **Download** to download the federation metadata XML for subsequent use.
+        ![Set up Alibaba Cloud Service (Role-based SSO)](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594844055_en-US.png)
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951244054_en-US.png)
 
-        6.  In the **Set up Alibaba Cloud Service \(Role-based SSO\)** section, copy the URLs as needed.
+## Configure role-based SSO in Alibaba Cloud {#section_pc7_e43_i5z .section}
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951244055_en-US.png)
+1.  Log on to the Alibaba Cloud [RAM console](https://ram.console.aliyun.com/) by using Account1.
+2.  In the left-side navigation pane, click **SSO**.
+3.  On the **Role-based SSO** page, click **Create IdP**.
+4.  On the page that appears, specify the **IdP Name** parameter as `AAD`, and specify the **Note** parameter.
+5.  Click **Upload** under **Metadata File** to upload the federation metadata file you downloaded before. 
 
--   Configure role-based SSO in Alibaba Cloud:
+    **Note:** You need to upload the **federation metadata file** that you have downloaded from the **SAML Signing Certificate** section in Step 6-e.
 
-    1.  Log on to the Alibaba Cloud [RAM console](https://ram.console.aliyun.com/) by using Account1.
-    2.  In the left-side navigation pane, select **SSO**.
-    3.  On the **Role-based SSO** tab, click **Create IdP**.
-    4.  On the displayed page, enter `AAD` in the **IdP Name** field, enter a description in the **Note** field, click **Upload** to upload the federation metadata file you downloaded before, and click **OK**.
-    5.  After the IdP is successfully created, click **Create RAM Role**.
-    6.  In the **RAM Role Name** filed, enter `AADrole`, select `AAD` from the **Select IdP** drop-down list, and click **OK**.
-    **Note:** You can grant permission to the role as needed. After creating the IdP and the corresponding role, we recommend that you save the ARNs of the IdP and the role for subsequent use. You can obtain the ARNs on the IdP information page and the role information page.
+6.  Click **OK**.
+7.  After the IdP is created, click **Create RAM Role**.
+8.  Specify the **RAM Role Name** parameter as `AADrole`, and specify the **Note** parameter.
+9.  Select `AAD` from the drop-down list of Select IdP, and click **OK**. 
 
--   Associate the Alibaba Cloud RAM role \(AADrole\) with the Azure AD user \(u2\):
+    **Note:** 
 
-    To associate the RAM role with the Azure AD user, you must create a role in Azure AD by following these steps:
+    -   You can grant permission to the role based on your business needs. For more information, see [Grant permission to a RAM role](intl.en-US/User Guide/RAM roles/Grant permission to a RAM role.md#).
+    -   After creating the IdP and the corresponding role, we recommend that you save the ARNs of the IdP and the RAM role for subsequent use. For more information about how to obtain the ARN of the RAM role, see [View basic information about a RAM role](intl.en-US/User Guide/RAM roles/View basic information about a RAM role.md#).
 
-    1.  Log on to the [Azure AD Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
-    2.  Click **modify permissions** to obtain required permissions for creating a role.
+## Associate the Alibaba Cloud RAM role \(AADrole\) with the Azure AD user \(u2\) {#section_1p2_4hh_yah .section}
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951344132_en-US.png)
+1.  To associate the RAM role with the Azure AD user, you must first create a role in Azure AD by following these steps: 
+    1.  Log on to the [Azure AD Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) by using u2.
+    2.  Click **modify permissions** to obtain the required permissions. 
 
-    3.  Select the following permissions from the list and click **Modify Permissions**, as shown in the following figure.
+        ![Azure AD Graph Explorer](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594844132_en-US.png)
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951344135_en-US.png)
+    3.  Select the following permissions from the list, and click **Modify Permissions**. 
 
-        **Note:** After permissions are granted, log on to the Graph Explorer again.
+        ![Modify permissions](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944135_en-US.png)
 
-    4.  On the **Graph Explorer** page, select **GET** from the first drop-down list and **beta** from the second drop-down list. Then enter `https://graph.microsoft.com/beta/servicePrincipals` in the field next to the drop-down lists, and click **Run Query**.
+        **Note:** After the permissions are granted, log on to the Graph Explorer again.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951344150_en-US.png)
+    4.  On the Graph Explorer page, select **GET** from the first drop-down list, and select **beta** from the second drop-down list. Then, enter `https://graph.microsoft.com/beta/servicePrincipals` into the textbox next to the drop-down lists, and click **Run Query**. 
 
-        **Note:** If you are using multiple directories, you can enter `https://graph.microsoft.com/beta/contoso.com/servicePrincipals` in the field of the query.
+        ![Run Query](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944150_en-US.png)
 
-    5.  In the **Response Preview** section, extract the appRoles property from the 'Service Principal' for subsequent use.
+        **Note:** If you are using multiple directories, enter `https://graph.microsoft.com/beta/contoso.com/servicePrincipals` into the textbox next to the drop-down lists.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951344166_en-US.png)
+    5.  On the **Response Preview** tab, extract the `appRoles` property from the `Service Principal` object for subsequent use. 
 
-        **Note:** You can locate the appRoles property by entering `https://graph.microsoft.com/beta/servicePrincipals/<objectID>` in the field of the query. Note that the `objectID` is the object ID you have copied from the Azure AD **Properties** page.
+        ``` {#codeblock_fxv_xkg_gv1 .language-json}
+         "appRoles": [
+                        {
+                            "allowedMemberTypes": [
+                                "User"
+                            ],
+                            "description": "msiam_access",
+                            "displayName": "msiam_access",
+                            "id": "7dfd756e-8c27-4472-b2b7-38c17fc5****",
+                            "isEnabled": true,
+                            "origin": "Application",
+                            "value": null
+                        }
+                    ],
+        ```
 
-    6.  Go back to the Graph Explorer, change the method from **GET** to **PATCH**, paste the following content into the **Request Body** section, and click **Run Query**:
+        **Note:** You can find the `appRoles` property by entering `https://graph.microsoft.com/beta/servicePrincipals/<objectID>` into the textbox next to the drop-down lists. Note that the value of the `objectID` parameter is the object ID you have copied from the Azure AD Properties page.
 
-        ``` {#codeblock_y9g_mkr_57x}
-        
+    6.  Go back to the **Graph Explorer**, select **PATCH** from the first drop-down list, and select **beta** from the second drop-down list. Enter `https://graph.microsoft.com/beta/servicePrincipals/<objectID>` into the textbox next to the drop-down lists. Copy and paste the following sample script into the **Request Body** section, edit the script based on your business needs, and click **Run Query**. 
+
+        ``` {#codeblock_xcc_6ab_ucb .language-json}
         { 
           "appRoles": [
             { 
@@ -123,7 +147,7 @@ To implement role-based SSO, you must configure Azure AD and Alibaba Cloud by fo
               ],
               "description": "msiam_access",
               "displayName": "msiam_access",
-              "id": "41be2db8-48d9-4277-8e86-f6d22d35****",
+              "id": "41be2db8-48d9-4277-8e86-f6d22d35****",// The ID of the RAM role.
               "isEnabled": true,
               "origin": "Application",
               "value": null
@@ -133,54 +157,58 @@ To implement role-based SSO, you must configure Azure AD and Alibaba Cloud by fo
             ],
             "description": "Admin,AzureADProd",
             "displayName": "Admin,AzureADProd",
-            "id": "68adae10-8b6b-47e6-9142-6476078cdbce",
+            "id": "68adae10-8b6b-47e6-9142-6476078c****",// The ID that is produced by an ID generator in real time, such as GUID Generator.
             "isEnabled": true,
             "origin": "ServicePrincipal",
-            "value": "acs:ram::187125022722****:role/aadrole,acs:ram::187125022722****:saml-provider/AAD"
+            "value": "acs:ram::187125022722****:role/aadrole,acs:ram::187125022722****:saml-provider/AAD"// The ARNs of the IdP and the RAM role that you created in the RAM console.
             }
           ]
         }
         ```
 
-        **Note:** The `value` is the ARNs of the IdP and the role you created in the RAM console. Here, you can add multiple roles as needed. Azure AD will send the value of these roles as the claim value in SAML response. However, you can only add new roles after the `msiam_access` part for the patch operation. To smooth the creation process, we recommend that you use an ID generator, such as GUID Generator, to generate IDs in real time.
+        **Note:** You can add multiple roles based on your business needs. Azure AD will send the ARNs of these roles and their corresponding IdPs as the claim value in SAML response. However, you can only add new roles after the `msiam_access` part for the patch operation.
 
-    7.  After the 'Service Principal' is patched with the required role, attach the role with the Azure AD user \(u2\) by following these steps:
-        1.  In the Azure portal, choose **Azure Active Directory** \> **Enterprise applications** \> **All applications**.
-        2.  In the **NAME** column, click **Alibaba Cloud Service \(Role-based SSO\)**.
-        3.  On the displayed page, select **Users and groups** from the left-side navigation pane.
-        4.  In the upper-left corner, click **Add user**.
+2.  Associate the RAM role with the Azure AD user \(u2\) by following these steps: 
+    1.  Log on to the **Azure portal** as an administrator.
+    2.  In the left-side navigation pane, choose **Azure Active Directory** \> **Enterprise applications** \> **All applications**.
+    3.  In the **NAME** column, click **Alibaba Cloud Service \(Role-based SSO\)**.
+    4.  In the left-side navigation pane, click **Users and groups**.
+    5.  In the upper-left corner, click **Add user**. 
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951344178_en-US.png)
+        ![Add a user](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944178_en-US.png)
 
-        5.  On the **Users and groups** tab, select u2 from the user list, and click **Select**. Then, click **Assign**.
+    6.  On the page that appears, click **Users**, select u2 from the user list, and then click **Select**. 
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951444179_en-US.png)
+        ![Select a user](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944179_en-US.png)
 
-        6.  View the assigned role and test role-based SSO.
+    7.  Click **Assign**.
+    8.  View the assigned role and test role-based SSO. 
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951444185_en-US.png)
+        ![View the assigned role and test role-based SSO](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944185_en-US.png)
 
-    **Note:** After you assign the user \(u2\), the created role is automatically attached to the user. If you have created multiple roles, you need to attach the appropriate role to the user as needed. If you want to implement role-based SSO from Azure AD to multiple Alibaba Cloud accounts, repeat the preceding steps.
+        **Note:** After you assign the user \(u2\), the created RAM role is automatically attached to the user. If you have created multiple RAM roles, you need to attach an appropriate role to the user. If you want to implement role-based SSO from Azure AD to multiple Alibaba Cloud accounts, repeat the preceding steps.
 
 
 ## Test role-based SSO {#section_yj4_slh_jhb .section}
 
-After the preceding configurations are completed, test role-based SSO by following these steps:
+1.  Log on to the **Azure portal** as an administrator.
+2.  In the left-side navigation pane, choose **Azure Active Directory** \> **Enterprise applications** \> **All applications**.
+3.  In the **NAME** column, click **Alibaba Cloud Service \(Role-based SSO\)**.
+4.  In the left-side navigation pane of the page that appears, click **Single sign-on**.
+5.  On the page that appears, in the **Validate single sign-on with Alibaba Cloud Service \(Role-based SSO\)** section, click **Validate**. 
 
-1.  In the Azure portal, go to the **Alibaba Cloud Service \(Role-based SSO\)** page, select **Single sign-on**, and click **Test**.
+    ![Validate](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944188_en-US.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951444188_en-US.png)
+6.  Click **Sign in as current user**. 
 
-2.  Click **Sign in as current user**.
+    ![Sign in as the current user](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944191_en-US.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951444191_en-US.png)
+7.  On the page for selecting a logon account, select u2. 
 
-3.  On the account selection page, select u2.
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951444192_en-US.png)
+    ![Select an account](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944192_en-US.png)
 
 
-The following page is displayed, indicating that role-based SSO is successful.
+If the following page appears, it indicates that role-based SSO is successful.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156404951444194_en-US.png)
+![Successful role-based SSO](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/155432/156697594944194_en-US.png)
 
