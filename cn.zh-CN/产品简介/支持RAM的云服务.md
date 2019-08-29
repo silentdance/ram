@@ -263,8 +263,8 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunDycdpReadOnlyAccess
 
  |[流量权限访问控制](https://help.aliyun.com/document_detail/55767.html)|
-|短信服务|√|√|√|√|服务级别| -   AliyunSMSFullAccess
--   AliyunSMSReadOnlyAccess
+|短信服务|√|√|√|√|服务级别| -   AliyunDysmsFullAccess
+-   AliyunDysmsReadOnlyAccess
 
  |[访问权限控制](https://help.aliyun.com/document_detail/108069.html) |
 |物联网无线连接服务|√|√|√|√|服务级别| -   AliyunDyiotFullAccess
@@ -306,7 +306,7 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 -   AliyunKMSReadOnlyAccess
 -   AliyunKMSCryptoAccess
 
- |[使用RAM实现KMS资源授权](../../../../cn.zh-CN/用户指南/使用 RAM 实现 KMS 资源授权.md#)|
+ |[使用RAM实现KMS资源授权](../../../../cn.zh-CN/用户指南/使用RAM实现访问控制.md#)|
 |智能顾问|√|√|√|√|操作级别| -   AliyunAdvisorFullAccess
 -   AliyunAdvisorReadOnlyAccess
 
@@ -314,8 +314,8 @@ STS（Security Token Service）是阿里云提供的一种临时访问权限管�
 
 ## 应用服务 {#section_08 .section}
 
-|服务名|控制台（RAM）|API（RAM）|控制台（STS\)|API（STS）|授权粒度|系统策略|相关文档|
-|:--|:-------|:-------|:--------|:-------|:---|:---|:---|
+|服务名|控制台（RAM）|API（RAM）|控制台（STS）|API（STS）|授权粒度|系统策略|相关文档|
+|:--|:-------|:-------|:-------|:-------|:---|:---|:---|
 |日志服务|√|√|√|√|资源级别| -   AliyunLogFullAccess
 -   AliyunLogReadOnlyAccess
 
