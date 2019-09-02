@@ -10,7 +10,7 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-|Action|String|是|CreateRole|系统规定参数。取值：CreateRole。
+|Action|String|是|CreateRole|系统规定参数。取值：CreateRole
 
  |
 |RoleName|String|否|ECSAdmin|指定角色名，最多包含64个字符。
@@ -27,7 +27,7 @@
 
 AssumeRolePolicyDocument样例说明
 
--   如下策略表示允许扮演该角色的受信主体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户：
+-   如下策略表示允许扮演该角色的受信主体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户。
 
 ```
 
@@ -48,7 +48,7 @@ AssumeRolePolicyDocument样例说明
 
 ```
 
--   如下策略表示允许扮演该角色的受信主体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户（testuser）：
+-   如下策略表示允许扮演该角色的受信主体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户（testuser）。
 
 ```
 
@@ -71,7 +71,7 @@ AssumeRolePolicyDocument样例说明
 
 **说明：** 创建此角色时，请确保已创建好RAM用户`testuser`（其UPN为：testuser@123456789012****.onaliyun.com）。
 
--   如下策略表示允许扮演该角色的受信主体为当前云账号下的ECS服务（用户创建ECS实例时可以指定使用该RAM角色，实例启动后将能获得该RAM角色的STS Token）：
+-   如下策略表示允许扮演该角色的受信主体为当前云账号下的ECS服务（用户创建ECS实例时可以指定使用该RAM角色，实例启动后将能获得该RAM角色的STS Token）。
 
 ```
 
@@ -93,7 +93,7 @@ AssumeRolePolicyDocument样例说明
 
 ```
 
--   如下策略表示允许扮演该角色的受信主体为当前云账号（AccountID=123456789012****）中的身份提供商（testprovider）下的用户：
+-   如下策略表示允许扮演该角色的受信主体为当前云账号（AccountID=123456789012****）中的身份提供商（testprovider）下的用户。
 
 ```
 
@@ -200,5 +200,5 @@ https://ram.aliyuncs.com/?Action=CreateRole
 
 ## 错误码 { .section}
 
-访问[错误中心](https://error-center.aliyun.com/status/product/Ram)查看更多错误码。
+访问[错误中心](https://error-center.alibabacloud.com/status/product/Ram)查看更多错误码。
 
