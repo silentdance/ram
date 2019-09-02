@@ -10,7 +10,7 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-|Action|String|是|ListGroups|系统规定参数。取值：ListGroups。
+|Action|String|是|ListGroups|系统规定参数。取值：ListGroups
 
  |
 |Marker|String|否|EXAMPLE|当请求的返回结果被截断时，可以使用`Marker`获取从当前截断位置之后的内容。
@@ -116,5 +116,5 @@ https://ram.aliyuncs.com/?Action=ListGroups
 
 ## 错误码 { .section}
 
-访问[错误中心](https://error-center.aliyun.com/status/product/Ram)查看更多错误码。
+访问[错误中心](https://error-center.alibabacloud.com/status/product/Ram)查看更多错误码。
 
