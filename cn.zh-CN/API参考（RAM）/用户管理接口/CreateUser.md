@@ -10,7 +10,7 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-|Action|String|是|CreateUser|系统规定参数。取值：CreateUser。
+|Action|String|是|CreateUser|系统规定参数。取值：CreateUser
 
  |
 |Comments|String|否|This is a cloud computing engineer.|备注，最大长度128个字符。
@@ -122,5 +122,5 @@ https://ram.aliyuncs.com/?Action=CreateUser
 
 ## 错误码 { .section}
 
-访问[错误中心](https://error-center.aliyun.com/status/product/Ram)查看更多错误码。
+访问[错误中心](https://error-center.alibabacloud.com/status/product/Ram)查看更多错误码。
 
