@@ -2,15 +2,15 @@
 
 调用ListPolicies接口列出权限策略。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Ram&api=ListPolicies)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Ram&api=ListPolicies&type=RPC&version=2015-05-01)
 
 ## 请求参数 {#parameters .section}
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-|Action|String|是|ListPolicies|系统规定参数。取值：ListPolicies。
+|Action|String|是|ListPolicies|系统规定参数。取值：ListPolicies
 
  |
 |Marker|String|否|EXAMPLE|当请求的返回结果被截断时，可以使用`Marker`获取从当前截断位置之后的内容。
@@ -80,31 +80,30 @@ https://ram.aliyuncs.com/?Action=ListPolicies
 
 ``` {#xml_return_success_demo}
 <ListPoliciesResponse>
-  <RequestId>7B8A4E7D-6CFF-471D-84DF-195A7A241ECB</RequestId>
-  <IsTruncated>true</IsTruncated>
-  <Marker>EXAMPLE</Marker>
-  <Policies>
-    <Policy>
-      <PolicyName>OSS-Administrator</PolicyName>
-      <PolicyType>Custom</PolicyType>
-      <Description>OSS管理员权限</Description>
-      <DefaultVersion>v1</DefaultVersion>
-      <CreateDate>2015-01-23T12:33:18Z</CreateDate>
-      <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
-      <AttachmentCount>0</AttachmentCount>
-    </Policy>
-    <Policy>
-      <PolicyName>ReadOnlyAccess</PolicyName>
-      <PolicyType>System</PolicyType>
-      <Description>只读权限</Description>
-      <DefaultVersion>v1</DefaultVersion>
-      <CreateDate>2015-02-11T18:39:12Z</CreateDate>
-      <UpdateDate>2015-02-19T09:43:16Z</UpdateDate>
-      <AttachmentCount>0</AttachmentCount>
-    </Policy>
-  </Policies>
+      <RequestId>7B8A4E7D-6CFF-471D-84DF-195A7A241ECB</RequestId>
+      <IsTruncated>true</IsTruncated>
+      <Marker>EXAMPLE</Marker>
+      <Policies>
+            <Policy>
+                  <PolicyName>OSS-Administrator</PolicyName>
+                  <PolicyType>Custom</PolicyType>
+                  <Description>OSS管理员权限</Description>
+                  <DefaultVersion>v1</DefaultVersion>
+                  <CreateDate>2015-01-23T12:33:18Z</CreateDate>
+                  <UpdateDate>2015-01-23T12:33:18Z</UpdateDate>
+                  <AttachmentCount>0</AttachmentCount>
+            </Policy>
+            <Policy>
+                  <PolicyName>ReadOnlyAccess</PolicyName>
+                  <PolicyType>System</PolicyType>
+                  <Description>只读权限</Description>
+                  <DefaultVersion>v1</DefaultVersion>
+                  <CreateDate>2015-02-11T18:39:12Z</CreateDate>
+                  <UpdateDate>2015-02-19T09:43:16Z</UpdateDate>
+                  <AttachmentCount>0</AttachmentCount>
+            </Policy>
+      </Policies>
 </ListPoliciesResponse>
-
 ```
 
 `JSON` 格式
