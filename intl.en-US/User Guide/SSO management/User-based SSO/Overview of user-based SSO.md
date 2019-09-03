@@ -29,7 +29,7 @@ Before you use user-based SSO, you must set configurations to establish trust be
 
 1.  To make sure your IdP is trusted by Alibaba Cloud, you must configure the IdP in the Alibaba Cloud console.
 
-    For more information, see [Configure the SAML of an account](intl.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#).
+    For more information, see [Configure the SAML for user-based SSO](intl.en-US/User Guide/SSO management/User-based SSO/Configure the SAML for user-based SSO.md#).
 
 2.  To make sure Alibaba Cloud is trusted by the IdP, you must configure Alibaba Cloud as a trusted SAML SP and configure an SAML assertion in your IdP.
 
