@@ -30,7 +30,7 @@ The HTTP status code `2xx` indicates that the API operation is successful.
 
 ## Sample error responses {#section_psj_lrk_xdb .section}
 
-The HTTP status code `4xx` or `5xx` indicates that the API operation failed, and no result data is returned. The returned message body contains the specific error code, error message, the value of the `RequestId` parameter, and the value of the `HostId` parameter. The RequestId parameter indicates the globally unique ID of the API request, and the HostId parameter indicates the ID of the host to which your API request is sent. You can locate the errors by using the error codes. You can locate the errors by using the error codes. For more information, see [Error codes](https://error-center.aliyun.com/status/product/Ram).
+The HTTP status code `4xx` or `5xx` indicates that the API operation failed, and no result data is returned. The returned message body contains the specific error code, error message, the value of the `RequestId` parameter, and the value of the `HostId` parameter. The RequestId parameter indicates the globally unique ID of the API request, and the HostId parameter indicates the ID of the host to which your API request is sent. You can locate the errors by using the error codes. You can locate the errors by using the error codes.
 
 -   XML format
 
