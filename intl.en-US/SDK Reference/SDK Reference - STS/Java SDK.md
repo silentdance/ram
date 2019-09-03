@@ -7,7 +7,7 @@ This topic describes how to install Java SDK and provides an operation example.
 STS SDKs consist of Alibaba Cloud Java SDKs and STS SDKs.
 
 -   To install an Alibaba Cloud Java SDK, you must firstly install `aliyun-java-sdk-core`. For information about how to generate code examples and perform debug operations, see [OpenAPI Explorer](https://api.aliyun.com/).
--   To install an STS SDK, you must firstly install `aliyun-java-sdk-sts`. For information about STS API actions, see [Introduction](../../../../reseller.en-US/API Reference (STS)/Introduction.md#).
+-   To install an STS SDK, you must firstly install `aliyun-java-sdk-sts`. For information about STS API actions, see [What is STS?](../../../../reseller.en-US/API Reference (STS)/What is STS?.md#).
 
 ## Installation {#section_tsg_gxv_xdb .section}
 
@@ -112,6 +112,6 @@ public class StsServiceSample {
 **Note:** 
 
 -   Make sure that the access key ID and access key secret are valid.
--   For information about STS endpoints, see [Service address](../../../../reseller.en-US/API Reference (STS)/Calling method/Service address.md#).
+-   For information about STS endpoints, see [Endpoints](../../../../reseller.en-US/API Reference (STS)/Calling method/Endpoints.md#).
 -   For information about the AssumeRole API action, see [AssumeRole](../../../../reseller.en-US/API Reference (STS)/Operation interfaces/AssumeRole.md#).
 
