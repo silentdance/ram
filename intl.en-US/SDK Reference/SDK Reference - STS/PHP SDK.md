@@ -59,7 +59,6 @@ try {
 
 **Note:** 
 
--   For information about RAM roles, see [RAM role management](../../../../reseller.en-US/User Guide/Roles/RAM role management.md#).
--   For information about STS endpoints, see [Service address](../../../../reseller.en-US/API Reference (STS)/Calling method/Service address.md#).
+-   For information about STS endpoints, see [Endpoints](../../../../reseller.en-US/API Reference (STS)/Calling method/Endpoints.md#).
 -   For information about the AssumeRole action, see [AssumeRole](../../../../reseller.en-US/API Reference (STS)/Operation interfaces/AssumeRole.md#).
 
