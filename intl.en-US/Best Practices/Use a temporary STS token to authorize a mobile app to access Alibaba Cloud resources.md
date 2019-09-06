@@ -2,6 +2,10 @@
 
 This topic describes how to use a temporary STS token of a RAM role to authorize a mobile app to access Alibaba Cloud resources.
 
+## Prerequisites {#section_8dq_op2_9yp .section}
+
+An Alibaba Cloud account is created. If not, create one before proceeding.
+
 ## Scenario {#section_01 .section}
 
 Enterprise A has developed a mobile app, which runs on users' own devices. Therefore, Enterprise A cannot manage these devices directly and wants to use Alibaba Cloud OSS so that the mobile app can upload data to or download data from OSS.
@@ -9,14 +13,14 @@ Enterprise A has developed a mobile app, which runs on users' own devices. There
 The requirements of Enterprise A are as follows:
 
 -   The app does not need to use an application server to transmit data. Instead, it can directly upload data to or download data from OSS.
--   To maintain account security, Enterprise A will not save the access key to the mobile app because mobile devices that run the app are not managed by Enterprise A directly.
+-   To maintain account security, Enterprise A will not save the AccessKey pair to the mobile app because mobile devices that run the app are not managed by Enterprise A directly.
 -   Security risks are minimized by granting the app temporary access credentials \(by means of an STS token\) that the app can then use to connect to OSS. The app can access OSS only for a specified duration.
 
 ## Solution {#section_03 .section}
 
 Before you upload data to or download data from OSS, the mobile app must first apply for an access credential from the application server. The application server assumes a RAM role as a RAM user, calls the AssumeRole action of the STS API to obtain a temporary STS token, and then sends the STS token to the mobile app. After the STS token is sent, the mobile app uses the STS token to access OSS.
 
-![Use a temporary STS token to authorize a mobile app to access Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23775/156680415614407_en-US.png)
+![Use a temporary STS token to authorize a mobile app to access Alibaba Cloud resources](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23775/156777859914407_en-US.png)
 
 1.  The mobile app applies for an access credential from the application server.
 2.  Enterprise A uses its Alibaba Cloud account to create a RAM role and grant relevant permissions to the role.
@@ -88,9 +92,9 @@ Assume that the Alibaba Cloud account ID of Enterprise A is `123456789012****`.
 
 ## Obtain the STS token of the RAM role {#section_05 .section}
 
-1.  The application server uses the access key of the RAM user to call the AssumeRole action of the STS API.
+1.  The application server uses the AccessKey pair of the RAM user to call the AssumeRole action of the STS API.
 
-    **Note:** The access key for the application server must be configured.
+    **Note:** The AccessKey pair for the application server must be configured.
 
     The following is an example of how to use Alibaba Cloud CLI to call the AssumeRole action:
 
@@ -124,7 +128,7 @@ Enterprise A configures the `Policy` parameter to further restrict the permissio
 
 For example, Enterprise A allows the STS token to access only `sample-bucket/2015/01/01/*.jpg`.
 
-``` {#codeblock_x17_jfh_j1z}
+``` {#codeblock_x17_jfh_j1z .lanuage-xml}
 $ aliyuncli sts AssumeRole --RoleArn acs:ram::123456789012****:role/oss-readonly --RoleSessionName client-002 --Policy "{\"Version\":\"1\", \"Statement\": [{\"Effect\":\"Allow\", \"Action\":\"oss:GetObject\", \"Resource\":\"acs:oss:*:*:sample-bucket/2015/01/01/*.jpg\"}]}"
 {
    "AssumedRoleUser": {
@@ -158,12 +162,14 @@ $ aliyuncli sts AssumeRole --RoleArn acs:ram::123456789012****:role/oss-readonly
     ```
 
 
-## What to do next {#section_07 .section}
+**More information**  
 
-For more information, see:
 
--   [Set up direct data transfer for mobile apps](../../../../reseller.en-US/Best Practices/Application server/Set up direct data transfer for mobile apps.md#)
--   [Permission control](../../../../reseller.en-US/Best Practices/Application server/Permission control.md#)
--   [Set up data callback for mobile apps](../../../../reseller.en-US/Best Practices/Application server/Set up data callback for mobile apps.md#)
--   [STS temporary access authorization](../../../../reseller.en-US/Developer Guide/Hide/Access control/STS temporary access authorization.md#)
+[Set up direct data transfer for mobile apps](../../../../reseller.en-US/Best Practices/Application server/Set up direct data transfer for mobile apps.md#)
+
+[Permission control](../../../../reseller.en-US/Best Practices/Application server/Permission control.md#)
+
+[Set up data callback for mobile apps](../../../../reseller.en-US/Best Practices/Application server/Set up data callback for mobile apps.md#)
+
+[Access OSS with a temporary access token provided by STS](../../../../reseller.en-US/Developer Guide/Identity authentication/Access OSS with a temporary access token provided by STS.md#)
 
