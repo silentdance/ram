@@ -2,7 +2,8 @@
 
 Deletes a RAM user group.
 
-**Note:** Before you delete a RAM user group, make sure that no policy is attached to the group and no RAM user belongs to this group.
+-   Before you delete a RAM user group, make sure that no policy is attached to the group.
+-   Before you delete a RAM user group, make sure that no RAM user belongs to this group.
 
 ## Debug {#apiExplorer .section}
 
@@ -57,7 +58,7 @@ Response example
 }
 ```
 
-## Errors { .section}
+## Errors {#section_q7b_zm1_vao .section}
 
 For a list of error codes, visit the [API Error Center](https://error-center.alibabacloud.com/status/product/Ram?spm=5176.10421674.0.0.29c5cav7cav7Io).
 
