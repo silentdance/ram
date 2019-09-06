@@ -2,6 +2,10 @@
 
 This topic describes how to use RAM to authorize applications to access Alibaba Cloud resources by obtaining the temporary STS token of a RAM role.
 
+## Prerequisites {#section_jkr_8xx_fjq .section}
+
+An Alibaba Cloud account is created. If not, create one before proceeding.
+
 ## Scenario {#section_01 .section}
 
 An enterprise has bought ECS instances and wants to deploy its applications in ECS. To allow the applications to access other Alibaba Cloud APIs by using access keys, the enterprise can use one of the following methods:
@@ -18,7 +22,9 @@ However, if the preceding methods are used, the following issues occur:
 
 To resolve the preceding issues, the enterprise can combine ECS with the access control feature of RAM. Specifically, the administrator creates a RAM role for each ECS instance \(that is, the operating environment of the applications\) and grants each RAM role appropriate permissions. The applications can use the temporary STS token of the corresponding RAM role to call other Alibaba Cloud APIs.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23777/156586581614410_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23777/156777867414410_en-US.png)
+
+## Procedure {#section_cq2_ecq_y4r .section}
 
 1.  The enterprise uses its Alibaba Cloud account to create a RAM role \(`MyApplicationRole`\).
 
@@ -43,7 +49,7 @@ To resolve the preceding issues, the enterprise can combine ECS with the access 
 
         The enterprise uses its Alibaba Cloud account to create a custom policy in the RAM console and attach the policy to the RAM user. The policy content is as follows:
 
-        ``` {#codeblock_srz_5i6_mpu}
+        ``` {#codeblock_kmv_0tz_d7i}
         {
            "Statement": [
             {
@@ -78,13 +84,13 @@ To resolve the preceding issues, the enterprise can combine ECS with the access 
 
         Request example:
 
-        ``` {#codeblock_f3j_2uh_9xw}
+        ``` {#codeblock_4tj_4pw_u25}
         $ curl http://100.100.100.200/latest/meta-data/ram/security-credentials/MyApplicationRole
         ```
 
         Response example
 
-        ``` {#codeblock_7ai_75w_sg6}
+        ``` {#codeblock_fh3_mny_xls}
         [root@local ~]# curl http://100.100.100.200/latest/meta-data/ram/security-credentials/MyApplicationRole
         {
         "AccessKeyId" : "STS.J8XXXXXXXXXX4",
