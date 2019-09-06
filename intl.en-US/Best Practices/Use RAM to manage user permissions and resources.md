@@ -2,6 +2,10 @@
 
 This topic describes how to use RAM to manage user permissions and resources.
 
+## Prerequisites {#section_by7_rd8_zkb .section}
+
+An Alibaba Cloud account is created. If not, create one before proceeding.
+
 ## Scenario {#section_w1b_xdk_xdb .section}
 
 Enterprise A has bought several types of Alibaba Cloud resources, such as ECS instances, RDS instances, SLB instances, and OSS buckets for a project. During this project, many employees need to perform operations on these cloud resources, but different employees require different permissions to complete different operations.
@@ -16,7 +20,7 @@ The requirements of Enterprise A are as follows:
 
 ## Solution {#section_abb_xdk_xdb .section}
 
-![Solution](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23773/156680510514406_en-US.png)
+![Solution](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23773/156777852014406_en-US.png)
 
 -   Set multi-factor authentication \(MFA\) for you Alibaba Cloud account to avoid risks associated with mistaken disclosure of the password. For more information, see [Enable an MFA device for an Alibaba Cloud account](../../../../reseller.en-US/User Guide/Security settings/Multi-factor authentication/Enable an MFA device for an Alibaba Cloud account.md#).
 -   Create RAM users for different employees \(or applications\) and set logon passwords or create AccessKey pairs. For more information, see [Create a RAM user](../../../../reseller.en-US/User Guide/RAM users/Create a RAM user.md#).
