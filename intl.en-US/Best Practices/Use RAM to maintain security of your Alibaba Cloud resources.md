@@ -2,6 +2,10 @@
 
 This topic describes how to use RAM to apply access and security settings to your Alibaba Cloud resources so that you can better manage access permissions with fine-grained access control.
 
+## Prerequisites {#section_ug8_z0q_5pv .section}
+
+An Alibaba Cloud account is created. If not, create one before proceeding.
+
 ## Scenario {#section_pqk_vdp_kgb .section}
 
 When you migrate your business resources to the cloud, the traditional organizational structures and previous management methods of your resources may no longer meet your requirements. As a result, the migration of your resources may create higher security management issues as follows:
@@ -15,7 +19,7 @@ When you migrate your business resources to the cloud, the traditional organizat
 
 To resolve the preceding issues, you can use RAM to create RAM users and grant resource access permissions to RAM users. Specifically, you can use RAM to separate the access key of your Alibaba Cloud account from RAM users and grant minimum permissions to users as needed to maintain the security of your resources.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/97386/156680360537013_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/97386/156777000837013_en-US.png)
 
 ## Security management solution {#section_gyq_2ny_pgb .section}
 
@@ -94,5 +98,5 @@ After migrating your services to the cloud, you can use the preceding solutions 
 
 ## What to do next {#section_v52_q2f_qgb .section}
 
-You can use RAM to categorize your O&M requirements and assign tasks to different engineers as needed. For more information, see [Manage permissions of different O&M engineers by using RAM](reseller.en-US/Best Practices/Manage permissions of different O&M engineers by using RAM.md#).
+You can use RAM to categorize your O&M requirements and assign tasks to different engineers as needed. For more information, see [Use RAM to manage permissions of O&M engineers](reseller.en-US/Best Practices/Use RAM to manage permissions of O&M engineers.md#).
 
