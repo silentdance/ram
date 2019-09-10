@@ -1,6 +1,6 @@
 # AssumeRole {#reference_clc_3sv_xdb .reference}
 
-调用AssumeRole接口获取一个扮演该角色的临时身份。
+调用AssumeRole接口获取一个扮演该角色的临时身份，此处RAM用户扮演的是受信实体为阿里云账号的RAM角色。
 
 ## 请求参数 {#section_it1_ksv_xdb .section}
 
