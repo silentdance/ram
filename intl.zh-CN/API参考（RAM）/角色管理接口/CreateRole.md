@@ -18,108 +18,110 @@
  格式：`^[a-zA-Z0-9\.@\-]+$`。
 
  |
-|AssumeRolePolicyDocument|String|否|\{"Statement":\[\{"Action":"sts:AssumeRole","Effect":"Allow","Principal":\{"RAM":"acs:ram::123456789012\*\*\*\*:root"\}\}\],"Version":"1"\}|一个策略文本，指定受信任的允许扮演该角色的一个或多个主体，这个主体可以是阿里云账号、阿里云服务或身份提供商。
+|AssumeRolePolicyDocument|String|否|\{"Statement":\[\{"Action":"sts:AssumeRole","Effect":"Allow","Principal":\{"RAM":"acs:ram::123456789012\*\*\*\*:root"\}\}\],"Version":"1"\}|一个策略文本。指定受信任的允许扮演该角色的一个或多个主体，这个主体可以是阿里云账号、阿里云服务或身份提供商。
+
+ **说明：** RAM用户不能扮演受信实体为阿里云服务的RAM角色。
 
  |
-|Description|String|否|ECS管理角色|角色描述，最大长度1024字符。
+|Description|String|否|ECS管理角色|角色描述，最大长度为1024个字符。
 
  |
 
-AssumeRolePolicyDocument样例说明
+ **AssumeRolePolicyDocument样例说明** 
 
--   如下策略表示允许扮演该角色的受信主体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户。
+-   以下策略表示：允许扮演该角色的受信实体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户。
 
-```
-
-{
-"Statement": [
-{
-  "Action": "sts:AssumeRole",
-  "Effect": "Allow",
-  "Principal": {
-    "RAM": [
-      "acs:ram::123456789012****:root"
-    ]
-  }
-}
-],
-"Version": "1"
-}
-
-```
-
--   如下策略表示允许扮演该角色的受信主体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户（testuser）。
-
-```
-
-{
-"Statement": [
-{
-  "Action": "sts:AssumeRole",
-  "Effect": "Allow",
-  "Principal": {
-    "RAM": [
-      "acs:ram::123456789012****:user/testuser"
-    ]
-  }
-}
-],
-"Version": "1"
-}
-
-```
-
-**说明：** 创建此角色时，请确保已创建好RAM用户`testuser`（其UPN为：testuser@123456789012****.onaliyun.com）。
-
--   如下策略表示允许扮演该角色的受信主体为当前云账号下的ECS服务（用户创建ECS实例时可以指定使用该RAM角色，实例启动后将能获得该RAM角色的STS Token）。
-
-```
-
-{
-"Statement": [
-{
-  "Action": "sts:AssumeRole",
-  "Effect": "Allow",
-  "Principal": {
-    "Service": [
-      "ecs.aliyuncs.com"
-    ]
-  }
-}
-],
-"Version": "1"
-}
-
-
-```
-
--   如下策略表示允许扮演该角色的受信主体为当前云账号（AccountID=123456789012****）中的身份提供商（testprovider）下的用户。
-
-```
-
-{
-
+    ```
+    
+    {
     "Statement": [
-
-        {
-            "Action": "sts:AssumeRole",
-            "Effect": "Allow",
-            "Principal": {
-                "Federated": [
-                    "acs:ram::123456789012****:saml-provider/testprovider"
-                ]
-            },
-            "Condition":{
-                "StringEquals":{
-                    "saml:recipient":"https://signin.aliyun.com/saml-role/sso"
-                }
-            }
-        }
+    {
+      "Action": "sts:AssumeRole",
+      "Effect": "Allow",
+      "Principal": {
+        "RAM": [
+          "acs:ram::123456789012****:root"
+        ]
+      }
+    }
     ],
     "Version": "1"
-}
+    }
+    
+    ```
 
-```
+-   以下策略表示：允许扮演该角色的受信实体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户（testuser）。
+
+**说明：** 创建此角色时，请确保已创建好RAM用户`testuser`\(其UPN为：testuser@123456789012\*\*\*\*.onaliyun.com\)。
+
+    ```
+    
+    {
+    "Statement": [
+    {
+      "Action": "sts:AssumeRole",
+      "Effect": "Allow",
+      "Principal": {
+        "RAM": [
+          "acs:ram::123456789012****:user/testuser"
+        ]
+      }
+    }
+    ],
+    "Version": "1"
+    }
+    
+    ```
+
+-   以下策略表示：允许扮演该角色的受信实体为当前云账号下的ECS服务（用户创建ECS实例时可以指定使用该RAM角色，实例启动后将能获得该RAM角色的STS Token）。
+
+    ```
+    
+    {
+    "Statement": [
+    {
+      "Action": "sts:AssumeRole",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": [
+          "ecs.aliyuncs.com"
+        ]
+      }
+    }
+    ],
+    "Version": "1"
+    }
+    
+    ```
+
+-   以下策略表示：允许扮演该角色的受信实体为当前云账号\(AccountID=123456789012\*\*\*\*\)中的身份提供商（testprovider）下的用户。
+
+    ```
+    
+    {
+    
+        "Statement": [
+    
+            {
+                "Action": "sts:AssumeRole",
+                "Effect": "Allow",
+                "Principal": {
+                    "Federated": [
+                        "acs:ram::123456789012****:saml-provider/testprovider"
+                    ]
+                },
+                "Condition":{
+                    "StringEquals":{
+                        "saml:recipient":"https://signin.aliyun.com/saml-role/sso"
+                    }
+                }
+            }
+        ],
+        "Version": "1"
+    }
+    
+    ```
+
 
 ## 返回数据 {#resultMapping .section}
 
