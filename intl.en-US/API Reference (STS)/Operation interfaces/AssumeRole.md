@@ -1,19 +1,19 @@
 # AssumeRole {#reference_clc_3sv_xdb .reference}
 
-You can call this operation to obtain a temporary identity for assuming a role.
+You can call this operation to obtain a temporary identity for assuming a role. In this topic, RAM users can only assume the RAM roles of the trusted Alibaba Cloud account.
 
 ## Request parameters {#section_it1_ksv_xdb .section}
 
 |Parameter|Type|Required|Example|Description|
 |:--------|:---|:-------|:------|:----------|
 |Action|String|Yes|AssumeRole|The operation that you want to perform. Set this parameter to AssumeRole.|
-|RoleArn|String|Yes|acs:ram::123456789012\*\*\*\*:role/adminrole|The Alibaba Cloud Resource Name \(ARN\) of the specified RAM role. Format: `acs:ram::$accountID:role/$roleName` . **Note:** 
+|RoleArn|String|Yes|acs:ram::123456789012\*\*\*\*:role/adminrole|The Alibaba Cloud Resource Name \(ARN\) of the specified RAM role. Format: `acs:ram::$accountID:role/$roleName`. **Note:** 
 
 -   `$accountID`: specifies the Alibaba Cloud account ID. To view the account ID, log on to the Alibaba Cloud console, move your pointer over your profile picture in the upper-right corner, and then click **Security Settings**.
 -   `$roleName`: specifies the name of the RAM role. To view the role name, log on to the RAM console, and click **RAM Roles** in the left-side navigation pane. In the **RAM Role Name** column, you can view the name of the target RAM role.
 
  |
-|RoleSessionName|String|Yes|alice|The role session name that is specified by the user. You can use this parameter to identify the user who assumes the role by identifying the security tokens. Format: `^[a-zA-Z0-9\. @\-_]+$`. **Note:** The value must be 2 to 32 characters in length. If you enter only one character, an error occurs.
+|RoleSessionName|String|Yes|alice|The role session name that is specified by the user. This parameter can be used to identify the RAM user who assumes the role. Format: `^[a-zA-Z0-9\. @\-_]+$`. **Note:** The value must be 2 to 32 characters in length. If you enter only one character, an error occurs.
 
  |
 |Policy|String|No|\{"Statement": \[\{"Action": \["\*"\],"Effect": "Allow","Resource": \["\*"\]\}\],"Version":"1"\}|The policy that specifies the permissions of the generated STS token. The value can be up to 1,024 bytes in length. If you do not specify this parameter, the STS token has all permissions of the specified RAM role.|
@@ -25,8 +25,8 @@ You can call this operation to obtain a temporary identity for assuming a role.
 |:--------|:---|:------|:----------|
 |RequestId|String|6894B13B-6D71-4EF5-88FA-F32781734A7F|The ID of the request.|
 |Credentials| | |The access credential.|
-|└AccessKeyId|String|STS.L4aBSCSJVMuKg5U1\*\*\*\*|The AccessKey ID.|
-|└AccessKeySecret|String|wyLTSmsyPGP1ohvvw8xYgB29dlGI8KMiH2pK\*\*\*\*|The AccessKey Secret.|
+|└AccessKeyId|String|STS.L4aBSCSJVMuKg5U1\*\*\*\*|The AccessKey ID provided to you by Alibaba Cloud.|
+|└AccessKeySecret|String|wyLTSmsyPGP1ohvvw8xYgB29dlGI8KMiH2pK\*\*\*\*|The AccessKey secret provided to you by Alibaba Cloud.|
 |└SecurityToken|String|\*\*\*\*\*\*\*\*|The STS token.|
 |└Expiration|String|2015-04-09T11:52:19Z|The time when the STS token expires.|
 |AssumedRoleUser| | |The temporary identity that you use to assume the role.|
@@ -36,7 +36,7 @@ You can call this operation to obtain a temporary identity for assuming a role.
 -   `$roleName`: specifies the name of the RAM role. To view the role name, log on to the RAM console, and click **RAM Roles** in the left-side navigation pane. In the **RAM Role Name** column, you can view the name of the target RAM role.
 
  |
-|└AssumedRoleUserId|String|34458433936495\*\*\*\*:alice|The ID of the temporary identity to assume the role.|
+|└AssumedRoleUserId|String|34458433936495\*\*\*\*:alice|The ID of the temporary identity that you use to assume the role.|
 
 ## Examples {#section_tdy_lsv_xdb .section}
 
