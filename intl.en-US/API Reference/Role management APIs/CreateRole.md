@@ -1,33 +1,37 @@
 # CreateRole {#doc_api_Ram_CreateRole .reference}
 
-Creates a RAM role.
+You can call this operation to create a RAM role.
 
-## Debug {#apiExplorer .section}
+## Debugging {#api_explorer .section}
 
-Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to perform debug operations and generate SDK code examples.
+[OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole&type=RPC&version=2015-05-01) automatically calculates the signature value. For your convenience, we recommend that you call this operation in OpenAPI Explorer. OpenAPI Explorer dynamically generates the sample code of the operation for different SDKs.
 
 ## Request parameters {#parameters .section}
 
-|Parameter|Type|Required?|Example value|Description|
-|:--------|:---|:--------|:------------|:----------|
-|Action|String|Yes|CreateRole| The name of this action.
-
- Value: CreateRole
+|Parameter|Type|Required|Example|Description|
+|---------|----|--------|-------|-----------|
+|Action|String|Yes|CreateRole| The operation that you want to perform. Set this parameter to CreateRole.
 
  |
-|RoleName|String|Yes|ECSAdmin| The RAM role name. It must be 1 to 64 characters in length.
+|RoleName|String|Yes|ECSAdmin| The name of the RAM role. The specified name can be up to 64 characters in length.
 
- Pattern: `^[a-zA-Z0-9\.@\-]+$`
+ Format: `^[a-zA-Z0-9\. @\-]+$`.
 
  |
-|AssumeRolePolicyDocument|String|Yes|\{"Statement":\[\{"Action":"sts:AssumeRole","Effect":"Allow","Principal":\{"RAM":"acs:ram::123456789012\*\*\*\*:root"\}\}\],"Version":"1"\}|The policy text that specifies one or more entities entrusted to assume the RAM role. The entrusted entity can be an Alibaba Cloud account, an Alibaba Cloud service, or an identity provider \(IdP\).|
-|Description|String|Yes|ECS administrator|The RAM role description. It must be 1 to 1,024 characters in length.|
+|AssumeRolePolicyDocument|String|Yes|\{"Statement":\[\{"Action":"sts:AssumeRole","Effect":"Allow","Principal":\{"RAM":"acs:ram::123456789012\*\*\*\*:root"\}\}\],"Version":"1"\}| The policy text that specifies one or more entities entrusted to assume the RAM role. The trusted entity can be an Alibaba Cloud account, Alibaba Cloud service, or identity provider \(IdP\).
 
-## Example of AssumeRolePolicyDocument {#requestParamsSupplement .section}
+ **Note:** RAM users cannot assume the RAM roles of the trusted Alibaba Cloud service.
 
--   The following policy allows the RAM role to be assumed by RAM users under the entrusted Alibaba Cloud account \(ID: 123456789012\*\*\*\*\):
+ |
+|Description|String|No|The RAM role is used to manage ECS instances.| The description of the RAM role. The description can be up to 1,024 characters in length.
 
-    ``` {#codeblock_42b_8ed_xi3}
+ |
+
+Example value of the AssumeRolePolicyDocument parameter
+
+-   The following policy allows the RAM role to be assumed by RAM users under the trusted Alibaba Cloud account whose ID is 123456789012\*\*\*\*.
+
+    ``` {#codeblock_7a5_bww_3z8}
     {
     "Statement": [
     {
@@ -44,9 +48,11 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
     }
     ```
 
--   The following policy allows the RAM role to be assumed by the RAM user \(testuser\) under the entrusted Alibaba Cloud account \(ID: 123456789012\*\*\*\*\):
+-   The following policy allows the RAM role to be assumed by the RAM user named testuser under the trusted Alibaba Cloud account whose ID is 123456789012\*\*\*\*.
 
-    ``` {#codeblock_six_a47_akl}
+    **Note:** To create the RAM role, you must ensure that you have created the RAM user testuser whose UPN is testuser@123456789012\*\*\*\*.onaliyun.com.
+
+    ``` {#codeblock_nyz_hg6_75j}
     {
     "Statement": [
     {
@@ -63,9 +69,9 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
     }
     ```
 
--   The following policy allows the RAM role to be assumed by ECS under the current Alibaba Cloud account:
+-   The following policy allows the RAM role to be assumed by the ECS service under the current Alibaba Cloud account.
 
-    ``` {#codeblock_tz5_drp_quv}
+    ``` {#codeblock_e1t_34j_p65}
     {
     "Statement": [
     {
@@ -82,13 +88,13 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
     }
     ```
 
-    **Note:** After the RAM role is assumed by ECS, you can specify to use this role when you create an instance. The STS token of role to be assumed is then obtained when you start the instance.
+-   The following policy allows the RAM role to be assumed by users under the IdP named testprovider for the current Alibaba Cloud account whose ID is 123456789012\*\*\*\*.
 
--   The following policy allows the RAM role to be assumed by users under the IdP \(testprovider\) in the current Alibaba Cloud account \(ID: 123456789012\*\*\*\*\):
-
-    ``` {#codeblock_2di_2l2_90t}
+    ``` {#codeblock_abw_5g1_go4}
     {
+    
         "Statement": [
+    
             {
                 "Action": "sts:AssumeRole",
                 "Effect": "Allow",
@@ -111,44 +117,60 @@ Use [OpenAPI Explorer](https://api.aliyun.com/#product=Ram&api=CreateRole) to pe
 
 ## Response parameters {#resultMapping .section}
 
-|Parameter|Type|Example value|Description|
-|:--------|:---|:------------|:----------|
-|RequestId|String|04F0F334-1335-436C-A1D7-6C044FE73368|The request ID.|
-|Role|N/A|N/A|The information about the RAM role.|
-|└Arn|String|acs:ram::123456789012\*\*\*\*:role/ECSAdmin|The Alibaba Cloud Resource Name \(ARN\) of the RAM role.|
-|└AssumeRolePolicyDocument|String|\{ "Statement": \[ \{ "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": \{ "RAM": "acs:ram::123456789012\*\*\*\*:root" \} \} \], "Version": "1" \}|The policy that specifies the entity entrusted to assume the RAM role.|
-|└CreateDate|String|2015-01-23T12:33:18Z|The date and time when the RAM role was created.|
-|└Description|String|ECS administrator|The description of the RAM role.|
-|└RoleId|String|901234567890\*\*\*\*|The ID of the RAM role.|
-|└RoleName|String|ECSAdmin|The name of the RAM role.|
+|Parameter|Type|Example|Description|
+|---------|----|-------|-----------|
+|RequestId|String|04F0F334-1335-436C-A1D7-6C044FE73368| The ID of the request.
 
-## Example {#demo .section}
+ |
+|Role|N/A|N/A| The information about the RAM role.
 
-Request example
+ |
+|Arn|String|acs:ram::123456789012\*\*\*\*:role/ECSAdmin| The Alibaba Cloud Resource Name \(ARN\) of the RAM role.
+
+ |
+|AssumeRolePolicyDocument|String|\{ "Statement": \[ \{ "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": \{ "RAM": "acs:ram::123456789012\*\*\*\*:root" \} \} \], "Version": "1" \}| The policy that specifies the trusted entity to assume the RAM role.
+
+ |
+|CreateDate|String|2015-01-23T12:33:18Z| The time when the RAM role was created.
+
+ |
+|Description|String|The RAM role is used to manage ECS instances.| The description of the RAM role.
+
+ |
+|RoleId|String|901234567890\*\*\*\*| The ID of the RAM role.
+
+ |
+|RoleName|String|ECSAdmin| The name of the RAM role.
+
+ |
+
+## Examples {#demo .section}
+
+Sample requests
 
 ``` {#request_demo}
 https://ram.aliyuncs.com/?Action=CreateRole
 &RoleName=ECSAdmin
 &AssumeRolePolicyDocument={"Statement":[{"Action":"sts:AssumeRole","Effect":"Allow","Principal":{"RAM":"acs:ram::123456789012****:root"}}],"Version":"1"}
-&Description=ECS administrator
-&<Common parameters>
+&Description=The RAM role is used to manage ECS instances.
+&<Common request parameters>
 ```
 
-Response example
+Sample success responses
 
 `XML` format
 
 ``` {#xml_return_success_demo}
 <CreateRoleResponse>
-  <RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
-  <Role>
-    <RoleId>901234567890****</RoleId>
-    <RoleName>ECSAdmin</RoleName>
-    <Arn>acs:ram::123456789012****:role/ECSAdmin</Arn>
-    <Description>ECS administrator</Description>
-    <AssumeRolePolicyDocument>{ "Statement": [ { "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": { "RAM": "acs:ram::123456789012****:root" } } ], "Version": "1" }</AssumeRolePolicyDocument>
-    <CreateDate>2015-01-23T12:33:18Z</CreateDate>
-  </Role>
+      <RequestId>04F0F334-1335-436C-A1D7-6C044FE73368</RequestId>
+      <Role>
+            <RoleId>901234567890****</RoleId>
+            <RoleName>ECSAdmin</RoleName>
+            <Arn>acs:ram::123456789012****:role/ECSAdmin</Arn>
+            <Description>The RAM role is used to manage ECS instances.</Description>
+            <AssumeRolePolicyDocument>{ "Statement": [ { "Action": "sts:AssumeRole", "Effect": "Allow", "Principal": { "RAM": "acs:ram::123456789012****:root" } } ], "Version": "1" }</AssumeRolePolicyDocument>
+            <CreateDate>2015-01-23T12:33:18Z</CreateDate>
+      </Role>
 </CreateRoleResponse>
 ```
 
@@ -159,7 +181,7 @@ Response example
     "RequestId":"04F0F334-1335-436C-A1D7-6C044FE73368",
     "Role":{
         "RoleName":"ECSAdmin",
-        "Description":"ECS administrator",
+        "Description":"The RAM role is used to manage ECS instances.",
         "AssumeRolePolicyDocument":"{ \"Statement\": [ { \"Action\": \"sts:AssumeRole\", \"Effect\": \"Allow\", \"Principal\": { \"RAM\": \"acs:ram::123456789012****:root\" } } ], \"Version\": \"1\" }",
         "Arn":"acs:ram::123456789012****:role/ECSAdmin",
         "CreateDate":"2015-01-23T12:33:18Z",
@@ -168,7 +190,5 @@ Response example
 }
 ```
 
-## Errors {#section_iqc_x1d_1u6 .section}
-
-For a list of error codes, visit the [API Error Center](https://error-center.alibabacloud.com/status/product/Ram?spm=5176.10421674.0.0.29c5cav7cav7Io).
+## Error codes {#section_5z7_3so_m53 .section}
 
