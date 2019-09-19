@@ -10,17 +10,17 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
+|RoleName|String|是|ECSAdmin|指定角色名，最多包含64个字符。
+
+ 格式：`^[a-zA-Z0-9.@-]+$`。
+
+ |
+|AssumeRolePolicyDocument|String|是|\{"Statement":\[\{"Action":"sts:AssumeRole","Effect":"Allow","Principal":\{"RAM":"acs:ram::123456789012\*\*\*\*:root"\}\}\],"Version":"1"\}|一个策略文本。指定允许扮演该角色的一个或多个主体，这个主体可以是阿里云账号、阿里云服务或身份提供商。
+
+ **说明：** RAM用户不能扮演可信实体为阿里云服务的RAM角色。
+
+ |
 |Action|String|是|CreateRole|系统规定参数。取值：CreateRole
-
- |
-|RoleName|String|否|ECSAdmin|指定角色名，最多包含64个字符。
-
- 格式：`^[a-zA-Z0-9\.@\-]+$`。
-
- |
-|AssumeRolePolicyDocument|String|否|\{"Statement":\[\{"Action":"sts:AssumeRole","Effect":"Allow","Principal":\{"RAM":"acs:ram::123456789012\*\*\*\*:root"\}\}\],"Version":"1"\}|一个策略文本。指定受信任的允许扮演该角色的一个或多个主体，这个主体可以是阿里云账号、阿里云服务或身份提供商。
-
- **说明：** RAM用户不能扮演受信实体为阿里云服务的RAM角色。
 
  |
 |Description|String|否|ECS管理角色|角色描述，最大长度为1024个字符。
@@ -29,7 +29,7 @@
 
  **AssumeRolePolicyDocument样例说明** 
 
--   以下策略表示：允许扮演该角色的受信实体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户。
+-   以下策略表示：允许扮演该RAM角色的可信实体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的任何RAM用户。
 
     ```
     
@@ -50,7 +50,7 @@
     
     ```
 
--   以下策略表示：允许扮演该角色的受信实体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户（testuser）。
+-   以下策略表示：允许扮演该RAM角色的可信实体为云账号\(AccountID=123456789012\*\*\*\*\)下被授权的RAM用户（testuser）。
 
 **说明：** 创建此角色时，请确保已创建好RAM用户`testuser`\(其UPN为：testuser@123456789012\*\*\*\*.onaliyun.com\)。
 
@@ -73,7 +73,7 @@
     
     ```
 
--   以下策略表示：允许扮演该角色的受信实体为当前云账号下的ECS服务（用户创建ECS实例时可以指定使用该RAM角色，实例启动后将能获得该RAM角色的STS Token）。
+-   以下策略表示：允许扮演该RAM角色的可信实体为当前云账号下的ECS服务。
 
     ```
     
@@ -94,7 +94,7 @@
     
     ```
 
--   以下策略表示：允许扮演该角色的受信实体为当前云账号\(AccountID=123456789012\*\*\*\*\)中的身份提供商（testprovider）下的用户。
+-   以下策略表示：允许扮演该RAM角色的可信实体为当前云账号\(AccountID=123456789012\*\*\*\*\)中的身份提供商（testprovider）下的用户。
 
     ```
     
@@ -202,5 +202,5 @@ https://ram.aliyuncs.com/?Action=CreateRole
 
 ## 错误码 { .section}
 
-访问[错误中心](https://error-center.aliyun.com/status/product/Ram)查看更多错误码。
+访问[错误中心](https://error-center.alibabacloud.com/status/product/Ram)查看更多错误码。
 
