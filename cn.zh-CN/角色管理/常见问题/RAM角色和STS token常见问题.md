@@ -35,14 +35,14 @@
 
 **说明：** 
 
--   上述自定义策略中的`Resource`为角色ARN，如何查看角色ARN请参见[\#section\_3di\_0zn\_p7y](#section_3di_0zn_p7y)其中，`$accountId`为云账号ID，`$roleName`为RAM角色名称。
+-   上述自定义策略中的`Resource`为角色ARN，如何查看角色ARN请参见[如何查看RAM角色的ARN？](#section_qbw_mhy_173)其中，`$accountId`为云账号ID，`$roleName`为RAM角色名称。
 -   将上述自定义策略授权给RAM用户，便可以指定具体可以扮演的RAM角色。关于如何为RAM用户授权，请参见[为RAM用户授权](../../../../cn.zh-CN/用户管理/为RAM用户授权.md#)。
 
 ## 如何查看RAM角色的ARN？ {#section_qbw_mhy_173 .section}
 
 您可以登录[RAM控制台](https://signin.aliyun.com/login.htm)，在**RAM角色管理**页签下，单击目标RAM角色名称，在**基本信息**区域下查看角色ARN。
 
-![ RAM角色ARN](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1769808/156887216960601_zh-CN.png)
+![ RAM角色ARN](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1769808/156887355660601_zh-CN.png)
 
 ## 为什么使用STS时会报错？ {#section_lj3_0pc_8ep .section}
 
@@ -54,7 +54,7 @@ Error message: You are not authorized to do this action. You should be authorize
 
 出现上述现象是因为进行授权的RAM用户没有相应的权限，因此使用时系统会报错。
 
-请为RAM用户添加系统策略（AliyunSTSAssumeRoleAccess）或自定义策略，详情请参见[\#section\_5el\_qdq\_959](#section_5el_qdq_959)
+请为RAM用户添加系统策略（AliyunSTSAssumeRoleAccess）或自定义策略，详情请参见[能否指定RAM用户具体可以扮演哪个RAM角色？](#section_c5c_e3t_at9)
 
 ## STS服务调用次数是否有上限？ {#section_oyc_f04_h99 .section}
 
