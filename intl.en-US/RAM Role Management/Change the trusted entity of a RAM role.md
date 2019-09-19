@@ -2,6 +2,8 @@
 
 This topic describes how to change the trusted entity of a RAM role to a specific Alibaba Cloud account, Alibaba Cloud service, or identity provider \(IdP\). You can change the trusted entity of a RAM role by modifying the policy attached to the RAM role.
 
+**Note:** When creating a RAM role, you can specify an Alibaba Cloud account, Alibaba Cloud service, or identity provider \(IdP\) for the trusted entity of the RAM role. In most cases, you do not need to change the trusted entity after creating a RAM role. If you have to change the trusted entity, you can use either of the following methods. After you change the trusted entity, we recommend that you test whether the RAM role works properly.
+
 ## Change the trusted entity of a RAM role to a specific Alibaba Cloud account {#section_2gb_zs1_4g9 .section}
 
 You can check the trusted entity of a RAM role by viewing the policy. If the `Principal` element contains the `RAM` field, the trusted entity is an **Alibaba Cloud account**. The role can be assumed by RAM users under the trusted account.
