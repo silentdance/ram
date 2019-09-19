@@ -10,6 +10,9 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
+|Action|String|是|CreateRole|系统规定参数。取值：CreateRole
+
+ |
 |RoleName|String|是|ECSAdmin|指定角色名，最多包含64个字符。
 
  格式：`^[a-zA-Z0-9.@-]+$`。
@@ -18,9 +21,6 @@
 |AssumeRolePolicyDocument|String|是|\{"Statement":\[\{"Action":"sts:AssumeRole","Effect":"Allow","Principal":\{"RAM":"acs:ram::123456789012\*\*\*\*:root"\}\}\],"Version":"1"\}|一个策略文本。指定允许扮演该角色的一个或多个主体，这个主体可以是阿里云账号、阿里云服务或身份提供商。
 
  **说明：** RAM用户不能扮演可信实体为阿里云服务的RAM角色。
-
- |
-|Action|String|是|CreateRole|系统规定参数。取值：CreateRole
 
  |
 |Description|String|否|ECS管理角色|角色描述，最大长度为1024个字符。
