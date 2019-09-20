@@ -1,8 +1,8 @@
-# 支持STS的云服务 {#concept_ofk_yt2_xdb .concept}
+# 支持STS的云服务 {#concept_ofk_yt2_xdb .reference}
 
 本文按服务类别罗列了支持临时安全令牌（STS）访问和鉴权的阿里云服务，方便您查询和使用。
 
-有关STS的介绍和应用场景，请参​见[什么是STS](../../../../cn.zh-CN/API 参考（STS）/什么是STS.md#)和[RAM角色概览](../../../../cn.zh-CN/角色管理/RAM 角色概览.md#)。
+有关STS的介绍和应用场景，请参见[什么是STS](../../../../cn.zh-CN/API 参考（STS）/什么是STS.md#)和[RAM角色概览](../../../../cn.zh-CN/角色管理/RAM角色概览.md#)。
 
 ## 支持STS的云服务列表 {#section_00 .section}
 
