@@ -1,4 +1,4 @@
-# 支持RAM的云服务 {#concept_ofk_yt2_xdb .concept}
+# 支持RAM的云服务 {#concept_ofk_yt2_xdb .reference}
 
 本文按服务类别罗列了与访问控制（RAM）相集成的阿里云服务，并提供每个服务支持的授权粒度、系统策略以及相关文档，方便您查询和使用。
 
@@ -479,7 +479,7 @@
 |阿里云Elasticsearch|√|√|资源级别| -   AliyunElasticsearchReadOnlyAccess
 -   AliyunElasticsearchFullAccess
 
- |[授权资源类型](../../../../cn.zh-CN/用户指南/访问控制/授权资源类型.md#)|
+ |[授权资源类型](../../../../cn.zh-CN/访问控制/授权资源类型.md#)|
 |自然语言处理|×|√|服务级别|-|-|
 |机器翻译|×|√|服务级别|-|-|
 |I+关系网络分析|√|√|服务级别|-|-|
